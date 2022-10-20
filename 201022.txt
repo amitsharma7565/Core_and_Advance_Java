@@ -1,0 +1,274 @@
+Variable:
+its a name of memory location in which we can store data
+
+how we can declare variable:
+datatype varaiblename;
+
+example:
+
+int price;
+
+datatype:
+specifies the types of data and its size
+
+1.primitive datatypes
+Predefind datatypes
+
+8 types
+byte--1   0
+short--2   0
+int----4     0
+long---8     0L
+double---8 0.0/0.0d
+float---4    0.0f
+char--2   \u0000
+boolean---1 bit   false
+
+
+2.non-primitive datatypes
+
+Arrays
+String
+class
+
+Scanner:
+used to read the data from user
+
+util package
+
+package:collection of classes and interfaces
+class:collection of methods
+method:contains code it performs some task
+
+nextByte()
+nextShort()
+nextInt()
+nextLong()
+nextFloat()
+nextDouble()
+nextBoolean()
+next()
+nextLine()
+next().charAt(0)
+
+int a
+Scanner sc=new Scanner(System.in)
+
+sc.nextByte()
+
+
+problem statement
+Total cost of product
+
+I went to shop I have purchased one AC  5 ton
+
+what is the cost?
+
+50000+28% GST
+
+totalcost?
+
+2.problem statement
+gross salary:
+
+basicsalary+HRA+DA
+
+basic salary:20000
+hra:12% on basic salary------20000*12/100=2400
+DA :20% on basic salary------20000*20/100=4000
+
+
+gs=20000+2400+4000
+
+3.problem statement
+
+event
+
+brandingexpenses--20000
+food expenses----50000
+travel expenses---12000
+logistic expenses-----5000
+
+I want your help
+
+find total amount i spent?
+
+percentage on each expense
+
+================================
+Nikhil, the founder of “Pine Tree” company wished to design an Event Management 
+System that would let its Customers plan and host events seamlessly via an online 
+platform.
+ 
+As a part of this requirement, Nikhil wanted to write a piece of code for his 
+company’s Amphi Event Management System that will display customized welcome 
+messages by taking Customers’ name as input. Help Nikhil on the task.
+ 
+Input Format:
+First line of the input is a string that corresponds to a Customer’s name. Assume 
+that the maximum length of the string is 50.
+ 
+Output Format:
+Output should display the welcome message along with the Customer’s name.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+ 
+Sample Input and Output:
+Enter your name
+Beena
+Hello Beena ! Welcome to Amphi Event Management System
+========================================================================
+"Pine Tree" Company has signed up a big time Event Management deal from the Rotary Youth Club 
+for a Trade Fair organized at Codissia Complex, wherein all startup companies in the Software 
+industry are demonstrating their latest products and services and meet with industry partners 
+and Customers.
+ 
+Amphi Event Management System has to be modified to write a piece of code that will get the 
+input of the number of events to be hosted for the Fair at Codissia from its users and display 
+the same. Help the company to accomplish the requirement.
+ 
+Input Format:
+First line of the input is an integer that corresponds to the number of events to be hosted at 
+Codissia.
+ 
+Output Format:
+Output should display the number of events to be hosted at Codissia.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+ 
+Sample Input and Output:
+Enter the number of events hosted in Codissia
+50
+Number of events hosted in Codissia is 50
+=========================================================================
+Trade Fairs are important for companies to present their products and to get in touch with its customer
+s and business parties. One such grandeur Trade Fair Event was organized by the Confederation of Nation
+al Large Scale Industry.
+Number of people who attended the event on the first day was x. But as days progressed, the event 
+gained good response and the number of people who attended the event on the second day was twice the 
+number of people who attended on the first day. Unfortunately due to heavy rains on the third day, 
+the number of people who attended the event was exactly half the number of people who attended on the 
+first day.
+ 
+Given the total number of people who have attended the event in the first 3 days, find the number of 
+people who have attended the event on day 1, day 2 and day 3.
+ 
+Input Format:
+First line of the input is an integer value that corresponds to the total number of people.
+ 
+Output Format:
+First line of the output should display the number of attendees on day 1.
+Second line of the output should display the number of attendees on day 2.
+Third line of the output should display the number of attendees on day 3.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+ 
+Sample Input and Output:
+Enter the total number of people
+10500
+Number of attendees on day 1 : 3000
+Number of attendees on day 2 : 6000
+Number of attendees on day 3 : 1500
+==================================================================
+Wisconsin State Fair is one of the largest midsummer celebrations in the Midwest Allis, showcasing 
+the agriculture skills and prowess of the state. The Event organizers hired few part-time employees 
+to work at the fair and the agreed salary paid to them are as given below:
+ 
+Weekdays --- 80 / hour
+Weekends --- 50 / hour
+ 
+Justin is a part-time employee working at the fair. Number of hours Justin has worked in the weekdays 
+is 10 more than the number of hours he had worked during weekends. If the total salary paid to him in 
+this month is known, write a program to estimate the number of hours he had worked during weekdays and 
+the number of hours he had worked during weekends.
+ 
+Input Format:
+First line of the input is a double value that corresponds to the total salary paid to Justin.
+ 
+Output Format:
+First line of the output should display the number of hours Justin has worked during the weekdays.
+Second line of the output should display the number of hours Justin has worked during the weekends.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+ 
+Sample Input and Output:
+Enter the total salary paid
+2750
+Number of weekday hours is 25
+Number of weekend hours is 15
+=============================================
+[5:18 PM] Lalitha Ujjaneni
+    c1 && c2result
+ttt
+tff
+ftf
+fff
+
+c1 & c2result
+ttt
+tff
+ftf
+fff
+Logical or
+c1 || c2result
+ttt
+tft
+ftt
+fff
+bitwise or
+c1 | c2result
+ttt
+tft
+ftt
+fff
+0100
+0101
+-----
+0101---5
+================================
+    bitwise xor
+
+^
+
+1 1-0
+0 0-0
+1 0 -1
+0 1-1
+======================================
+tertnary operator
+
+class Sample {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    //read input
+    int a=10 ,b=20, c=30;
+     String result=(a==b)?"both are equal":"both are not equal";
+    System.out.println(result);
+          
+   
+  }
+
+}
+
+
+class Sample {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    //read input
+    int a=10,b=20;
+     String result=(a>b)?" a is big ":"b is big";
+    System.out.println(result);
+          
+   
+  }
+
+}
+========================================
+Operator
+// arithmetic(+,-,*,/,%,++,--)
+// relational(<,>,<=,>=,==,!=)to compare 2 varaibles
+// logical(&&,||,!)and aor not//to compare 2 conditions we can
+// bitwise(&,|,^,<<,>>)
+// assignment(=,+=,-=,*=,/=,%=)
+// ternary(?:)
+

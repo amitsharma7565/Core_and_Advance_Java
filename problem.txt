@@ -1,0 +1,216 @@
+
+1. Write a pseudocode to accept two numbers and print addition, substraction, multiplication and division.
+2. Write a pseudocode to accept 3 subjects marks and print total and avg marks.
+3. Write a pseudocode to accept basic salary and find gross salary.
+gs=basic+hra+da;
+
+Hra is 89% on basic and Da is 78% on Basic.
+
+
+
+begin
+
+            Display "Welcome to Java";
+
+end
+
+==========================================
+2. Write a pseudocode to print addition of  two numbers.
+
+begin
+   numeric  num1, num2,sum
+   Display "Enter num1 value"
+   input num1
+   Display "Enter num2 value"
+   input num2
+   
+  sum=num1+num2
+   Display "Addition is",sum
+end
+
+==========================================
+Q3. Write a pseudocode to accept two numbers and print addition, 
+substraction, multiplication and division.
+
+begin
+numeric  num1, num2,addition,substraction,multiplication,division
+Display "Enter num1 value"
+input num1
+Display "Enter num2 value"
+input num2
+addition =num1+num2
+substraction =num1-num2
+multiplication=num1*num2
+division=num1/num2
+
+Display "Addition is", Addition
+Display "substraction is", substraction
+Display "multiplication is", multiplication
+Display "division is", division
+end
+
+----------------------------------------------------
+4. Write a pseudocode to accept 3 subjects marks and print total and avg marks.
+begin
+numeric num1,num2,num3,total,avg
+Display "Enter the 1st Subject number"
+input num1
+Display "Enter the 2nd Subject number"
+input num2
+Display "Enter the 3rd Subject number"
+input num3
+total= num1+num2+num3
+avg = total/3
+Display "The Total marks is " total
+Display "The avg marks is "avg
+end
+
+------------------------------------------------
+5. Write a pseudocode to accept basic salary and find gross salary.
+gs=basic+hra+da;
+Hra is 89% on basic and Da is 78% on Basic.
+
+Begin 
+numeric salary,gs,hra,da
+Display "Enter basic salary"
+input s1
+hra=(s1*89)/100
+da=(s1*78)/100
+gs=s1+hra+da
+Display "gross salary is "gs
+end
+==========================================
+6. Write a pseudocode to accept salary and 3 shopping bills and find total shopping 
+ amount and how much percentage of amount the employee is spending on shopping on
+ his/her salary.
+
+
+Begin
+numeric salary,b1,b2,b3,shopping,percentage
+Display "enter the salary"
+input salary
+DisplaY "Enter the 1st Shopping bill"
+input b1
+DisplaY "Enter the 2nd Shopping bill"
+input b2
+DisplaY "Enter the 3rd Shopping bill"
+input b3
+shopping=b1+b2+b3
+percentage=(Shopping*100)/salary
+Display "Total bill" shopping
+Display "Percentage" percentage
+end
+==========================================
+7. Write a pseudocode to accept  number and check it is +ve or -ve or Zero.
+
+Begin 
+numeric num 
+Display "Enter the number"
+input num 
+if(num>0)
+Display("Postive number")
+else if(num<0)
+Display("Negative number")
+else 
+Dislpay("Zero number")
+End
+==========================================
+8. Write a pseudocode to accept  number and check it is even or odd.
+
+Begin
+numeric num
+Display "Enter the number"
+input num
+if(num%2==0)
+Display("number is even")
+else
+Dislpay("number is odd")
+end
+==========================================
+
+9. Write a pseudocode to accept  age and check he/she is eligible for 
+voting or not?
+
+Begin 
+numeric age
+Display "Enter the age"
+input age
+if(age>18)
+Display("He/She is eligible for vote")
+else
+Display("He/She is not eligible for vote")
+End 
+==========================================
+10. Write a pseudocode to accept  marks and check it is valid or not.  
+[valid marks: 0 to 100]
+
+Begin
+numeric marks
+Display "Enter the marks"
+input marks
+if(marks<=100)
+Display("Valid")
+else
+Display("Not valid")
+End
+==========================================
+11. Write a pseudocode to accept 3 numbers and print largest number?
+
+Begin 
+numeric num1,num2,num3
+Display "Enter 1st the number"
+input num1
+Display "Enter 2nd the number"
+input num2
+Display "Enter 3rd the number"
+input num3
+if(num1>num2)&&(num1>num3)
+Display("num1 is largest")
+else if(num2>num1)&&(num2>num3)
+Display("num2 is largest")
+else
+Display("num3 is largest")
+End
+========================================== 
+12. Write a pseudocode to accept week number and print week day?
+
+Begin
+numeric week_number
+Display "Enter the week number"
+input week_number
+if(week_number==1)
+Display("Sunday")
+else if(week_number==2)
+Display("Monday")
+else if(week_number==3)
+Display("Tuesday")
+else if(week_number==4)
+Display("Wednesday")
+else if(week_number==5)
+Display("Thursday")
+else if(week_number==6)
+Display("Friday")
+else if(week_number==7)
+Display("Saturday")
+else
+Display("Invalid input")
+End 
+==========================================
+
+=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

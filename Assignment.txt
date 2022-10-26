@@ -1,0 +1,154 @@
+1. WAP to accept 3 subjects marks from learners 
+(Project score + External score + internal score)
+--> check the learner got passed in 3 subjects or not.  [ pass marks is 50]
+--> if learner is got passed in 3 subjects then find the total score.
+        total_score=  70% from project + 20% from external + 10% from internals
+--> based on total score print grade.
+           90+   -- A grade
+           70-90 -- B grade
+           50-70 -- C grade
+--> if student got failed in subjects, print failed subject name along with score.
+
+
+Begin
+numeric sub1,sub2,sub3,total
+Display "Enter the sub1 marks"
+input sub1
+Display "Enter the sub2 marks"
+input sub2
+Display "Enter the sub3 marks"
+input sub3
+if(sub1=>50&&sub2=>50&&sub3=>50){
+
+	total=((70*project)/100)+((20*external)/100)+((10*internals)/100)
+
+	if(total=>90)
+		Display("A Grade")
+	else if(total=>70)
+		Display("B Grade")
+	else if(total=>50)
+		Display("c Grade")
+}
+else{
+	if()
+else if(sub1<50) 
+
+	Display("Fail in subject1" sub1)
+
+else if(sub2<50)
+	Display("Fail in subject2" sub2)
+else if(sub3<50)
+	Display("Fail in subject3" sub3)
+else
+	("Fail in all subject")
+End
+=====================================================
+2. WAP to print 1- 10 numbers.
+         
+begin
+numeric i
+for(i=1;i<=10;i++) {
+Display i
+}
+end
+==================================================
+3.WAP to print 1-n numbers
+
+begin
+numeric i,n
+Display"Enter the number "
+input n
+for(i=1;i<=n;i++){
+Display i
+}
+End
+==================================================
+4.WAP to print n-1 numbers
+Begin 
+numeric i, n
+Display"Enter the number"
+input n
+for(i=n;i>=0;i--){
+Display i
+}
+End
+==================================================
+5.WAP to accept start and stop values and print between values
+
+Begin 
+numeric i, start, stop
+Display "Enter the start value"
+input start
+Display "Enter the stop value"
+input stop
+if(start<stop){
+for(i=start;start<stop;i++){
+Display i
+
+}}
+else if(start>stop)
+ {
+	for(i=start;start>=stop;i--){
+	Display i
+}}
+else
+	Display("both value same")
+	
+End
+================================================
+6. WAP to print even numbers between 1-n.
+Begin
+numeric i, n
+Display "Enter the number"
+input n
+for(i=1;i<=n,i++){
+if(i%2==0)
+Display(i)}
+end
+================================================
+7. WAP to print odd numbers between 1-n.
+Begin
+numeric i, n
+Display "Enter the number"
+input n
+for(i=1;i<=n,i++){
+if(i%2!=0)
+Display(i)}
+end
+==============================================
+8. WAP to print sum of 1-n.
+Begin 
+numeric i, n, sum=0
+Display"Enter the number"
+input n 
+for(i=1;i<=n;i++){
+sum=sum+i}
+Display "Sum of all 1 to"n "no is"sum
+End
+=============================================
+9.WAP to print sum of even numbers and sum of odd numbers between 1-n.
+Begin 
+numeric i, n, sum1=0,sum2=0
+Display"Enter the number"
+input n 
+for(i=1;i<=n;i++){
+if(i%2==o){
+sum1 =sum1+i
+}
+else
+{
+sum2 =sum2+i
+}
+}
+Display"Sum of even number is "sum1
+Display "Sum of odd number is "sum2
+End 
+
+
+
+
+
+
+
+
+

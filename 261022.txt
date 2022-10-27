@@ -1,0 +1,114 @@
+import java.util.Scanner;
+class Sample {
+  public static void main(String args[]) {
+    int day;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter day number");
+    day=sc.nextInt();
+    switch(day){//switch variable//int,byte,short,long,string,enum
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wendsday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Monday");
+        break;
+      default:
+        System.out.println("invalid input");
+        
+    }
+   
+  }
+}
+============================================
+import java.util.Scanner;
+class Sample {
+  public static void main(String args[]) {
+
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter character");
+    char ch=sc.next().charAt(0);
+    switch(ch){
+      case 'A':
+        System.out.println("vowel");
+        break;
+      case 'E':
+        System.out.println("vowel");
+        break;
+      case 'I':
+        System.out.println("vowel");
+        break;
+      case 'O':
+        System.out.println("Vowel");
+        break;
+      case 'U':
+        System.out.println("vowel");
+        break;
+      default:
+        System.out.println("consonant");
+    }
+   
+   
+  }
+}
+=============================================
+enter num1
+  10
+enter num2
+
+20
+***********calculator*************
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.exit
+
+select option
+1
+Addition is 30
+
+2
+
+  Subtraction is -10
+=======================================
+ATM operation
+
+  amount=10000
+
+1.withdraw
+2.deposit
+3.check balance
+4.exit
+
+  select option
+  1
+//  enter amount to withdraw
+//  500
+//  amount=amount-500;
+// withdraw successfully
+
+  2
+   Enter amount to deposit
+   depsoit=1000
+  amount=amount+deposit
+
+  3.
+  the amount is 11000
+
+  4
+  System.out.print("thank you for visiting");

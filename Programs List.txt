@@ -1,0 +1,641 @@
+1.write a java program to print area of circle?
+input:r,area
+formula=3.14*r*r
+---------------------------------------------------
+2.write a java program to print sum of two numbers?
+int num1,num2
+sum=num1+num2
+print(sum)
+--------------------------------------------------------
+3.write a java program to print area of square?
+int side;
+area=side*side
+-----------------------------------------------------------
+4.write a java program to print area of triangle?
+int b,h
+area=0.5*b*h
+--------------------------------------------------------------------
+5.compound interset?
+p,t,r
+si=(p*t*r)/100;
+ci=si-p
+-----------------------------------------------------------------------
+6.wap to slove the distance between two points?
+int x1,x2,y1,y2
+dis=Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)(y2-y1))
+--------------------------------------------------------------------
+7.wap to print percentage of subject?
+sub1,sub2,sub3,sub4,sub5
+sum=sub1+sub2+sub3+sub4+sub5
+per=(sum/total)*100
+------------------------------------------------
+8.perimeter of circle?
+int r
+per=2*3.14*r
+print(per)
+-------------------------------------------------
+9.perimeter of square?
+int s
+per=4*s
+print(per)
+----------------------------------------------
+10.perimeter of triangle?
+s1,s2,s3
+per=s1+s2+s3
+-----------------------------------------------------
+11.simple interset?
+p,t,r
+SI=(p*t*r)/100;
+-----------------------------------------------------------------
+12.wap to print quadratic equation?
+double a,b,c
+d=b*b-4*a*c
+eq=-b+Math.sqrt(d)/2*a
+print(eq)
+--------------------------------------------------------------------------
+13.wap to print sum of squares of 2 numbers?
+int num1,num2
+
+sum=num1*nuum1+num2*num2
+print(sum)
+-----------------------------------------------------------------------------
+14.wap to swap 2 numbers without using third variable?
+int a,b
+a=a+b
+b=a-b
+a=a-b
+--------------------------------------------------------------------------
+15.wap to swap 2 numbers with using third variable?
+a,b,temp
+temp=a
+a=b
+b=temp
+---------------------------------------------------------------------------------------
+16./*Nikhil, the founder of “Pine Tree” company wished to design an Event Management System that would let its Customers plan and host events seamlessly via an online platform.
+As a part of this requirement, Nikhil wanted to write a piece of code for his company’s Amphi Event Management System that will display customized welcome messages by taking Customers’ name as input. Help Nikhil on the task.
+Input Format:
+First line of the input is a string that corresponds to a Customer’s name. Assume that the maximum length of the string is 50.
+Output Format:
+Output should display the welcome message along with the Customer’s name.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+
+Sample Input and Output:
+Enter your name
+Beena
+Hello Beena ! Welcome to Amphi Event Management System*/
+================================================================================================ 17./* "Pine Tree" Company 17.has signed up a big time Event Management deal from the Rotary Youth Club for a Trade Fair organized at Codissia Complex, wherein all startup companies in the Software industry are demonstrating their latest products and services and meet with industry partners and Customers.
+
+Amphi Event Management System has to be modified to write a piece of code that will get the input of the number of events to be hosted for the Fair at Codissia from its users and display the same. Help the company to accomplish the requirement.
+
+Input Format:
+
+First line of the input is an integer that corresponds to the number of events to be hosted at Codissia.
+
+Output Format:
+
+Output should display the number of events to be hosted at Codissia.
+
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output.]
+
+Sample Input and Output:
+
+Enter the number of events hosted in Codissia
+
+50
+
+Number of events hosted in Codissia is 50*/
+
+======================================================================================================
+
+18./* Trade Fairs are important for companies to present their products and to get in touch with its customers and business parties. One such grandeur Trade Fair Event was organized by the Confederation of National Large Scale Industry.
+
+Number of people who attended the event on the first day was x. But as days progressed, the event gained good response and the number of people who attended the event on the second day was twice the number of people who attended on the first day. Unfortunately due to heavy rains on the third day, the number of people who attended the event was exactly half the number of people who attended on the first day.
+
+Given the total number of people who have attended the event in the first 3 days, find the number of people who have attended the event on day 1, day 2 and day 3.
+
+Input Format:
+
+First line of the input is an integer value that corresponds to the total number of people.
+
+Output Format:
+
+First line of the output should display the number of attendees on day 1.
+
+Second line of the output should display the number of attendees on day 2.
+
+Third line of the output should display the number of attendees on day 3.
+
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output.]
+
+Sample Input and Output:
+
+Enter the total number of people
+
+10500
+
+Number of attendees on day 1 : 3000
+
+Number of attendees on day 2 : 6000
+
+Number of attendees on day 3 : 1500*/
+
+
+total=x+2x+x/2
+x=(total*2)/7
+=============================================================================================================
+
+19./*Wisconsin State Fair is one of the largest midsummer celebrations in the Midwest Allis, showcasing the agriculture skills and prowess of the state. The Event organizers hired few part-time employees to work at the fair and the agreed salary paid to them are as given below:
+
+Weekdays --- 80 / hour
+
+Weekends --- 50 / hour
+
+Justin is a part-time employee working at the fair. Number of hours Justin has worked in the weekdays is 10 more than the number of hours he had worked during weekends. If the total salary paid to him in this month is known, write a program to estimate the number of hours he had worked during weekdays and the number of hours he had worked during weekends.
+
+Input Format:
+
+First line of the input is a double value that corresponds to the total salary paid to Justin.
+
+Output Format:
+
+First line of the output should display the number of hours Justin has worked during the weekdays.
+
+Second line of the output should display the number of hours Justin has worked during the weekends.
+
+Refer sample input and output for formatting specifications.
+
+[All text in bold corresponds to input and rest corresponds to output.]
+
+Sample Input and Output:
+
+Enter the total salary paid
+
+2750
+
+Number of weekday hours is 25
+
+Number of weekend hours is 15*/
+
+total=(x+10)*80+x*50
+
+x=(800-total)/130
+
+====================================================================================================================
+Conditional Statements:
+
+20.A recently launched attraction at the "Events Square" entertainment fair is the "Carnival of Terror" which is an interactive fun zone featuring scary, horror and Halloween stories.
+
+The Entry tickets for the show is to be printed with a Welcome message along with an additional message for Children stating they should be accompanied by an adult. Given the age of the person visiting the scary house, the ticket should carry the additional message only for Children whose age is less than 15 years. The show organizers wanted your help to accomplish this task. Write a program that will get age as the input and display the appropriate message on the tickets.
+
+Input Format:
+
+First line of the input is an integer that corresponds to the age of the person.
+
+Output Format:
+
+Output should display the additional message "Please note that you should be accompanied by an adult" for Children less than 15 years. Otherwise it should print only the Welcome message.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+20
+
+Sample Output 1:
+
+Welcome to the show
+
+Sample Input 2:
+
+14
+
+Sample Output 2:
+
+Welcome to the show
+
+Please note that you should be accompanied by an adult
+
+============================================================================================================
+
+21."FantasyKingdom" is a brand new Amusement park that is going to be inaugurated shortly in the City and is promoted as the place for breath-taking charm. The theme park has more than 30 exhilarating and craziest rides and as a special feature of the park, the park Authorities has placed many Ticketing Kiosks at the entrance which would facilitate the public to purchase their entrance tickets and ride tickets.
+
+The Entrance Tickets are to be issued typically based on age, as there are different fare for different age groups. There are 2 types of tickets – Child ticket and Adult ticket. If the age given is less than 15, then Child ticket is issued whereas for age greater than equal to 15, Adult ticket is issued. Write a piece of code to program this requirement in the ticketing kiosks.
+
+Input Format:
+
+First line of the input is an integer that corresponds to the age of the person.
+
+Output Format:
+
+Output should display "Child Ticket" or "Adult Ticket" based on the conditions given.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+20
+
+Sample Output 1:
+
+Adult Ticket
+
+Sample Input 2:
+
+12
+
+Sample Output 2:
+
+Child Ticket
+
+=======================================================================================================
+
+22."Fantasy Kingdom" is a brand new Amusement park that is going to be inaugurated shortly in the City and is promoted as the place for breath-taking charm. The theme park has more than 30 exhilarating and thrilling rides and as a special feature of the park, the park Authorities have placed many Booking Kiosks at the entrance which would facilitate the public to purchase their entrance tickets and ride tickets.
+
+There are few rides in the park which are not suitable for Children and aged people, hence the park Authorities wanted to program the kiosks to issue the tickets based on people’s age. If the age given is less than 15 (Children) or greater than 60 (Aged), then the system should display as "Not Allowed", otherwise it should display as "Allowed". Write a block of code to help the Authorities program this functionality.
+
+Input Format:
+
+First line of the input is an integer that corresponds to the age of the person opting for the ride.
+
+Output Format:
+
+Output should display "Allowed" or "Not Allowed" based on the conditions given.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+20
+
+Sample Output 1:
+
+Allowed
+
+Sample Input 2:
+
+12
+
+Sample Output 2:
+
+Not Allowed
+
+====================================================================================================================
+
+23.It was the inaugural ceremony of "Fantasy Kingdom" Amusement park and the park Management has announced some lucky prizes for the visitors on the first day. Based on this, the visitors whose ticket number has the last digit as 3 or 8, are declared as lucky winners and attracting prizes are awaiting to be presented for them.
+
+Write a program to find if the last digit of the ticket number of visitors is 3 or 8.
+
+Input Format:
+
+First line of the input is an integer that corresponds to the ticket number.
+
+Output Format:
+
+Output should display as "Lucky Winner" if the last digit of the ticket number is 3 or 8. Otherwise print "Not a Lucky Winner".
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+43
+
+Sample Output 1:
+
+Lucky Winner
+
+Sample Input 2:
+
+41
+
+Sample Output 2:
+
+Not a Lucky Winner
+
+====================================================================================================
+
+24.The Westland Game Fair is the premier event of its kind for kids interested in some intellectual and cognitive brain games. Alan, a middle school boy is visiting the fair where he is very much drawn by the Card game.
+
+The game’s rules are:
+
+A player needs to pick 3 cards from a big lot of cards. There are 4 types of Cards namely Spade(S), Heart(H), Club(C) and Diamond (D). If all the 3 cards that the player picks are of the same type and same number, they get a Double Bonanza. If all the 3 cards are of the same type or if they all have the same number, they get a Bonanza. Otherwise they do not get a Bonanza. Alan has now picked 3 cards and is awaiting to know if he has got a bonanza. Please help him to know if he has won the Bonanza or not.
+
+Input Format:
+
+There are 3 lines of input.
+
+Each of the line consists of character and integer input, which corresponds to the type of the card and the number in it that Alan picked. The type of card and the number are separated by a single space.
+
+Output Format:
+
+Output should display "Double Bonanza" or "Bonanza" or "No Bonanza" based on the conditions given.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+S 5
+
+S 5
+
+S 5
+
+Sample Output 1:
+
+Double Bonanza
+
+Sample Input 2:
+
+S 6
+
+S 5
+
+H 5
+
+Sample Output 2:
+
+No Bonanza
+
+===========================================================================================================
+
+25.The Westland Game Fair is the premier event of its kind for kids interested in some intellectual and cognitive brain games. Exciting games were organized for kids between age group of 8 and 10. One such game was called the "Triangle game", where different number boards in the range 1 to 180 are available. Each kid needs to select three number boards, where the numbers on the boards correspond to the angles of a triangle.
+
+If the angles selected by a kid forms a triangle, he/she would receive Prize 1. If the angles selected by a kid forms a right triangle, he/she would receive Prize 2. If the angles selected by the kids form an equilateral triangle, he/she would receive Prize 3. If the angles selected by a kid do not form even a triangle, then he/she will not receive any prizes. Write a program for the organizers to fetch the result based on the number boards selected by the kids.
+
+Input Format:
+
+There are 3 lines in the input, each of which corresponds to the numbers on the boards that the kids select.
+
+Output Format:
+
+Output should display "Prize 1" or "Prize 2" or "Prize 3" or "No Prize" based on the conditions given.
+
+Refer sample input and output for formatting specifications.
+
+Sample Input 1:
+
+60
+
+50
+
+70
+
+Sample Output 1:
+
+Prize 1
+
+Sample Input 2:
+
+60
+
+60
+
+70
+
+Sample Output 2:
+
+No Prize
+
+====================================================================================================
+
+26.eligible for vote?
+
+age>18
+vote
+else
+not eligible
+--------------------------------------------------------------------
+27.given number is even or not?
+
+num%2==0
+even
+else
+not even
+--------------------------------------------------------------------
+
+28.given number divisble by 5 or not?
+
+num%5==0
+divisible
+else
+not
+---------------------------------------------------------------------------
+29.find greatest number among 2 numbers?
+
+num1,num2
+num1>num2
+num1 is greater
+else
+num2 is greater
+--------------------------------------------------------------------------
+
+30.check whether character is alphabet or not?
+char ch
+
+(ch>='a' && ch<='z')||(ch>='A'&&ch<='Z')
+alphabet
+else
+not 
+-----------------------------------------------------------------------
+31.check whether character is digit or not?
+
+char ch;
+ch>=0&&ch<=9
+digit
+---------------------------------------------------------------
+
+32.given person is eligble for blood donation?
+age>18 && weight>50
+eligble
+else
+not
+----------------------------------------------------
+33.divisible by 5 and 3 or not?
+num%5==0 && num%3==0
+divisible
+else
+not
+----------------------------------------------------------
+34.given number is positive or not?
+
+num>0
+postive
+else
+not
+---------------------------------------------------------------
+35.given number is negative or not?
+num<0
+negitive
+else
+not
+------------------------------------------------------------------
+
+36.given number is zero or not?
+num==0
+Zero
+else
+not
+------------------------------------------------------------------
+
+37.given number is positive or negative or zero?
+num
+
+if (num>0)
+pos
+else if(num<0)
+neg
+else
+zero
+------------------------------------------------------------
+38.maximum between 3 numbers?
+num1,num2,num3
+if(num1>num2)&&(num1>num3)
+num1 is big
+else if(num2>num3)
+num2 is big
+else
+num3 big
+----------------------------------------------------------------
+
+39.grade?
+per>90
+---------------------------------------------------------
+40.vowel or not?
+
+aeiou
+vowel
+else
+not vowel
+------------------------------------------------------------------
+41.given alphabet is upper or not?
+ch>='a' && ch<='z'
+lowercase
+else
+uppercase
+--------------------------------------------------
+
+42.Write a JAVA program to input any character and check whether it is alphabet, digit    or special character?
+if(ch>='a' &&ch<='z')
+alphabet
+else if(ch>='0' && ch<='9')
+digit
+else
+special character
+-------------------------------------------------------------------------------
+
+43.Write a JAVA program to input week number and print week day?
+
+daynumber:1
+
+monday
+---------------------------------------------------------------------------------------------------------
+44.*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross salary according to following:      BasiJAVASalary <= 10000 : HRA = 20%, DA = 80%      BasiJAVASalary <= 20000 : HRA = 25%, DA = 90%      BasiJAVASalary > 20000 : HRA = 30%, DA = 95%*/
+
+if(bs<=10000)
+{
+grossslary=bs+(20*bs)/100+(80*bs)/100
+}
+--------------------------------------------------------------------------------------------------------------------------
+45.Write a JAVA program to count total number of notes in given amount?
+note=10000/500
+
+---------------------------------------------------------------------
+
+46.under weight?(nested if)
+
+47.*10th class
+
+  your offer you something based on your final marks
+
+90: excellent,i will buy for bike
+
+  80:very good, I will buy for you mobile
+
+  70:good,cycle
+
+  60:worst,belt
+
+father:how much grade you are expecting in final exam
+
+  son: dad i got 90 per
+
+  father:Good,I will buy cycle*/
+------------------------------------------------------------------------------------------------------
+48./*Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition: 
+
+    For first 50 units Rs. 0.50/unit 
+
+    For next 100 units Rs. 0.75/unit 
+
+    For next 100 units Rs. 1.20/unit 
+
+     For unit above 250 Rs. 1.50/unit 
+
+     An additional surcharge of 20% is added to the bill*/
+------------------------------------------------------------------------------------------------
+
+49.week day?(Switch case)
+-----------------------------------------------------------------------------
+
+50.*enter num1(Switch)
+
+  10
+
+enter num2
+
+20
+
+***********calculator*************
+
+1.Addition
+
+2.Subtraction
+
+3.Multiplication
+
+4.Division
+
+5.exit
+
+select option
+
+1
+
+Addition is 30
+
+2
+
+Subtraction is -10*/
+--------------------------------------------------------------------------------------------
+51.*ATM operation   amount=10000 1.withdraw
+
+2.deposit
+
+3.check balance
+
+4.exit   select option
+
+  1
+
+//  enter amount to withdraw
+
+//  500
+
+//  amount=amount-500;
+
+// withdraw successfully   2
+
+   Enter amount to deposit
+
+   depsoit=1000
+
+  amount=amount+deposit   3.
+
+  the amount is 11000   4
+
+  System.out.print("thank you for visiting");*/
+------------------------------------------------------------------------------------------------------------------------

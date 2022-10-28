@@ -1,0 +1,75 @@
+1. for loop
+2. while loop 
+3. do while loop
+
+===================================================
+//looping statements or iterative statements
+// when you want repeat to write one statement no.of times in that case we can use looping
+// 1.for loop
+// 2.while loop//pre controlled loop
+// 3.do while loop-
+
+when know no.of iteration for loop
+  when you dont know no.of iteration while or do while
+  
+// lalitha
+class Sample{
+  public static void main(String args[])
+  { 
+    int i=1;
+    do{
+    System.out.println("lalitha");
+    i++;//11
+    }while(i<=10);
+  }
+}
+
+// 1   10 
+  
+// 1.intialization of loop variable
+// 2.condition to terminate
+// 3.increament/decreament
+===========================================
+
+for loop  (Syntax)
+
+class Sample{
+  public static void main(String args[])
+  {
+  for(int i=1;i<=10;i++)//i=11;11<=10
+    System.out.println("lalitha");  
+  }
+}
+======================================
+While loop  (Syntax)
+
+class Sample{
+  public static void main(String args[])
+  { 
+    int i=1;
+    while(i<=10){
+    System.out.println("lalitha");
+    i++;//11
+    }
+  }
+}
+====================
+class Sample{
+  public static void main(String args[])
+  { 
+    int i=1;
+    do{
+      if(i%2==0){
+        System.out.println(i);
+      }
+      i++;
+    }while(i<=10);
+    }
+  }
+======================================
+1.even numbers
+2.odd numbers
+3.sum of 1 to n natural numbers
+4.sum of even numbers
+5.sum of odd numbers
+6. Print Name

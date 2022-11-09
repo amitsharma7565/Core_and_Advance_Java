@@ -1,0 +1,324 @@
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678};
+    int temp,rem,rev=0;
+    //to iterate array elements
+      System.out.println("plaindrome numbers");
+    for(int i=0;i<a.length;i++){
+        temp=a[i];//temp=121
+        rev=0;
+        while(temp>0){//0>0
+          rem=temp%10;//3%10=3
+          rev=rev*10+rem;//40+2=420+3=423
+          temp=temp/10;//324/10=32/10=3/10=0  
+        }
+     
+      if(a[i]==rev){//324==423
+        System.out.println(a[i]);
+      }
+      
+    }
+    
+    }
+  }
+================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371};
+    int temp,rem,sum=0;
+    //to iterate array elements
+      System.out.println("amstrong numbers");
+    for(int i=0;i<a.length;i++){
+        temp=a[i];//temp=121
+        sum=0;
+        while(temp>0){//121>0
+        rem=temp%10;//3%10=3
+       sum=sum+(rem*rem*rem);//40+2=420+3=423+1
+        temp=temp/10;//324/10=32/10=3/10=0  
+        }
+     
+      if(a[i]==sum){//324==423
+        System.out.println(a[i]);
+      }
+      
+    }
+    
+    }
+  }
+=================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371,6,28};
+    int temp,rem,sum=0;
+    //to iterate array elements
+      System.out.println("perfect numbers");
+    for(int i=0;i<a.length;i++){
+      sum=0;
+      for(int j=1;j<=a[i]/2;j++){
+        if(a[i]%j==0){
+          sum=sum+j;
+        }
+      }
+      if(sum==a[i]){
+        System.out.println(a[i]);
+      }
+       
+      
+    }
+    
+    }
+  }
+========================================
+import java.util.*;
+class Fruit{
+  public static void main(String args[]){
+    Scanner s=new Scanner(System.in);
+    String a[]={"Apple","Banana","Orange","Watermelon"};
+    System.out.println("Enter the Fruit name");
+    String name=s.next();
+    int count=0;
+    for(int i=0;i<a.length;i++){
+      if(a[i].equals(name)){
+        count++;
+        break;
+      }
+     
+    }
+    if(count==1){
+      System.out.println("item found");
+    }
+    else{
+      System.out.println("Item not found");
+    }
+  }
+}
+===================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371,6,28};
+    int min=a[0],index=0;
+    
+    for(int i=0;i<a.length;i++){
+      if(a[i]<min){//6<6
+        min=a[i]; //min=6
+        index=i;
+      }
+    }
+      
+    System.out.println("Min element is "+min+" found at "+ (index)+"th index");
+    }
+  }
+===========================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter size");
+    int n=sc.nextInt();
+    int a[]=new int[n+1];
+    System.out.println("Enter array elements");
+    for(int i=0;i<n;i++){
+      a[i]=sc.nextInt();
+    }
+    System.out.println("enter index position");
+    int index_pos=sc.nextInt();
+    System.out.println("enter new element");
+    //insertion process
+   int ele=sc.nextInt();
+    for(int i=n-1;i>=index_pos;i--){
+      a[i+1]=a[i];
+      
+    }
+    a[index_pos]=ele;
+    System.out.println("after insertion");
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+    
+    }
+  }
+============================================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={10,5,20,7};
+    int temp;
+    for(int i=0;i<a.length;i++){
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]>a[j]){
+          temp=a[i];
+          a[i]=a[j];
+          a[j]=temp;
+          
+        }
+      }
+    }
+    System.out.println("after sorting");
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+    }
+  }
+============================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={10,5,20,7,10,5};
+  int count=0;
+    System.out.println("Duplicates elements");
+    for(int i=0;i<a.length;i++){
+      count=0;
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+          count++;
+        }
+        
+      }
+      if(count>0){
+        System.out.println(a[i]);
+      }
+    }
+   
+    }
+    }
+======================================
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+    int a[]={1,2,1,3,2,1,4};
+    int fr[]=new int[a.length];
+    int visited=-1;
+  int count=0;
+    System.out.println("Duplicates elements");
+    for(int i=0;i<a.length;i++){//i=0
+      count=1;
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+          count++;//2
+          fr[j]=visited;
+        }
+       }
+      if(fr[i]!=visited){
+        fr[i]=count;
+      }
+    }
+  System.out.println(" elements |frequency ");
+    for(int i=0;i<a.length;i++){
+      if(fr[i]!=visited){
+      System.out.println(a[i]+"       "+fr[i]);
+      }
+    }
+   
+    }
+    }
+================================
+1.delete an element from an array
+2.update an element from an array
+3.unique element from an array
+4.count unique elements from an array
+========================================
+2d
+
+import java.util.*;
+class Sample{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter row size");
+    int row=sc.nextInt();
+    System.out.println("enter col size");
+    int col=sc.nextInt();
+    int a[][]=new int[row][col];
+    //Reading
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        a[i][j]=sc.nextInt();
+      }
+    }
+    //display
+    
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+       System.out.print(a[i][j]+" ");
+      }
+      System.out.println();
+    }
+    }
+    }
+
+========================================
+import java.util.*;
+class Sample{
+  public static void main(String args[]){
+    int a[][]={{12,34,45},{34,56,78},{78,9,10}};
+    
+    //display
+    
+    for(int i=0;i<3;i++){
+      for(int j=0;j<3;j++){
+       System.out.print(a[i][j]+" ");
+      }
+      System.out.println();
+    }
+    }
+    }
+============================================
+add on this array
+    store in third array
+
+ 1.   2 3
+    4 5
+
+    5 6
+    3 4
+
+    7 9
+    7 9
+
+    2.
+test case :1
+    2 3
+    1 2
+
+    4 5 
+    2 5
+
+    not matched
+
+    test case 2:
+     1 2 3
+     4 5 6
+
+    1 2
+    3 4
+    5 6
+
+    
+row=a.length;
+col=a[0].length
+
+  row1=b.length
+  col1=b[0].length
+
+  if(row!=row1)||(col!=col1)
+  {
+"not "
+  }
+    else
+{
+  if(a[i][j]!==b[i][j]){
+    count=1;
+    break;
+  }
+}

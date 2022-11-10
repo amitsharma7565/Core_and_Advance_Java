@@ -1,0 +1,194 @@
+method
+
+block of code which is used to perform task
+
+
+syntax
+
+return-type methodname(argument1,argument2,................................){
+
+//statement 1
+//statemnt 2
+//statement 3
+}
+
+return-type:specify the type of result return by the method
+method-name:indicates name of the method
+parameters/argumnets:method variables
+
+types of method signature
+
+4
+
+without return type and without parameters
+with return type and without parameters
+without return type and with parameters
+with return type and with parameter
+
+without return type and without parameters
+
+void sumNumber(){
+  int a,b,sum;
+    a=10;
+    b=20;
+    sum=a+b;
+    System.out.println(sum);
+   
+}
+
+void -it does not return anything from this method
+  
+with return type and without parameters
+
+  int sumNumber(){
+  int a,b,sum;
+    a=10;
+    b=20;
+    sum=a+b;
+  return sum;
+  }
+
+return-return some values
+
+  
+without return type and with parameters
+
+  void sumNumber(int a,int b){
+  int sum=a+b;
+  System.out.println(sum);
+  }
+
+with return type and with parameter
+
+  int sumNumber(int a,int b){
+  int sum=a+b;
+  return sum;
+  }
+
+
+in java
+
+we have 2 types of methods
+
+1.static method
+
+declare with static keyboard.
+Static method is not object specific method we can call method with the class name
+it is common to all the objects
+
+Static methods are declared with the keyword static
+
+Math class(static methods)
+
+Math.pow()  
+Math.sqrt()
+
+2.Instance method
+instance method is a object specific method which we can access with object only
+
+Scanner
+
+nextInt()-instance specific/object specific
+
+Math class(static methods)
+
+Math.pow()  
+Math.sqrt()
+===============================================================
+object oriented programming
+
+Object means a real-world entity such as a pen, chair, table, computer, watch, etc.
+Any entity that has state and behavior is known as an object.
+An Object can be defined as an instance of a class. An object contains an address 
+and takes up some space in memory
+
+Class
+Collection of similar objects is called class. It is a logical entity.
+
+or A class can also be defined as a blueprint from which you can create an 
+individual object. Class doesn't consume any space.
+or
+class contains properties/state and behaviour/methods of an object
+
+-----------------------------------------------
+pen-  this is class
+brand name of pen is -object
+and object is some state and behaviour/mehods.
+
+state
+
+pen-color
+ink-color
+height
+
+behaviour
+
+writing
+
+class pen{
+//varibles
+
+//methods
+
+}
+-------------------------------------------------------------
+pen reynold=new pen()
+pen sellos=new pen()
+
+Student
+
+name
+rollno
+marks
+phone no
+grade
+static collegename
+
+behaviour
+//instance
+reading()
+writing()
+attendence()
+
+static variable:comman for all
+for eg college name, company name.
+
+instance variables
+variables which are declared inside the class and outside the method,these we can 
+access with help of instance/object only
+
+Local varaible:
+the variable inside the method
+--------------------------------------------
+class A{
+static void int a=10//static variable
+int b=10 // instance variable
+public static void main(String args[]){
+	int a=10 // local variable
+	System.out.prinln(a)
+	System.out.println(A.b)
+}
+}
+-------------------------------------------
+
+Student std1=new Student();
+std1(object).name(instance variable)="Amith";
+std1(object).rollno(instance variable)=1234;
+std1.marks=20
+std1.phoneno=12122334
+std1.grade=12
+
+std1.reading();
+std1.writing()
+std1.attendence();
+
+Student std2=new Student();
+std1.name="Amith";
+std1.rollno=1234;
+std1.marks=20
+std1.phoneno=12122334
+std1.grade=12
+
+std1.reading();
+std1.writing()
+std1.attendence();

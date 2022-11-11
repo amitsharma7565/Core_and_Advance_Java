@@ -1,0 +1,45 @@
+#######################################
+#   Configuration for Run Button      #
+#######################################
+
+# Provide the name of the directory (assignment or project name)
+cd Amiii
+# Java compile command. Do not change this. 
+javac String.java
+
+#This is the main class you want to run. 
+#This need to change every time you want to run a #Java File. 
+java String
+
+#######################################
+#   Configuration for GitHub          #
+#######################################
+# This is a ONE TIME SETUP ONLY
+# Configure these variables
+EMAIL="amitsharma7565@gmail.com"
+NAME="Amit_Sharma"
+GITHUB_USERNAME="amitsharma7565"
+GITHUB_ACCESS_TOKEN="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"
+
+
+#######################################
+#   DO NOT CHANGE ANYTHING BELOW      #
+#######################################
+
+#git configuration below make using IDE easy.
+git config --global --replace-all user.email $EMAIL
+#enter your name
+git config --global --replace-all user.name $NAME
+
+#create ~/.netrc file
+# This .netrc file is used to store your username and your Perosnal Access Token
+FILE1=~/.netrc
+if test -f "$FILE1"; then
+    rm $FILE1
+fi
+
+echo machine github.com login $GITHUB_USERNAME password $GITHUB_ACCESS_TOKEN  > $FILE1
+
+
+
+

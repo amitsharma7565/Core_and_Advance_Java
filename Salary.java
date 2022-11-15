@@ -1,46 +1,48 @@
-/*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross     salary according to following: 
+// 1.Create a class named 'Member' having the following members:
+// Data members
+// 1 - Name
+// 2 - Age
+// 3 - Phone number
+// 4 - Address
+// 5 - Salary
+// It also has a method named 'printSalary' which prints the salary of the members.
+// Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' 
+// and 'Manager' classes have data members 'specialization' and 'department' 
+// respectively. Now, assign name, age, phone number, address and salary to an 
+// employee and a manager by making an object of both of these classes and print the 
+// same.
 
-    BasiJAVASalary <= 10000 : HRA = 20%, DA = 80% 
+class Member{
+  String name;
+  int age;
+  long phoneNumber;
+  String adress;
+  int salary;
+  void printSalary(){
+    System.out.println(salary);
+  }
+}
+class Employee extends Member{
+  String specializations;
+}
+class Manager extends Employee{
+    String department;
+  void Display(){
+    System.out.println(name+" "+age+" "+phoneNumber+" "+adress+" "+salary);
+  }
+}
+class Salary{
+  public static void main(String args[]){
+    Manager m=new Manager();
 
-    BasiJAVASalary <= 20000 : HRA = 25%, DA = 90% 
-
-    BasiJAVASalary > 20000 : HRA = 30%, DA = 95%*/
-
-import java.util.Scanner;
-
-class Salary
-{
- public static void main(String args[]) 
- {
-   
-  int basic_salary,GrossPayment;
-//create an object using scanner class
-  Scanner scan=new Scanner(System.in);
-
-  System.out.println("Enter Basic Salary Of Employee: ");
-  basic_salary=scan.nextInt();
- 
-   //condition
-   if(basic_salary<=10000)            
-{
-  int da=(80*basic_salary)/100;
-   int hra=(20*basic_salary)/100;
-//formula for gross salry
-  GrossPayment = basic_salary + da + hra;
-   }
-   else if(basic_salary<=20000)
-   {
-  int da = (90 * basic_salary) / 100;
-  int hra = ( 25 * basic_salary) / 100;
-  GrossPayment = basic_salary + da + hra;
-   }
-   else
-   {
-  int da = (95 * basic_salary) / 100;
-  int hra = (30 * basic_salary) / 100;
-  GrossPayment = basic_salary + da + hra;
-   }
-
-  System.out.println("Gross Salary Of Employee: "+GrossPayment);
-  }
+    m.name="Amit";
+    m.age=25;
+    m.phoneNumber=8894181261l;
+    m.adress="efghnm";
+    m.salary=45644;
+    m.printSalary();
+    m.specializations="mech";
+    m.department="Quality";
+    m.Display();
+  }
 }

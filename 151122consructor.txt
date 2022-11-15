@@ -1,0 +1,427 @@
+import java.util.*;
+class Employee{
+  int eid;
+  String ename;
+  String edept;
+  int esalary;
+  long ephoneno;
+
+  void grossSalary(int bsalary){
+    if(bsalary<10000){
+      int gs=2000+2000+bsalary;
+      System.out.println(gs);
+    }
+    else{
+      int gs=1000+1000+bsalary;
+      System.out.println(gs);
+    }
+  }
+
+  void insurence(int bsalary){
+    if(bsalary<10000){
+      System.out.println("Not elegible");
+    }
+    else{
+      System.out.println("eliegible");
+    }
+  }
+}
+
+class Sample{
+  public static void main(String args[]){
+    Employee e[]=new Employee[5];
+    Scanner sc=new Scanner(System.in);
+    for(int i=0;i<5;i++){
+      e[i]=new Employee();
+      System.out.println("Enter employee "+ (i+1)+" details" );
+      System.out.println("Enter id");
+      e[i].eid=sc.nextInt();
+      System.out.println("Enter name");
+      e[i].ename=sc.next();
+      System.out.println("Enter department");
+      e[i].edept=sc.next();
+      System.out.println("Enter Salarly");
+      e[i].esalary=sc.nextInt();
+      System.out.println("enter phone no");
+      e[i].ephoneno=sc.nextLong();
+    }
+
+    //display data
+    for(int i=0;i<5;i++){
+       System.out.println(e[i].eid+" "+e[i].ename+" "+e[i].edept+" "+e[i].esalary+" "+e[i].ephoneno);
+    e[i].grossSalary(e[i].esalary);
+    e[i].insurence(e[i].esalary);
+
+    }
+       
+  }   
+  }
+
+==================================
+import java.util.*;
+class Employee{
+  int eid;
+  String ename;
+  String edept;
+  int esalary;
+  long ephoneno;
+Scanner sc=new Scanner(System.in);
+  void input(){
+    int i=0;
+    System.out.println("Enter employee "+ (i+1)+" details" );
+      System.out.println("Enter id");
+    eid=sc.nextInt();
+      System.out.println("Enter name");
+    ename=sc.next();
+      System.out.println("Enter department");
+      edept=sc.next();
+      System.out.println("Enter Salarly");
+      esalary=sc.nextInt();
+      System.out.println("enter phone no");
+      ephoneno=sc.nextLong();
+  }
+  void display(){
+    System.out.println("eid= "+eid);
+    System.out.println("ename="+ename);
+    System.out.println("edept="+edept);
+    System.out.println("esalary= "+esalary);
+    System.out.println("ephone no= "+ephoneno);
+  }
+
+  void grossSalary(int bsalary){
+    if(bsalary<10000){
+      int gs=2000+2000+bsalary;
+      System.out.println(gs);
+    }
+    else{
+      int gs=1000+1000+bsalary;
+      System.out.println(gs);
+    }
+  }
+
+  void insurence(int bsalary){
+    if(bsalary<10000){
+      System.out.println("Not elegible");
+    }
+    else{
+      System.out.println("eliegible");
+    }
+  }
+}
+
+class Sample{
+  public static void main(String args[]){
+  Employee e[]=new Employee[5];
+    for(int i=0;i<5;i++){
+      e[i]=new Employee();
+      e[i].input();
+    }
+     for(int i=0;i<5;i++){
+      e[i].display();
+    }
+    
+   
+       
+  }   
+====================================
+constructor 
+Constructors
+
+In Java
+, a constructor is a block of codes similar to the method. It is called when an instance of the class
+is created. At the time of calling constructor, memory for the object is allocated in the memory.
+
+It is a special type of method which is used to initialize the object.
+
+Every time an object is created using the new() keyword, at least one constructor is called.
+
+It calls a default constructor if there is no constructor available in the class. In such case, Java compiler provides a default constructor by default.
+
+void methodname(parameters){
+}
+
+Employee(parameters){
+
+}
+
+
+Rules for creating Java constructor
+There are two rules defined for the constructor.
+constructor is a block of codes similar to the method.
+Constructor name must be the same as its class name
+A Constructor must have no explicit return type
+A Java constructor cannot be abstract, static, final, and synchronized
+
+There are two types of constructors in Java:
+no-arg constructor, (Default)
+and parameterized constructor.
+
+Default Constructor
+A constructor is called "Default Constructor" when it doesn't have any parameter.
+
+Parameterized Constructor
+A constructor which has a specific number of parameters is called a parameterized constructor.
+
+Why use the parameterized constructor?
+The parameterized constructor is used to provide different values to distinct objects. However, you can provide the same values also.
+
+
+this keyword:
+It is used to refer current class instance variables
+it is used to refer current class instance methods
+it is used for refer current class constructor
+=========================================
+Example of construtor
+
+import java.util.*;
+class Employee{
+  int eid;
+  String ename;
+  String edept;
+  int esalary;
+  long ephoneno;
+  Employee(){
+    eid=123;
+    ename="lalitha";
+    edept="Accounts";
+    esalary=23000;
+    ephoneno=9876564523L;
+  } 
+  Employee(int id,String name,String dept,int salary,long phoneno){
+    eid=id;
+    ename=name;
+    edept=dept;
+    esalary=salary;
+    ephoneno=phoneno;
+  }
+  Employee(int id){
+    eid=id;
+  }
+Employee(int id,String name){
+  eid=id;
+  ename=name;
+}
+  
+}
+
+
+class Sample{
+  public static void main(String args[]){
+  // 
+    Employee e=new Employee();
+    System.out.println(e.eid);
+    Employee e1=new Employee(345,"anitha","IT",120000,89765634L);
+    System.out.println(e1.eid+" "+e1.ename);
+    Employee e2=new Employee(678);
+    System.out.println(e2.eid);
+    Employee e3=new Employee(378,"kavitha");
+    System.out.println(e3.eid+" "+e3.ename);
+    
+   
+       
+  }   
+  }
+==================================
+ineritance
+1. single inheritance
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread);  }
+}
+
+class Sample{
+  public static void main(String args[]){
+    Dog puppy=new Dog();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.bark();
+  }
+}
+------------------------------------------
+2. multilevel inheritance
+//Multilevel Inheritance
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class Cat extends Dog{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor);  }
+  
+}
+
+class Sample{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+-------------------------
+3. //Hiererchical  Inheritance
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class Cat extends Animal{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor);  }
+  
+}
+
+class Sample{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+}
+---------------------------
+4.//Hibrid  Inheritance
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class BabyDog extends Dog{
+  void weep(){
+    System.out.println("Weeping.....");
+  }
+  
+}
+class Cat extends Animal{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor);  }
+  
+}
+
+class Sample{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+}
+
+
+
+========================================
+excerise 
+1.Create a class named 'Member' having the following members:
+Data members
+1 - Name
+2 - Age
+3 - Phone number
+4 - Address
+5 - Salary
+It also has a method named 'printSalary' which prints the salary of the members.
+Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' 
+and 'Manager' classes have data members 'specialization' and 'department' 
+respectively. Now, assign name, age, phone number, address and salary to an 
+employee and a manager by making an object of both of these classes and print the 
+same.
+------------------------------------------------------------
+2.Create a class named 'Rectangle' with two data members 'length' and 'breadth' 
+and two methods to print the area and perimeter of the rectangle respectively. 
+Its constructor having parameters for length and breadth is used to initialize 
+length and breadth of the rectangle. Let class 'Square' inherit the 'Rectangle' 
+class Print the area and perimeter of a rectangle and a square.
+-------------------------------------------------------------
+3.Now repeat the above example to print the area of 10 squares.
+Hint-Use array of objects
+-------------------------------------------------
+4.Create a class named 'Shape' with a method to print "This is This is shape". 
+Then create two other classes named 'Rectangle', 'Circle' inheriting the Shape
+ class, both having a method to print "This is rectangular shape" and "This is 
+circular shape" respectively. Create a subclass 'Square' of 'Rectangle' having a
+ method to print "Square is a rectangle". Now call the method of 'Shape' and '
+Rectangle' class by the object of 'Square' class.
+

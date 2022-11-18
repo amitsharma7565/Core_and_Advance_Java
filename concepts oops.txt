@@ -1,0 +1,24 @@
+why we need OOPs
+coode reusability
+user readable
+data security
+real time objects implementation
+
+what is OOPs
+
+class
+object
+constructor
+this
+static
+inheritance-is a relation
+aggregation--has-a
+
+loose coupling--if one object destroyed another object can survive
+tight coupling-if one object destroyed another object can not survive
+
+Association
+one-one
+one-many
+many-one
+many-many

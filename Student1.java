@@ -1,36 +1,49 @@
+// Create a class 'Student' with three data members which are name, age and address. 
+// The constructor of the class assigns default values name as "unknown", age as '0'and address as "not available".
+// It has two members with the same name 'setInfo'. 
+// First method has two parameters for name and age and assigns the same whereas the 
+// second method takes has three parameters which are assigned to name, age and 
+// address respectively. Print the name, age and address of 10 students.
+// Hint - Use array of objects
+
 import java.util.*;
 class Student{
-  // instance variable 
-  int rollNumber;
   String name;
-  int marks;
-  char grade;
-  String branch;
+  int age;
+  String address;
+  // constructor
+  Student(){
+    this.name="unknown";
+    this.age=0;
+    this.address="not aviable";
+  }
+  void setInfo(int age,String name){
+    this.age=age;
+    this.name=name;
+  }
+  void setInfo(String name,int age,String address){
+    this.name=name;
+    this.age=age;
+    this.address=address;
+  }
 }
 class Student1{
   public static void main(String args[]){
-    Scanner sc=new Scanner(System.in);
-    // create array
-    Student s[]=new Student[5];
-    // To Entering  the value 
-    for(int i=0;i<5;i++){
-      // create a object 
+    Scanner sc=new Scanner(System.in); 
+    Student s[]=new Student[10];
+    for(int i=1;i<10;i++){
+     System.out.println("Enter the age of the student");
       s[i]=new Student();
-      System.out.println("Enter the student"+(i+1)+" details");
-      System.out.println("Enter the roll number");
-      s[i].rollNumber=sc.nextInt();
-      System.out.println("Enter the student name");
-      s[i].name=sc.next();
-      System.out.println("Enter the student marks");
-      s[i].marks=sc.nextInt();
-      System.out.println("Enter the grade");
-      s[i].grade=sc.next().charAt(0);
-      System.out.println("Enter the branch");
-      s[i].branch=sc.next();
+      s[i].age=sc.nextInt();
+    System.out.println("Enter the adress of the student");
+      s[i].address=sc.next();
+     System.out.println("Enter the name of the student");
+      s[i].name=sc.next(); 
     }
-    // Display the result 
-    for(int i=0;i<5;i++){
-      System.out.println("Roll number is "+s[i].rollNumber+" Name "+s[i].name+" marks "+s[i].marks+" garde "+s[i].grade+" Branch "+s[i].branch);
+    for(int i=1;i<10;i++){
+      System.out.println(s[i].age+" "+s[i].address+" "+s[i].name);
     }
-  }
-}
+    }
+    }
+
+  

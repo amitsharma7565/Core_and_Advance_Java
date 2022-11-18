@@ -1,49 +1,41 @@
-class Address {
-  String state;
-  String city;
-  String streetname;
-  int drno;
+// class Employee-id ,name,salary use setter the getter read and display the data
 
-  // make a constructor
-  Address(String state, String city, String streetname, int drno) {
-    this.state = state;
-    this.city = city;
-    this.streetname = streetname;
-    this.drno = drno;
+class Employee{
+  private int id;
+  private String name;
+  private int salary;
+
+  // setter for assign the values
+  void setid(int id){
+    this.id =id;
+  }
+  void setname(String name){
+    this.name=name;
+  }
+  void setsalary(int salary){
+    this.salary=salary;
+  }
+
+  // getter to return the data
+
+  int getid(){
+    return id;
+  }
+  String getname(){
+    return name;
+  }
+  int getsalary(){
+    return salary;
   }
 }
 
-class Employee {
-  int eid;
-  String ename;
-  String edept;
-  int esalary;
-  Address address; // agregation
-  // make constructor
-
-  Employee(int eid, String ename, String edept, int esalary, Address address) {
-    this.eid = eid;
-    this.ename = ename;
-    this.edept = edept;
-    this.esalary = esalary;
-    this.address = address;
-  }
-
-  void display() {
-    System.out.println(eid + " " + ename + " " + edept + " " + esalary);
-    System.out.println(address.state + " " + address.city + " " + address.streetname + " " + address.drno);
-  }
-}
-
-class Employee1 {
-  public static void main(String args[]) {
-    // object create
-    Address address1 = new Address("AP", "Vijayawada", "Madhapur colony", 23);
-    Address address2 = new Address("AP", "Guntur", "Gurunank Colony", 123);
-    Employee emp1 = new Employee(34, "lalitha", "IT", 50000, address1);
-    Employee emp2 = new Employee(45, "kavitha", "Accounts", 60000, address2);
-    emp1.display();
-    emp2.display();
-
+// main class and main method
+class Employee1{
+  public static void main(String args[]){
+    Employee e=new Employee();
+    e.setid(12);
+    e.setname("Amit");
+    e.setsalary(999999);
+    System.out.println(e.getname()+" "+e.getid()+" "+e.getsalary());
   }
 }

@@ -1,13 +1,15 @@
-import java.util.*;
-
-class Digit {
-  public static void main(String args[]) {
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Enter the number");
-    int num = sc.nextInt();
-    if (num >= 0&& num<=9) {
-      System.out.println("Digit");
-    } else
-      System.out.println("not Digit");
+class Digit{
+  public static void main(String args[]){
+    String s="a1b2c3";
+    for(int i=0;i<s.length();i++){
+      if(s.charAt(i)>='a'&&s.charAt(i)<='z'){
+        System.out.print(s.charAt(i));
+      }
+    }
+    for(int i=0;i<s.length();i++){
+      if(s.charAt(i)>='1'&&s.charAt(i)<='9'){
+        System.out.print(s.charAt(i));
+      }
+    }
   }
 }

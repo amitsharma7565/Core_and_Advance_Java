@@ -1,49 +1,42 @@
-// Create a class 'Student' with three data members which are name, age and address. 
-// The constructor of the class assigns default values name as "unknown", age as '0'and address as "not available".
-// It has two members with the same name 'setInfo'. 
-// First method has two parameters for name and age and assigns the same whereas the 
-// second method takes has three parameters which are assigned to name, age and 
-// address respectively. Print the name, age and address of 10 students.
-// Hint - Use array of objects
-
-import java.util.*;
+// A Student is an object in a university management System. Analyze the concept and identify the data members   that   a   Student   class   should   have.   Also   analyze   thebehavior   of  student  in   a   university management System and identify the method sthat should be included in Student class9
 class Student{
+  int rollno;
   String name;
-  int age;
-  String address;
-  // constructor
-  Student(){
-    this.name="unknown";
-    this.age=0;
-    this.address="not aviable";
+  char grade;
+  String branch;
+  long mobileno;
+  int sub1=90;
+  int sub2=99;
+  int sub3=97;
+  int per;
+void read(){
+System.out.println(name+" reading");
+}
+void write(){
+System.out.println(name+" Writing"); 
+}
+void dance(){
+System.out.println(name+" Dancining");
+}
+  void percantage(){
+    int total=sub1+sub2+sub3;
+    int per= ((total*100)/300);
+    System.out.println(per+" %");
   }
-  void setInfo(int age,String name){
-    this.age=age;
-    this.name=name;
-  }
-  void setInfo(String name,int age,String address){
-    this.name=name;
-    this.age=age;
-    this.address=address;
-  }
+
 }
 class Student1{
   public static void main(String args[]){
-    Scanner sc=new Scanner(System.in); 
-    Student s[]=new Student[10];
-    for(int i=1;i<10;i++){
-     System.out.println("Enter the age of the student");
-      s[i]=new Student();
-      s[i].age=sc.nextInt();
-    System.out.println("Enter the adress of the student");
-      s[i].address=sc.next();
-     System.out.println("Enter the name of the student");
-      s[i].name=sc.next(); 
-    }
-    for(int i=1;i<10;i++){
-      System.out.println(s[i].age+" "+s[i].address+" "+s[i].name);
-    }
-    }
-    }
-
-  
+Student std1=new Student();
+std1.rollno=1234;
+std1.name="Wesss";
+std1.grade='B';
+std1.branch="ME";
+std1.mobileno=8894181261l;
+std1.read();
+std1.write();
+std1.dance();
+std1.percantage();
+System.out.println(std1.rollno+" "+std1.name+" "+std1.grade+" "+std1.branch+" "+std1.mobileno);
+}
+}

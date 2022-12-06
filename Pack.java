@@ -1,7 +1,7 @@
-import bitlab.Add;
-class Pack{
-  public static void main(String args[]){
-    Add a=new Add();
-    a.sum(1,2);
+package aaa;
+
+public class Pack {
+  public static void show() {
+    System.out.println("hello");
   }
 }

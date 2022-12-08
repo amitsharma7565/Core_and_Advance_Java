@@ -1,92 +1,40 @@
-// class Number{
-//   public static void main(String args[]){
-//     for(int i=10;i>0;i--){
-//       System.out.println(i);
-//     }
-//   }
-// }
-// class Number{
-//   public static void main(String args[]){
-//     int i=10;
-//     while(i>0){
-//       System.out.println(i);
-//       i--;
-//     }
-//   }
-// }
-// class Number{
-//   public static void main(String args[]){
-//     int i=10;
-//   do{
-//     System.out.println(i);
-//     i--;
-//   }while(i>0);
-//   }
-// }
-// import java.util.*;
-// class Number{
-//   public static void main(String args[]){
-//     Scanner sc=new Scanner(System.in);
-//     System.out.println("Enter the n value");
-//     int n=sc.nextInt();
-//     for(int i=n;i>0;i--){
-//       System.out.println(i);
-//     }
-//   }
-// }
-
-// import java.util.*;
-// class Number{
-//   public static void main(String args[]){
-//     Scanner sc=new Scanner(System.in);
-//     System.out.println("Enter the n value");
-//     int n=sc.nextInt();
-//     int i=n;
-//     while(i>0){
-//       System.out.println(i);
-//       i--;
-//     }
-//   }
-// }
-
-// import java.util.*;
-// class Number{
-//   public static void main(String args[]){
-//     Scanner sc=new Scanner(System.in);
-//     System.out.println("Enter the n value");
-//     int n=sc.nextInt();
-//     int i=n;
-//     do{
-//       System.out.println(i);
-//       i--;
-//     }while(i>0);
-//   }
-// }
-
-// class Number{
-//   public static void main(String args[]){
-//     for(char ch ='A';ch<='Z';ch++){
-//       System.out.println(ch);
-//     }
-//   }
-// }
-
-// class Number{
-//   public static void main(String args[]){
-//     char ch='a';
-//     while(ch<='z'){
-//       System.out.println(ch);
-//       ch++;
-//     }
-//   }
-// }
-
-// class Number{
-//   public static void main(String args[]){
-//     char ch='A';
-//     do{
-//       System.out.println(ch);
-//       ch++;
-//     }while(ch<='Z');
-//   }
-// }
+import java.util.*;
+class NumberType
+  {
+    public static int findType(int n){
+      int sum=0;
+      for(int i=1;i<=n/2;i++){
+        if(n%i==0){
+          sum=sum+i;
+        }
+        
+      }
+      System.out.println(sum);
+      if (sum==n){
+        return 1;
+      }
+      else if(sum>n){
+        return 0;
+      }
+      else{
+        return -1;
+      }
+    }
+  }
+public class Sample {
+   public static void main(String args[]) {
+      Scanner sc=new Scanner(System.in);
+     int num=sc.nextInt();
+    int result= NumberType.findType(num);
+     if(result==1){
+       System.out.println("perfect number");
+     }
+     else if(result==0){
+         System.out.println("defecient number");
+     }
+     else{
+         System.out.println("abundent number");
+     }
+     
+   }
+}

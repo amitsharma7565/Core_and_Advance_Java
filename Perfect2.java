@@ -1,25 +1,13 @@
-// 4 type of method
-// without return type and without parameters
-// with return type and without parameters
-// without return type and with parameters
-// with return type and with parameter
+// to print 1 to 100 only perfect number
 
+import java.util.*;
 class Perfect2{
-  static void perfect(){
-    int num=24,sum=0;
-    for(int i=1;i<=num/2;i++){
+  public static void main(String args[]){
+    int num=100;
+    for(int i=1;i<=num;i++){
       if(num%i==0){
-        sum=sum+i;
+        System.out.println(i);
       }
     }
-    if(sum==num){
-      System.out.println("perfect number");
-    }
-    else{
-      System.out.println("not perfect number");
-    }
-  }
-  public static void main (String args[]){
-    perfect();
   }
 }

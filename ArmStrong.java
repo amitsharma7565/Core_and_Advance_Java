@@ -1,22 +1,19 @@
-// 153=1*1*1+5*5*5+3*3*3;
-// 370=3*3*3+7*7*7+0*0*0;
+import java.util.*;
 class ArmStrong{
   public static void main(String args[]){
-    int n=373;
-    int sum=0;
-    int r;
-    int temp=n;
-    while(n>0){
-          r=n%10;
-    n=n/10;
-    sum=sum+r*r*r;
+    int num=1634;
+    int rem,sum=0;
+    int temp=num;
+    while(num>0){
+      rem=num%10;
+      num=num/10;
+      sum=sum+rem*rem*rem*rem;
     }
-  if(sum==temp){
-    System.out.println("armstrong number");
-  }
+    if(sum==temp){
+      System.out.println("ArmStrong number");
+    }
     else{
-      System.out.println("not armstrong number");
+      System.out.println("Nit a armstrong Number");
     }
   }
-  
 }

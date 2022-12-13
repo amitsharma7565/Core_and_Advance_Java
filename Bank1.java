@@ -1,67 +1,42 @@
-// class Bank{
-//   int IFSCcode=123444;
-//   void rateOfInterest(){
-//     System.out.println("Interest is 80ps");
-//   }
-// }
-// class SBI extends Bank{
-//   int IFSCcode=567890;
-//    void rateOfInterest(){
-//     System.out.println("Interest is 60ps");
-//   }
-// }
-// class HDFC extends Bank{
-//   int IFSCcode=9876;
-//    void rateOfInterest(){
-//     System.out.println("Interest is 70ps");
-//       super.rateOfInterest();
-//   }
-//     void printIFSC(){
-//          System.out.println("Parent IFSC:"+super.IFSCcode);
-//        System.out.println("childclass IFSC:"+IFSCcode);
-//       }
-// }
-// class Bank1{
-//   public static void main(String args[]){
-//     HDFC hdfc=new HDFC();
-//     System.out.println(hdfc.IFSCcode); 
-//     hdfc.rateOfInterest();
-//     hdfc.printIFSC();
-//   }
-// }
-
+// A boy has his money deposited $1000, $1500 and $2000 in banks-Bank A, Bank B and Bank C respectively. We have to print the money deposited by him in a particular bank.
+// Create a class 'Bank' with a method 'getBalance' which returns 0. Make its three subclasses named 'BankA', 'BankB' and 'BankC' with a method with the same name 'getBalance' which returns the amount deposited in that particular bank. Call the method 'getBalance' by the object of each of the three banks.
 
 class Bank{
-  int Ifsc=13440;
-  void rateOfInterest(){
-    System.out.println("Interset in bank is 80s");
+  public int getBalance(){
+    return 0;
   }
 }
-class Sbi extends Bank{
-  int Ifsc=13441;
-  void rateOfInterest(){
-    System.out.println("interset in Sbi bank is 60s");
+class BankA extends Bank{
+   public int getBalance(){
+    return 1000;
   }
 }
- class Hdfc extends Bank {
-   int Ifsc=13442;
-   void rateOfInterest(){
-     System.out.println("interset in Hdfc bank is 70s");
-     super.rateOfInterest();
-   }
-   void printIFSC(){
-       System.out.println("Parent IFSC:"+super.Ifsc);
-       System.out.println("childclass IFSC:"+Ifsc);
-      }
- }
-
+class BankB extends Bank{
+   public int getBalance(){
+    return 1500;
+  }
+}
+class BankC extends Bank{
+   public int getBalance(){
+    return 2000;
+  }
+}
 class Bank1{
   public static void main(String args[]){
-    Hdfc hd=new Hdfc();
-    hd.rateOfInterest();
-    int c=hd.Ifsc;
-    System.out.println("Child class Ifsc "+c);
-    hd.printIFSC();
-    // System.out.println("Parents class Ifsc "+d);
-  }
+    BankA a=new BankA();
+    int a1=a.getBalance();
+    if(a1==1000){
+      System.out.println("1000 deposit");
+    }
+    BankB b=new BankB();
+    int a2=b.getBalance();
+    if(a2==1500){
+      System.out.println("1500 deposit");
+    }
+    BankC c=new BankC();
+    int a3=c.getBalance();
+    if(a3==2000){
+      System.out.println("2000 deposit");
+    }
+  }  
 }

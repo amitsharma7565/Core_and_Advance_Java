@@ -1,0 +1,6467 @@
+1.write a java program to print area of circle?
+class Areacircle
+  {
+    public static void main(String args[])
+    {
+      int r=8;
+      double pi=3.14,area;
+      area=pi*r*r;
+      System.out.println("area of circle:"+area);
+    }
+  }
+=================================================================================
+2.write a java program to print sum of two numbers?
+class Addition
+  {
+    public static void main(String args[])
+    {
+      int a,b,sum;
+      a=10;
+      b=25;
+      sum=a+b;
+      System.out.println("sum of "+a+" and "+b+" is "+sum);
+    }
+  }
+=========================================================================
+3.write a java program to print area of square?
+class Areasquare
+  {
+    public static void main(String args[])
+    {
+      int s=5,area;
+      area=s*s;
+      System.out.println("area of square:"+area);
+    }
+  }
+======================================================================
+4.write a java program to print area of triangle?
+import java.util.Scanner;
+class Areatri
+  {
+    public static void main(String args[])
+    {
+      double b,h,area;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter breadth value");
+      b=sc.nextDouble();
+      System.out.println("enter height value");
+      h=sc.nextDouble();
+    area=(b*h)/2;
+      System.out.println("area of triangle:"+area);
+    }
+  }
+===============================================================
+5.compound interset?
+import java.util.Scanner;
+class Ci
+{
+   public static void main (String args[])
+  {
+    double principle, rate, time, compound_interest;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("The Principle amount is");
+    principle=sc.nextDouble();
+    System.out.println("The interest rate is:");
+    rate=sc.nextDouble();
+    System.out.println("The time period is:");
+    time=sc.nextDouble();
+    compound_interest = principle * (Math.pow((1 + rate / 100), time)) - principle;
+      System.out.println("\nThe Compound Interest is: " + compound_interest);
+   }
+}
+==========================================================================
+6.wap to slove the distance between two points?
+//scanner class
+import java.util.Scanner;
+//main class
+class Distance1 {
+  //main method
+	public static void main(String arg[])	{
+      int x1,x2,y1,y2;
+	    double dis;
+    //creating an object
+	    Scanner s=new Scanner(System.in);
+    //print the user data
+    System.out.println("enter x1 value:");
+    x1=s.nextInt();
+    System.out.println("enter x2 value:");
+    x2=s.nextInt();
+    System.out.println("enter y1 value:");
+    y1=s.nextInt();
+    System.out.println("enter y2 value:");
+    y2=s.nextInt();
+	    dis=Math.sqrt((x2-x1)*(x2-x1) + (y2-y1)*(y2-y1));	
+    //print result
+            System.out.println("distancebetween"+"("+x1+","+y1+"),"+"("+x2+","+y2+")===>"+dis);
+	}
+}
+===========================================================================
+7.wap to print percentage of subject?
+import java.util.Scanner;
+class Perc {
+  public static void main(String args[]) {
+    int tel,eng,math,sci,soc,hindi;
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter telugu marks");
+    tel=s.nextInt();
+    System.out.println("enter english marks");
+    eng=s.nextInt();
+    System.out.println("enter math marks");
+    math=s.nextInt();
+    System.out.println("enter science marks");
+    sci=s.nextInt();
+    System.out.println("enter social marks");
+    soc=s.nextInt();
+    System.out.println("enter hindi marks");
+    hindi=s.nextInt();
+    double total = tel+eng+math+sci+soc+hindi;
+    double percantage = (total / 600) * 100;
+    System.out.println("percentage of subjects:"+percantage + "%");
+  }
+}
+===============================================================================
+8.perimeter of circle?
+class Pericircle
+  {
+    public static void main(String args[])
+    {
+      double r=7.6,pi=3.14,peri;
+      peri=2*pi*r;
+      System.out.println("perimeter of circle:"+peri);
+    }
+  }
+=========================================================================================
+9.perimeter of square?
+class Perisquare
+  {
+    public static void main(String args[])
+    {
+      int s=5,peri;
+      peri=4*s;
+      System.out.println("perimeter of square :"+peri);
+    }
+  }
+============================================================================================
+10.perimeter of triangle?
+import java.util.Scanner;
+class Peritri
+  {
+    public static void main(String args[])
+    {
+      int a,b,c,peri;
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter a value");
+      a=sc.nextInt();
+      System.out.println("enter b value");
+      b=sc.nextInt();
+      System.out.println("enter c value");
+      c=sc.nextInt();
+      peri=a+b+c;;
+      System.out.println("perimeter of triangle:"+peri);
+    }
+  }
+=====================================================================================
+11.simple interset?
+import java.util.Scanner;
+class Si {
+  public static void main(String args[]) {
+    int p,r,t;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("principal amount is:");
+    p=sc.nextInt();
+    System.out.println("rate of interest");
+    r=sc.nextInt();
+    System.out.println("time");
+    t=sc.nextInt();
+    double si=(p*r*t)/100;
+    System.out.println("simple interest is:"+si);
+  }
+}
+==============================================================================
+12.wap to print quadratic equation?
+//scanner class
+import java.util.Scanner;
+//main class
+class Quadratic1 {
+  //main method
+    public static void main(String args[]) {
+      //data types
+      int a,b,c,result;
+      //creating an object
+      Scanner s=new Scanner(System.in);
+      System.out.println("enter a value:");
+      a=s.nextInt();
+      System.out.println("enter b value:");
+      b=s.nextInt();
+      System.out.println("enter c value:");
+      c=s.nextInt();
+      result=(b*b)-4*a*c;
+      //print result
+      System.out.println(result);
+      
+
+      
+    }
+  }
+==========================================================================================
+13.wap to print sum of squares of 2 numbers?
+import java.util.Scanner;
+class Sumofsquare1 {
+  public static void main(String args[]) {
+    int x, y, sum, sum_square;
+   Scanner s=new Scanner(System.in);
+    System.out.println("enter x value:");
+    x=s.nextInt();
+    System.out.println("enter y value:");
+    y=s.nextInt();
+    sum = x + y;
+    sum_square = sum * sum;
+    System.out.println("the sum of Square of two number is " + sum_square);
+  }
+=======================================================================================
+14.wap to swap 2 numbers without using third variable?
+import java.util.Scanner;
+class Swap1 {
+  public static void main(String args[]) {
+    int a, b;
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter a value:");
+    a=s.nextInt();
+    System.out.println("enter b value:");
+    b=s.nextInt();
+    System.out.println("before a swapping:"+a);
+    System.out.println("before b swapping:"+b);
+    a = a + b;
+    b = a - b;
+    a = a - b;
+    System.out.println("after a swapping:"+a);
+    System.out.println("after b swapping:"+b);
+  }
+}
+
+==================================================================================================
+15.wap to swap 2 numbers with using third variable?
+import java.util.Scanner;
+//creating class
+class Swapping1 {
+  //main method
+  public static void main(String args[]) {
+    int a, b, temp;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a value:");
+    a=sc.nextInt();
+    System.out.println("enter b value:");
+    b=sc.nextInt();
+    System.out.println("before a swapping:"+a);
+    System.out.println("before b swapping:"+b);
+    temp = a;
+    a = b;
+    b = temp;
+    System.out.println("after a swapping:"+a);
+    System.out.println("after b swapping:"+b);
+
+  }
+}
+========================================================================================================================
+16./*Nikhil, the founder of “Pine Tree” company wished to design an Event Management System that would let its Customers plan and host events seamlessly via an online platform.
+ 
+As a part of this requirement, Nikhil wanted to write a piece of code for his company’s Amphi Event Management System that will display customized welcome messages by taking Customers’ name as input. Help Nikhil on the task.
+ 
+Input Format:
+First line of the input is a string that corresponds to a Customer’s name. Assume that the maximum length of the string is 50.
+ 
+Output Format:
+Output should display the welcome message along with the Customer’s name.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+ 
+Sample Input and Output:
+Enter your name
+Beena
+Hello Beena ! Welcome to Amphi Event Management System*/
+//package
+import java.util.Scanner;
+//main class
+class Event {
+  //main method 
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter your name:");
+    String name=sc.next();
+    System.out.println("Hello "+name+" ! Welcome to Amphi Event Management System");
+    
+  }
+}
+=================================================================================================
+
+17./* "Pine Tree" Company has signed up a big time Event Management deal from the Rotary Youth Club for a Trade Fair organized at Codissia Complex, wherein all startup companies in the Software industry are demonstrating their latest products and services and meet with industry partners and Customers.
+Amphi Event Management System has to be modified to write a piece of code that will get the input of the number of events to be hosted for the Fair at Codissia from its users and display the same. Help the company to accomplish the requirement.
+Input Format:
+First line of the input is an integer that corresponds to the number of events to be hosted at Codissia.
+Output Format:
+Output should display the number of events to be hosted at Codissia.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+Sample Input and Output:
+Enter the number of events hosted in Codissia
+50
+Number of events hosted in Codissia is 50*/
+//package
+import java.util.Scanner;
+//main class
+class Event1 {
+  //main method
+  public static void main(String args[]) {
+    //creating an object
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the number of events hosted in Codissia:");
+    int eve=sc.nextInt();
+    System.out.println("Number of events hosted in Codissia is "+eve);
+    
+  }
+}
+======================================================================================================
+18./* Trade Fairs are important for companies to present their products and to get in touch with its customers and business parties. One such grandeur Trade Fair Event was organized by the Confederation of National Large Scale Industry.
+Number of people who attended the event on the first day was x. But as days progressed, the event gained good response and the number of people who attended the event on the second day was twice the number of people who attended on the first day. Unfortunately due to heavy rains on the third day, the number of people who attended the event was exactly half the number of people who attended on the first day.
+Given the total number of people who have attended the event in the first 3 days, find the number of people who have attended the event on day 1, day 2 and day 3.
+Input Format:
+First line of the input is an integer value that corresponds to the total number of people.
+Output Format:
+First line of the output should display the number of attendees on day 1.
+Second line of the output should display the number of attendees on day 2.
+Third line of the output should display the number of attendees on day 3.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+Sample Input and Output:
+Enter the total number of people
+10500
+Number of attendees on day 1 : 3000
+Number of attendees on day 2 : 6000
+Number of attendees on day 3 : 1500*/
+//package
+import java.util.Scanner;
+//main class
+class Event2 {
+  //main method 
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the total number of people ");
+    int total=sc.nextInt();
+   int day1=(2*total)/7;
+    int day2=day1*2;
+    int day3=day1/2;
+    System.out.println("Number of attendees on day 1:"+day1);
+    System.out.println("Number of attendees on day 2:"+day2);
+    System.out.println("Number of attendees on day 3:"+day3);
+    
+    
+    
+  }
+}
+=============================================================================================================
+19./*Wisconsin State Fair is one of the largest midsummer celebrations in the Midwest Allis, showcasing the agriculture skills and prowess of the state. The Event organizers hired few part-time employees to work at the fair and the agreed salary paid to them are as given below:
+Weekdays --- 80 / hour
+Weekends --- 50 / hour
+Justin is a part-time employee working at the fair. Number of hours Justin has worked in the weekdays is 10 more than the number of hours he had worked during weekends. If the total salary paid to him in this month is known, write a program to estimate the number of hours he had worked during weekdays and the number of hours he had worked during weekends.
+Input Format:
+First line of the input is a double value that corresponds to the total salary paid to Justin.
+Output Format:
+First line of the output should display the number of hours Justin has worked during the weekdays.
+Second line of the output should display the number of hours Justin has worked during the weekends.
+Refer sample input and output for formatting specifications.
+[All text in bold corresponds to input and rest corresponds to output.]
+Sample Input and Output:
+Enter the total salary paid
+2750
+Number of weekday hours is 25
+Number of weekend hours is 15*/
+import java.util.Scanner;
+//main class
+class Event3 {
+  //main method
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter total salary paid ");
+    int a=sc.nextInt();
+    int x=(a-800)/130;
+    System.out.println("weekend salary is"+x);
+    System.out.println("weekdays salary is"+(10+x));
+  }
+}
+====================================================================================================================
+20.A recently launched attraction at the "Events Square" entertainment fair is the "Carnival of Terror" which is an interactive fun zone featuring scary, horror and Halloween stories.
+ 
+The Entry tickets for the show is to be printed with a Welcome message along with an additional message for Children stating they should be accompanied by an adult. Given the age of the person visiting the scary house, the ticket should carry the additional message only for Children whose age is less than 15 years. The show organizers wanted your help to accomplish this task. Write a program that will get age as the input and display the appropriate message on the tickets.
+ 
+Input Format:
+First line of the input is an integer that corresponds to the age of the person.
+ 
+Output Format:
+Output should display the additional message "Please note that you should be accompanied by an adult" for Children less than 15 years. Otherwise it should print only the Welcome message.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+20
+ 
+Sample Output 1:
+Welcome to the show
+ 
+Sample Input 2:
+14
+ 
+Sample Output 2:
+Welcome to the show
+Please note that you should be accompanied by an adult*/
+import java.util.Scanner;
+class Ticket {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    //System.out.println("enter age");
+    int age=sc.nextInt();
+    if(age>15){
+      System.out.println("Welcome to the show");
+    }
+    else {
+      System.out.println("Welcome to the show");
+      System.out.println("Please note that you should be accompanied by an adult");
+      
+    }
+  }
+}
+============================================================================================================
+21."FantasyKingdom" is a brand new Amusement park that is going to be inaugurated shortly in the City and is promoted as the place for breath-taking charm. The theme park has more than 30 exhilarating and craziest rides and as a special feature of the park, the park Authorities has placed many Ticketing Kiosks at the entrance which would facilitate the public to purchase their entrance tickets and ride tickets.
+ 
+The Entrance Tickets are to be issued typically based on age, as there are different fare for different age groups. There are 2 types of tickets – Child ticket and Adult ticket. If the age given is less than 15, then Child ticket is issued whereas for age greater than equal to 15, Adult ticket is issued. Write a piece of code to program this requirement in the ticketing kiosks.
+ 
+Input Format:
+First line of the input is an integer that corresponds to the age of the person.
+ 
+Output Format:
+Output should display "Child Ticket" or "Adult Ticket" based on the conditions given.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+20
+ 
+Sample Output 1:
+Adult Ticket
+ 
+Sample Input 2:
+12
+ 
+Sample Output 2:
+Child Ticket
+import java.util.Scanner;
+class Ticket1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    //System.out.println("enter age");
+    int age=sc.nextInt();
+    if(age>15){
+      System.out.println("Adult Ticket");
+    }
+    else {
+      System.out.println("Child Ticket");
+      }
+  }
+}
+=======================================================================================================
+22.
+"Fantasy Kingdom" is a brand new Amusement park that is going to be inaugurated shortly in the City and is promoted as the place for breath-taking charm. The theme park has more than 30 exhilarating and thrilling rides and as a special feature of the park, the park Authorities have placed many Booking Kiosks at the entrance which would facilitate the public to purchase their entrance tickets and ride tickets.
+ 
+There are few rides in the park which are not suitable for Children and aged people, hence the park Authorities wanted to program the kiosks to issue the tickets based on people’s age. If the age given is less than 15 (Children) or greater than 60 (Aged), then the system should display as "Not Allowed", otherwise it should display as "Allowed". Write a block of code to help the Authorities program this functionality.
+ 
+Input Format:
+First line of the input is an integer that corresponds to the age of the person opting for the ride.
+ 
+Output Format:
+Output should display "Allowed" or "Not Allowed" based on the conditions given.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+20
+ 
+Sample Output 1:
+Allowed
+ 
+Sample Input 2:
+12
+ 
+Sample Output 2:
+Not Allowed
+import java.util.Scanner;
+class Ticket2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    //System.out.println("enter age");
+    int age=sc.nextInt();
+    if(age>15){
+      System.out.println("Allowed");
+    }
+    else {
+      System.out.println("Not Allowed");
+      }
+  }
+}
+====================================================================================================================
+23.It was the inaugural ceremony of "Fantasy Kingdom" Amusement park and the park Management has announced some lucky prizes for the visitors on the first day. Based on this, the visitors whose ticket number has the last digit as 3 or 8, are declared as lucky winners and attracting prizes are awaiting to be presented for them.
+Write a program to find if the last digit of the ticket number of visitors is 3 or 8.
+ 
+Input Format:
+First line of the input is an integer that corresponds to the ticket number.
+ 
+Output Format:
+Output should display as "Lucky Winner" if the last digit of the ticket number is 3 or 8. Otherwise print "Not a Lucky Winner".
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+43
+ 
+Sample Output 1:
+Lucky Winner
+ 
+Sample Input 2:
+41
+ 
+Sample Output 2:
+Not a Lucky Winner
+import java.util.Scanner;
+class Ticket3 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    //System.out.println("enter age");
+    int lastdigit=sc.nextInt();
+    if(lastdigit%10==3 || lastdigit%10==8){
+      System.out.println("Lucky Winner");
+    }
+    else {
+      System.out.println("Not a lucky winner");
+      }
+  }
+}
+====================================================================================================
+24.The Westland Game Fair is the premier event of its kind for kids interested in some intellectual and cognitive brain games. Alan, a middle school boy is visiting the fair where he is very much drawn by the Card game.
+ 
+The game’s rules are:
+A player needs to pick 3 cards from a big lot of cards. There are 4 types of Cards namely Spade(S), Heart(H), Club(C) and Diamond (D). If all the 3 cards that the player picks are of the same type and same number, they get a Double Bonanza. If all the 3 cards are of the same type or if they all have the same number, they get a Bonanza. Otherwise they do not get a Bonanza. Alan has now picked 3 cards and is awaiting to know if he has got a bonanza. Please help him to know if he has won the Bonanza or not.
+ 
+Input Format:
+There are 3 lines of input.
+Each of the line consists of character and integer input, which corresponds to the type of the card and the number in it that Alan picked. The type of card and the number are separated by a single space.
+ 
+Output Format:
+Output should display "Double Bonanza" or "Bonanza" or "No Bonanza" based on the conditions given.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+S 5
+S 5
+S 5
+ 
+Sample Output 1:
+Double Bonanza
+ 
+Sample Input 2:
+S 6
+S 5
+H 5
+ 
+Sample Output 2:
+No Bonanza
+import java.util.Scanner;
+class Ticket4 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int x=sc.nextInt();
+    int y=sc.nextInt();
+    int z=sc.nextInt();
+    char a=sc.next().charAt(0);
+    char b=sc.next().charAt(0);
+    char c=sc.next().charAt(0);
+    if((x==y&&y==z&&z==x)&&(a==b&&b==c&&c==a)) 
+      System.out.println("Double Bonanza");
+    else if((x==y&&y==z&&z==x)||(a==b&&b==c&&c==a)) 
+      System.out.println("Bonanza");
+    else
+      System.out.println("No Bonanza");
+  }
+}
+ 
+===========================================================================================================
+25.The Westland Game Fair is the premier event of its kind for kids interested in some intellectual and cognitive brain games. Exciting games were organized for kids between age group of 8 and 10. One such game was called the "Triangle game", where different number boards in the range 1 to 180 are available. Each kid needs to select three number boards, where the numbers on the boards correspond to the angles of a triangle.
+ 
+If the angles selected by a kid forms a triangle, he/she would receive Prize 1. If the angles selected by a kid forms a right triangle, he/she would receive Prize 2. If the angles selected by the kids form an equilateral triangle, he/she would receive Prize 3. If the angles selected by a kid do not form even a triangle, then he/she will not receive any prizes. Write a program for the organizers to fetch the result based on the number boards selected by the kids.
+ 
+Input Format:
+There are 3 lines in the input, each of which corresponds to the numbers on the boards that the kids select.
+ 
+Output Format:
+Output should display "Prize 1" or "Prize 2" or "Prize 3" or "No Prize" based on the conditions given.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+60
+50
+70
+ 
+Sample Output 1:
+Prize 1
+ 
+Sample Input 2:
+60
+60
+70
+ 
+Sample Output 2:
+No Prize
+ import java.util.Scanner;
+class Ticket5 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    int num1=sc.nextInt();
+    int num2=sc.nextInt();
+    int num3=sc.nextInt();
+    int sum;
+    sum=num1+num2+num3;
+    if(sum==180)
+    {
+    if(num1==90 || num2==90 || num3==90) {
+       System.out.println("Prize 2");
+    }
+    else if(num1==num2&&num2==num3&&num3==num1) {
+      System.out.println("Prize 3");
+    }
+    else {
+      System.out.println("Prize 1");
+  }
+}
+  else{
+    System.out.println("No Prize");
+  }
+}
+}
+====================================================================================================
+26.eligible for vote?
+//package
+import java.util.*;
+//create a main class
+class Vote {
+  //declare a main method
+  public static void main(String args[]) {
+    //create an object using scanner class
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter age:");
+    int age=s.nextInt();
+    //condition
+    if(age>18)
+      //print result
+      System.out.println("eligible for vote");
+    else
+    //print result
+      System.out.println("not eligible for vote");
+ }
+  
+}
+==============================================================================
+27.given number is even or not?
+import java.util.Scanner;
+class Even {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a number:");
+    int num=sc.nextInt();
+    if(num%2==0)
+      System.out.println(num+" is a even number");
+    else
+      System.out.println(num+" it is not a even number");
+  }
+}
+======================================================================================================
+28.given number divisble by 5 or not?
+//package
+import java.util.*;
+//class name
+public class Divisible
+{
+  //main method
+    public static void main(String args[])
+    {
+      //creating an object
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter any number to check it is divisible by 5 ");
+      //datatypes
+        int number=sc.nextInt();
+      //condition
+        if(number%5==0)
+        {
+          //print result
+            System.out.println("Given number "+ number + " is Divisible by 5 ");
+        } 
+        else
+        {
+            System.out.println("Given number "+ number + " is Not Divisible by 5 ");
+        }
+    }
+}
+======================================================================================================
+29.find greatest number among 2 numbers?
+//package
+import java.util.*;
+// creating class name
+public class Greatest
+{
+  //main method
+    public static void main(String args[])
+    {
+      //creating an object by using scanner class
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the first number: ");
+        int num1=sc.nextInt();
+        System.out.println("Enter thes second number: ");
+        int num2=sc.nextInt();
+      //condition
+        if(num1>num2)
+          //print result
+        System.out.println("number one is big");
+        else
+        System.out.println("number two is big");
+    }
+}
+=================================================================================================
+30.check whether character is alphabet or not?
+import java.util.*;
+//creating a class
+public class Alphabet
+{
+  //main method
+    public static void main(String args[])
+    {
+      //creating an object using scanner class
+        Scanner s=new Scanner(System.in);
+        char ch;
+        System.out.println("Enter the character ");
+        ch=s.next().charAt(0);
+      //condition
+        if((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))
+          //print result
+        System.out.println(ch+" is an alphabet");
+        else
+        System.out.println(ch+" is not an alphabet");
+    }
+}
+================================================================================================================
+31.check whether character is digit or not?
+import java.util.Scanner;
+//class name
+public class Digit 
+  {
+    //main method
+    public static void main(String[] args) 
+    {
+      //creating an object using scanner class
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any digit: ");
+        char num=scanner.next().charAt(0);
+      //condition
+        if(num >= '0' && num <= '9') 
+        {
+          //print result
+          System.out.println(num + " is a digit");
+        } 
+        else 
+        {
+          System.out.println(num + " not a digit");
+        }
+    
+    }
+}
+===============================================================================================================
+32.given person is eligble for blood donation?
+ //package  
+import java.util.Scanner;
+//create a main class
+class Blood{
+  //main method
+public static void main(String args[])
+  {
+    //creating an object by using scanner class
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a age");
+int age=sc.nextInt();
+System.out.println("enter Weight");
+int weight=sc.nextInt();
+if(age>18 && weight>50)
+System.out.println("Eligible for blood donation");
+else
+System.out.println("Not eleigible for blood donation");
+}
+}
+=========================================================================================================
+33.divisible by 5 and 3 or not?
+//package
+import java.util.Scanner;
+//create a main class
+class Divisible1{
+  //declare a main method
+public static void main(String args[])
+{
+  //creating an object using scanner class
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number");
+int num=sc.nextInt();
+  //condition
+if( num%5==0 && num%3==0)
+  //print result
+System.out.println(num+" is divisible by 5 and 3");
+else
+System.out.println(num+" is not divisible by 5 and 3");
+}
+}
+
+==========================================================================================
+34.given number is positive or not?
+//package
+import java.util.*;
+//create a main class
+class Positive {
+  //main method
+   public static void main(String args[]) {
+     //creating an object by using scanner class
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter a number:");
+     int num=sc.nextInt();
+     //condition
+     if(num>0)
+       //print result
+     System.out.println(num+" is a positive number");
+     else 
+       System.out.println(num+" it is not a positive number");
+     
+   }
+}
+===========================================================================================================
+35.given number is negative or not?
+//package
+import java.util.*;
+//create a main class
+class  Negative {
+  //main method
+   public static void main(String args[]) {
+     //creating an object by using scanner class
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter a number:");
+     int num=sc.nextInt();
+     //condition
+     if(num<0)
+       //print result
+     System.out.println(num+" is a negative number");
+     else 
+       System.out.println(num+" it is not a negative number");
+     
+   }
+}
+====================================================================================
+36.given number is zero or not?
+//package
+import java.util.*;
+//create a main class
+class Zero {
+  //main method
+   public static void main(String args[]) {
+     //creating an object by using scanner class
+     Scanner sc=new Scanner(System.in);
+     System.out.println("enter a number:");
+     int num=sc.nextInt();
+     //condition
+     if(num==0)
+       //print result
+     System.out.println(num+" is a zero ");
+     else 
+       System.out.println(num+" it is not a zero");
+     
+   }
+}
+=====================================================================================================
+37.given number is positive or negative or zero?
+//creating class
+public class Positive1
+  {
+    //main method
+    public static void main(String args[])
+    {
+      int num;
+      System.out.println("enter number");
+      //scanner class
+      Scanner q=new Scanner(System.in);
+       num=q.nextInt();
+      //if statement
+      if(num>0)
+        System.out.println("positive number");
+      else if(num<0)
+        System.out.println("negative");
+      else
+        System.out.println("zero");
+        
+
+    }
+  }
+
+
+
+===================================================================================
+38.maximum between 3 numbers?
+import java.util.*;
+public class Maximum1
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter three integer: ");
+        int num1=sc.nextInt();
+        int num2=sc.nextInt();
+        int num3=sc.nextInt();
+        if(num1>num2 && num1>num3)
+        {
+            System.out.println("The largest number is:"+num1);
+        }
+        else if(num2>num1 && num2>num3)
+        {
+            System.out.println("The largest number is:"+num2);
+        }
+        else if(num3>num1 && num3>num2)
+        {
+            System.out.println("The largest number is:"+num3);
+        }
+        else
+        {
+            System.out.println("The numbers are same.");
+        }
+    }
+}
+
+=======================================================================================================================
+39.grade?
+import java.util.*;
+class Grade {
+public static void main(String args[]) {
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter the subject1 marks:");
+  int sub1=sc.nextInt();
+  System.out.println("enter the subject2 marks:");
+  int sub2=sc.nextInt();
+  System.out.println("enter the subject3 marks:");
+  int sub3=sc.nextInt();
+  System.out.println("enter the subject4 marks:");
+  int sub4=sc.nextInt();
+  System.out.println("enter the subject5 marks:");
+  int sub5=sc.nextInt();
+  int total=sub1+sub2+sub3+sub4+sub5;
+  int avg=total/5;
+  int percentage=((total/500)*100);
+  if(avg>=90 && avg<100)
+    System.out.println("Grade A");
+  else if(avg>=80 && avg<90)
+    System.out.println("Grade B");
+  else if(avg>=70 && avg<80)
+    System.out.println("Grade C");
+  else if(avg>=60 && avg<70)
+    System.out.println("Grade D");
+  else if(avg>=50 && avg<60)
+    System.out.println("Grade E");
+  else
+    System.out.println("Grade F");
+}
+}
+===================================================================================
+40.vowel or not?
+import java.util.*;
+public class Vowel
+{
+    public static void main(String[] args)
+{
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter alphabet: ");
+        char ch= sc.next().charAt(0);
+        if((ch=='a' || ch== 'e' || ch== 'i' || ch=='o' || ch=='u') || (ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U'))
+        {
+           System.out.println("vowel");
+        }
+        else
+        {
+            System.out.println("consonant");
+        }
+    }
+}
+==============================================================================
+41.given alphabet is upper or not?
+import java.util.Scanner;
+public class Upper
+{
+public static void main(String args[])
+{
+    char ch;
+ Scanner scan=new Scanner(System.in); 
+System.out.println("Enter the character  ");
+ch=scan.next().charAt(0);
+if(ch>='A' && ch<='Z')
+{
+    System.out.println(ch+" is an upper case letter ");
+}
+else if(ch>='a' && ch<='z')
+{
+    System.out.println(ch+" is a lower case letter ");
+}
+else
+{
+    System.out.println(ch+" is not a Alphabets ");
+}
+}
+}
+=============================================================================================
+42.Write a JAVA program to input any character and check whether it is alphabet, digit    or special character?
+import java.util.Scanner;
+class Special {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a character:");
+    char ch=sc.next().charAt(0);
+    if((ch>='A' && ch<'Z')||(ch>='a' && ch <'z'))
+      System.out.println(ch+" is is a alphabet");
+    else if(ch>='0' && ch<'9')
+      System.out.println(ch+" it is a digit");
+    else
+      System.out.println(ch+" it is a special character");
+  }
+}
+==========================================================================================================
+43.Write a JAVA program to input week number and print week day?
+import java.util.*;
+public class Week
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter weekday number: ");
+        int weekday=sc.nextInt();
+        if(weekday==1)
+        {
+            System.out.println("monday");
+        }
+         else if(weekday==2) 
+         { 
+             System.out.println("tuesday");
+             
+         }
+         else if(weekday==3) 
+         { 
+             System.out.println("wednesday");
+             
+         }
+         else if(weekday==4) 
+         { 
+             System.out.println("thrusday");
+             
+         }
+         else if(weekday==5) 
+         { 
+             System.out.println("friday");
+             
+         }
+         else if(weekday==6) 
+         { 
+             System.out.println("saturday");
+             
+         }
+         else if(weekday==7) 
+         { 
+             System.out.println("sunday");
+             
+         }
+         else
+         {
+         System.out.println("please enter weekday number between 1-7");    
+         }
+
+    }
+}
+====================================================================================================================
+44.*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross salary according to following: 
+
+    BasiJAVASalary <= 10000 : HRA = 20%, DA = 80% 
+
+    BasiJAVASalary <= 20000 : HRA = 25%, DA = 90% 
+
+    BasiJAVASalary > 20000 : HRA = 30%, DA = 95%*/
+//package
+import java.util.Scanner;
+//create a main class
+class Basic
+{
+  //declare main method
+ public static void main(String args[]) 
+ {
+   
+  int basic_salary,GrossPayment;
+//create an object using scanner class
+  Scanner scan=new Scanner(System.in);
+
+  System.out.println("Enter Basic Salary Of Employee: ");
+  basic_salary=scan.nextInt();
+ 
+   //condition
+   if(basic_salary<=10000)            
+{
+  int da=(80*basic_salary)/100;
+   int hra=(20*basic_salary)/100;
+//formula for gross salry
+  GrossPayment = basic_salary + da + hra;
+   }
+   else if(basic_salary<=20000)
+   {
+  int da = (90 * basic_salary) / 100;
+  int hra = ( 25 * basic_salary) / 100;
+  GrossPayment = basic_salary + da + hra;
+   }
+   else
+   {
+  int da = (95 * basic_salary) / 100;
+  int hra = (30 * basic_salary) / 100;
+  GrossPayment = basic_salary + da + hra;
+   }
+
+  System.out.println("Gross Salary Of Employee: "+GrossPayment);
+  }
+}
+
+===============================================================================
+45.Write a JAVA program to count total number of notes in given amount?
+import java.util.*;
+class Count{
+  public static void main(String args[]){
+    Scanner s=new Scanner(System.in);
+    System.out.println("Enter the amount");
+    int amt=s.nextInt();
+    if(amt%500==0){
+      System.out.println("number of 500 notes are "+amt/500);
+    }
+    else if (amt%200==0){
+      System.out.println("number of 200 notes are "+amt/200);
+    }
+    else if(amt%100==0){
+      System.out.println("number of 100 notes are "+amt/100);
+    }
+    else
+      System.out.println("invalid input");
+  }
+}
+===========================================================================
+46.which is greater number?
+import java.util.Scanner;
+
+class Greater {
+public static void main(String args[]) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter  number1");
+int a=sc.nextInt();
+System.out.println("enter  number2");
+int b=sc.nextInt();
+System.out.println("enter  number3");
+int c=sc.nextInt();
+if(a>b){
+if(a>c){
+System.out.println("a is big");
+}
+else
+{
+System.out.println("c is big");
+}
+}
+else if(b>c){
+System.out.println("b is greater");
+}
+}
+}
+===================================================================
+47.*problem statement
+gross salary:
+basicsalary+HRA+DA
+basic salary:20000
+hra:12% on basic salary------20000*12/100=2400
+DA :20% on basic salary------20000*20/100=4000
+gs=20000+2400+4000*/
+//package
+import java.util.Scanner;
+//create a main class
+class Gross {
+  //main method
+ public static void main(String args[])  {
+  float Basic_salary,DA,HRA,da1,hra1,GrossSalary;
+   //creating an object
+  Scanner scan=new Scanner(System.in);
+  System.out.println("Enter Basic Salary Of Employee: ");
+  Basic_salary=scan.nextFloat();
+  System.out.println("Enter Basic DA Of Employee: "); 
+  da1=scan.nextFloat();
+  System.out.println("Enter Basic HRA Of Employee: ");
+  hra1=scan.nextFloat();
+   //formual for da and hra
+  DA=(da1*Basic_salary)/100;
+  HRA=(hra1*Basic_salary)/100;
+   //grosssalary formula
+  GrossSalary=Basic_salary+DA+HRA;
+  System.out.println("Gross Salary Of Employee: "+GrossSalary);
+  }
+}
+===========================================================
+48.under weight?
+import java.util.Scanner;
+class Weight {
+public static void main(String args[]) {
+Scanner sc=new Scanner(System.in);
+System.out.println("enter age");
+int age=sc.nextInt();
+System.out.println("enter weight");
+int weight=sc.nextInt();  
+if(age>18){
+if(weight>50){
+System.out.println("Eligible for blood donation");
+}
+else{
+System.out.println("under weight");
+}
+}
+else{
+System.out.println("under age");
+}
+}
+}
+========================================================================================
+49.*10th class
+  your offer you something based on your final marks
+90: excellent,i will buy for bike
+  80:very good, I will buy for you mobile
+  70:good,cycle
+  60:worst,belt
+father:how much grade you are expecting in final exam
+  son: dad i got 90 per
+  father:Good,I will buy cycle*/
+import java.util.Scanner;
+class Father {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter sub1 marks");
+    int tel=sc.nextInt();
+    System.out.println("enter sub2 marks");
+    int eng=sc.nextInt();
+    System.out.println("enter sub3 marks");
+    int hin=sc.nextInt();
+    System.out.println("enter sub4 marks");
+    int math=sc.nextInt();
+    System.out.println("enter sub5 marks");
+    int sci=sc.nextInt();
+    int total = tel+eng+math+sci+hin;
+    int per= (total* 100)/500;
+    System.out.println("percentage of subjects:"+per + "%");
+    if(per>=90)
+    {
+       System.out.println("father:how much grade you are expecting in final exam");
+    System.out.println("son: dad i got"+per+" %");
+      System.out.println(per+" :excellent,i will buy for bike");
+    }
+    else if(per>=80)
+    {
+    System.out.println("father:how much grade you are expecting in final exam");
+    System.out.println("son: dad i got"+per+" %");
+    System.out.println(per+" :very good, I will buy for you mobile");
+    }
+    else if(per>=70)
+    {
+    System.out.println("father:how much grade you are expecting in final exam");
+    System.out.println("son: dad i got"+per+" %");
+    System.out.println(per+" :good,cycle");
+    }
+    else 
+    {
+    System.out.println("fater:how much grade you are expecting in final exam");
+    System.out.println("son: dad i got"+per+" %");
+    System.out.println(per+":worst,belt");
+    }
+    
+  }
+}
+
+
+============================================================================================
+50.check whether character is digit or not?
+//package
+import java.util.Scanner;
+//class name
+public class Digit1
+  {
+    //main method
+    public static void main(String[] args) 
+    {
+      //creating an object using scanner class
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any digit: ");
+        char num=scanner.next().charAt(0);
+      //condition
+        if(num >= '0')
+        {
+          if(num <'9')
+          {
+         System.out.println(num + " is a digit");
+        }
+        
+        else 
+        {
+          System.out.println(num + " not a digit");
+        }
+        }
+    }
+  }
+====================================================================================
+51.given alphabet is vowel or consasent?
+
+import java.util.Scanner;
+class Vowel1 {
+public static void main(String args[]) {
+
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter character");
+char ch=sc.next().charAt(0);
+switch(ch){
+case 'A':
+case 'E':
+case 'I':
+case 'O':
+case 'U':
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+    System.out.println("vowel");
+break;
+default:
+System.out.println("consonant");
+}
+
+}
+}
+
+=================================================================================================================
+52./*Write a JAVA program to input electricity unit charges and calculate total     electricity bill according to the given condition: 
+    For first 50 units Rs. 0.50/unit 
+    For next 100 units Rs. 0.75/unit 
+    For next 100 units Rs. 1.20/unit 
+     For unit above 250 Rs. 1.50/unit 
+     An additional surcharge of 20% is added to the bill*/
+import java.util.*;
+//create a main class
+public class Electricity
+{
+  //main method
+    public static void main(String args[])
+    {
+        int units;
+        double billtopay=0;
+      //create an object by using scanner class
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number of units for calculating electricity bill:");
+        units=sc.nextInt();
+      //condition
+        if(units<50)
+        {
+          //formula
+            billtopay=units*0.50;
+            
+        }
+        else if(units<150)  //145
+        {
+          //(50*0.5)+(
+            billtopay=(50*0.50)+((units-50)*0.75);
+        }
+        else if(units<250)
+        {
+            billtopay=(50*0.50)+(100*0.75)+((units-150)*1.20);
+        }
+        else
+        {
+            billtopay=(50*0.50)+(100*0.75)+(100*1.20)+((units-250)*1.50);
+        }
+      double totalbill=(billtopay*20)/100;
+        System.out.println("the electricity bill for"+units+" is: "+billtopay);
+      System.out.println("total bill"+totalbill);
+    }
+}
+==========================================================================================================
+53.week day?
+import java.util.Scanner;
+class Day {
+  public static void main(String args[]) {
+    int da;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter day number");
+    da=sc.nextInt();
+    switch(da) {
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wendsday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Monday");
+        break;
+      default:
+        System.out.println("invalid input");
+        
+    }
+   
+  }
+}
+=============================================================================================
+54.*enter num1
+  10
+enter num2
+20
+***********calculator*************
+1.Addition
+2.Subtraction
+3.Multiplication
+4.Division
+5.exit
+select option
+1
+Addition is 30
+2
+Subtraction is -10*/
+import java.util.*;
+class Choice {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter num1");
+    int num1=sc.nextInt();
+    System.out.println("enter num2");
+    int num2=sc.nextInt();
+    int num3;
+    System.out.println("***********calculator*************");
+    System.out.println("1.Addition");
+    System.out.println("2.substraction"); 
+    System.out.println("3.multiplication");
+    System.out.println("4.division");
+    System.out.println("5.exit");
+    System.out.println("select option");
+    int cal=sc.nextInt();
+    
+
+    switch(cal) {
+      case 1: 
+        num3=num1+num2;
+            System.out.println("addition is:"+num3);
+        break;
+        case 2: 
+        num3=num1-num2;
+            System.out.println("substraction is:"+num3);
+        break;
+        case 3: 
+        num3=num1*num2;
+            System.out.println("multiplication is:"+num3);
+        break;
+        case 4: 
+        num3=num1+num2;
+            System.out.println("division is:"+num3);
+        break;
+        case 5: 
+            System.out.println("exit");
+        break;
+      default:
+           System.out.println("please enter between 1 to 5 only");
+
+        
+    }
+  }
+}
+================================================================================================
+55.*ATM operation
+
+  amount=10000
+
+1.withdraw
+2.deposit
+3.check balance
+4.exit
+
+  select option
+  1
+//  enter amount to withdraw
+//  500
+//  amount=amount-500;
+// withdraw successfully
+
+  2
+   Enter amount to deposit
+   depsoit=1000
+  amount=amount+deposit
+
+  3.
+  the amount is 11000
+
+  4
+  System.out.print("thank you for visiting");*/
+import java.util.*;
+class Atm {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    int amount=10000;
+    System.out.println("select the number\n 1.withdraw\n 2.deposit\n 3.check balance\n 4.exit ");
+    int num=sc.nextInt();
+    switch(num) {
+      case 1:
+        System.out.println("enter amount to withdraw");
+        int a=sc.nextInt();
+        amount=amount-a;
+        System.out.println("withdraw successfully");
+        break;
+        case 2:
+        System.out.println("enter amount to deposit");
+        int b=sc.nextInt();
+        amount=amount+b;
+        System.out.println("deposit successfully");
+        break;
+        case 3:
+        System.out.println("total amount"+amount);
+         break;
+      case 4:
+        System.out.println("Thank you for visiting");
+        break;
+      default:
+        System.out.println("Please enter between 1 to 4 only");
+    }
+  }
+}s
+=======================================================================
+56.sample program for loop.
+import java.util.*;
+class Demo {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    for(int i=1;i<=n;i++) {
+      System.out.println("Hello World");
+    }
+  }
+}
+=================================================================================
+57.sample program while loop.
+import java.util.*;
+class Demo1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+    while(i<=n)
+    {
+      System.out.println("Hello World");
+      i++;
+    }
+  }
+}
+========================================================================================
+58.sample program do-while loop.
+import java.util.*;
+class Demo2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+      do
+    {
+      System.out.println("Hello World");
+      i++;
+    } while(i<=n);
+  }
+}
+===========================================================================================
+59.write a java program to print 1 to n even number using for loop.
+import java.util.Scanner;
+class Even1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    for(int i=1;i<=n;i++)
+      {
+        if(i%2==0)//
+        {
+          System.out.println(i);
+        }
+      }
+  }
+}
+==================================================================================================
+60.write a java program to print 1 to n even number using while loop.
+import java.util.Scanner;
+class Even2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+    while(i<=n)//10
+    
+      {
+        if(i%2==0)
+        {
+          System.out.println(i);
+          
+        }
+        i++;
+      }
+  }
+}
+====================================================================================================
+61.write a java program to print 1 to n even number using do-while loop.
+import java.util.Scanner;
+class Even3 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+     int i=1;
+    do
+      {
+        if(i%2==0)
+        {
+          System.out.println(i);
+           }
+        i++;
+       } while(i<=n);
+  }
+}
+===========================================================================================================
+62.write a java program to print 1 to n odd number using for loop.
+import java.util.Scanner;
+class Odd {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    for(int i=1;i<=n;i++)
+      {
+        if(i%2==1)
+        {
+          System.out.println(i);
+        }
+      }
+  }
+}
+============================================================================================================
+63.write a java program to print 1 to n odd number using while loop.
+import java.util.Scanner;
+class Odd1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+    while(i<=n)
+    
+      {
+        if(i%2==1)
+        {
+          System.out.println(i);
+          
+        }
+        i++;
+      }
+  }
+}
+================================================================================================
+64.write a java program to print 1 to n odd number using do-while loop.
+import java.util.Scanner;
+class Odd2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+     int i=1;
+    do
+      {
+        if(i%2==1)
+        {
+          System.out.println(i);
+           }
+        i++;
+       } while(i<=n);
+  }
+}
+=============================================================================================
+65.write a java program to print sum of even numbers between 1 to n using for loop.
+import java.util.Scanner;
+class SumOfEven {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    for(int i=1;i<=n;i++)
+      {
+        if(i%2==0)
+        {
+          sum=sum+i;
+          
+        }
+      }
+    System.out.println(sum);
+  }
+}
+==================================================================================================
+66.write a java program to print sum of even numbers between 1 to n using while loop.
+import java.util.Scanner;
+class SumOfEven1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    int i=1;
+    while(i<=n)
+      {
+        if(i%2==0)
+        {
+          sum=sum+i;
+          }
+        i++;
+        }
+    System.out.println(sum);
+  }
+}
+========================================================================================================
+67.write a java program to print sum of even numbers between 1 to n using do-while loop.
+import java.util.Scanner;
+class SumOfEven2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    int i=1;
+    do
+      {
+        if(i%2==0)
+        {
+          sum=sum+i;
+          
+        }
+        i++;
+      }while(i<=n);
+    System.out.println(sum);
+  }
+}
+=================================================================================
+68.write a java program to print sum of odd numbers between 1 to n using for loop.
+import java.util.Scanner;
+class SumOfOdd {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    for(int i=1;i<=n;i++)
+      {
+        if(i%2==1)
+        {
+          sum=sum+i;
+          
+        }
+      }
+    System.out.println(sum);
+  }
+}
+=====================================================================================
+69.write a java program to print sum of odd numbers between 1 to n using while loop.
+import java.util.Scanner;
+class SumOfOdd1 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    int i=1;
+    while(i<=n)
+      {
+        if(i%2==1)
+        {
+          sum=sum+i;
+          }
+        i++;
+        }
+    System.out.println(sum);
+  }
+}
+======================================================================================
+70.write a java program to print sum of odd numbers between 1 to n using do-while loop.
+
+import java.util.Scanner;
+class SumOfOdd2 {
+  public static void main(String args[])
+  {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    int i=1;
+    do
+      {
+        if(i%2==1)
+        {
+          sum=sum+i;
+          
+        }
+        i++;
+      }while(i<=n);
+    System.out.println(sum);
+  }
+}
+====================================================================
+71.write a java program to print sum of natural number between 1 to n using for loop.
+import java.util.*;
+class SumOfNatural{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int sum=0;
+    for(int i=1;i<=n;i++)
+     {
+       sum=sum+i;
+     }
+   System.out.println(sum);
+
+    
+    }
+  }
+===================================================================================
+72.write a java program to print sum of natural number between 1 to n using while loop.
+import java.util.*;
+class SumOfNatural1{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+    int sum=0;
+     while(i<=n){
+       sum=sum+i;
+       i++;
+     }
+   System.out.println(sum);
+}
+  }
+=====================================================================================
+73.write a java program to print sum of natural number between 1 to n using do-while loop.
+import java.util.*;
+class SumOfNatural2{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    int n=sc.nextInt();
+    int i=1;
+    int sum=0;
+     do{
+       sum=sum+i;
+       i++;
+     }while(i<=n);
+   System.out.println(sum);
+}
+  }
+===================================================================================================
+74.write a java program to print  1 to n elements using for loop.
+import java.util.*;
+class Natural
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      for(int i=1;i<=n;i++)
+        {
+        System.out.println(i);
+        }
+    }
+  }
+=====================================================================================================
+75.write a java program to print  1 to n elements using while loop.
+import java.util.*;
+class Natural1
+  {
+    public static void main(String args[])
+    {
+      
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      int i=1;
+        while(i<=n)
+        {
+        System.out.println(i);
+          i++;
+        }
+    }
+  }
+============================================================================================================
+76.write a java program to print  1 to n elements using do-while loop.
+import java.util.*;
+class Natural2
+  {
+    public static void main(String args[])
+    {
+      
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      int i=1;
+        do
+        {
+        System.out.println(i);
+          i++;
+        }while(i<=n);
+    }
+  }
+====================================================================================================================
+77.write a java program to print reverse 1 to n elements using for loop.
+import java.util.*;
+class Natural
+  {
+    public static void main(String args[])
+    {
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      for(int i=n;i<0;i--)
+        {
+        System.out.println(i);
+        }
+    }
+  }
+======================================================================================================
+78.write a java program to print  reverse 1 to n elements using while loop.
+import java.util.*;
+class Natural1
+  {
+    public static void main(String args[])
+    {
+      
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      int i=n;
+        while(i>0)
+        {
+        System.out.println(i);
+          i--;
+        }
+    }
+  }
+==========================================================================================================
+79.write a java program to print reverse 1 to n elements using do-while loop.
+import java.util.*;
+class Natural2
+  {
+    public static void main(String args[])
+    {
+      
+      Scanner sc=new Scanner(System.in);
+      System.out.println("enter value");
+      int n=sc.nextInt();
+      int i=n;
+        do
+        {
+        System.out.println(i);
+          i--;
+        }while(i>=0);
+    }
+  }
+=============================================================================================================
+80.write a java program to print alphabet using for loop.
+
+class Alphabet1 {
+  public static void main(String args[])
+  {
+    
+    char ch;
+    for(ch='a';ch<='z';ch++)
+      {
+          System.out.print(ch);
+      }
+  }
+}
+==================================================================================================================
+81.write a java program to print alphabet using while loop.
+
+class Alphabet2 {
+  public static void main(String args[])
+  {
+    
+    char ch='a';
+    while(ch<='z')
+      {
+          System.out.print(ch);
+        ch++;
+      }
+  }
+}
+==========================================================================================================
+82.write a java program to print alphabet using do-while loop.
+
+class Alphabet3 {
+  public static void main(String args[])
+  {
+    
+    char ch='a';
+    do
+      {
+          System.out.print(ch);
+        ch++;
+      }while(ch<='z');
+  }
+}
+==========================================================================================================
+83.write a java program to print multiplication table using for loop.
+import java.util.*;
+  class Multiplication{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number:");
+        int n=sc.nextInt();
+        for(int i=1;i<=10;i++){
+            System.out.println(n+" * "+i+" = "+n*i);
+        }
+    }
+}
+============================================================================================================
+84.write a java program to print multiplication table using while loop.
+import java.util.*;
+  class Multiplication1{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number:");
+        int n=sc.nextInt();
+        int i=1;
+        while(i<=10){
+            System.out.println(n+" * "+i+" = "+n*i);
+          i++;
+        }
+    }
+}
+==============================================================================================================
+85.write a java program to print multiplication table using do-while loop.
+import java.util.*;
+  class Multiplication2{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number:");
+        int n=sc.nextInt();
+        int i=1;
+        do
+        {
+            System.out.println(n+" * "+i+" = "+n*i);
+          i++;
+        }while(i<=10);
+    }
+}
+=====================================================================================================================
+86.write a java program to print factor of a givrn number.
+import java.util.Scanner;
+public class Factors
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter n value");
+        int n=sc.nextInt();
+        for(int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                System.out.print(i+" ");
+            }
+}
+    }
+}
+==========================================================================================
+87.write a java program to print prime numbers.
+import java.util.Scanner;
+public class Prime
+{
+    public static void main(String args[])
+    {
+        int count=0;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter n value");
+        int n=sc.nextInt();
+        for(int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                count++;
+            }
+        }
+        if(count==1){
+            System.out.println("prime number");
+        }
+        else{
+            System.out.println("not a prime nmuber");
+        }
+
+    }
+}
+========================================================================================================
+88.write a java program to print 1 to n.
+import java.util.*;
+class PrimeNumber{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int count;
+System.out.println("Enter range");
+int n=sc.nextInt();
+for(int i=1;i<=n;i++){
+count=0;
+for(int j=1;j<=i;j++)
+{
+if(i%j==0)
+{
+count++;
+}
+}
+if(count==2){
+System.out.println(i);
+}
+}
+}
+}
+===================================================================================================
+89.write a java program to print sum of prime.
+import java.util.Scanner;
+
+public class SumOfPrime {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Find sum of prime numbers upto : ");
+        int upto = scanner.nextInt();
+       int sum = 0,count;
+      for(int number=1;number<=upto;number++)
+        {
+          count=0;
+          for(int i=2;i<=number/2;i++)
+            {
+              if(number%i==0)
+              {
+                count++;
+                break;
+              }
+            }
+          if(count==0&&number!=1)
+          {
+            sum=sum+number;
+          }
+        }
+      System.out.println("the sum of prime numbers"+sum);
+    }
+}
+ =================================================================================
+90.write a java program to print factioral of given number.
+import java.util.*;
+public class Factorial
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter the number: ");
+        int num=sc.nextInt();
+        int i=1,fact=1;
+        for(i=1;i<=num;i++)
+        {
+            fact=fact*i;
+            
+            
+        }
+        System.out.println("factorial of the number:"+fact);
+    }
+}
+=====================================================================
+91.write a java program to print number of digit in a given number.
+  import java.util.*;
+class NumberOfDigit{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
+int n=sc.nextInt();
+int count=0;
+while(n>0)
+{
+count++;
+n=n/10;
+}
+System.out.println(count);
+}
+}
+=======================================================================================
+92.write a java program to print sum of digit in a given number.
+import java.util.Scanner;  
+public class SumOfDigit  
+{  
+public static void main(String args[])  
+{  
+int number, digit, sum = 0;  
+Scanner sc = new Scanner(System.in);  
+System.out.print("Enter the number: ");  
+number = sc.nextInt();  
+while(number > 0)  
+{      
+digit = number % 10;   
+sum = sum + digit;    
+number = number / 10;  
+}  
+System.out.println("Sum of Digits: "+sum);  
+}  
+}
+===============================================================================================
+93.write a jva program to print product of digit in a given number.
+import java.util.Scanner;
+public class DigitProduct {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+         int num, rem;
+        int product = 1;
+        System.out.print("Enter any number : ");
+        num = scanner.nextInt();
+        
+        while(num != 0) {
+           
+            rem=num%10;
+            product=product*rem;
+            num= num / 10;
+        }
+             System.out.println(product);
+    }
+
+}
+=======================================================================
+94.write a java program to print sum of first and last digit.
+  import java.util.*;
+class SumOfFirst{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
+int n=sc.nextInt();
+int rem,prod=1;
+int last_digit=n%10;
+while(n>=9)
+{
+n=n/10;
+}
+int first_number=n;
+int sum=first_number+last_digit;
+System.out.println(sum);
+}
+}
+========================================================================
+95.write a java program to print given number is armstrong number or not.
+  import java.util.*;
+class Armstrong{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number");
+int n=sc.nextInt();
+int count=0,rem;
+int sum=0;
+int temp=n;
+while(temp>0){
+temp=temp/10;
+count++;
+}
+temp=n;
+while(temp>0){
+rem=temp%10;
+sum=sum+(int)(Math.pow(rem,count));
+temp=temp/10;
+}
+if(n==sum){
+System.out.println("Amstrong number");
+}
+else{
+System.out.println("Not Amstrong number");
+}
+
+}
+}
+=====================================================================
+96.write a java program to print 1 to n armstrong numbers.
+import java.util.*;
+public class ArmstrongAll
+{
+    public static void main(String[] args) 
+     {
+        int n, count = 0, a, b, c, sum = 0;
+       Scanner sc=new Scanner(System.in);
+        System.out.print("Armstrong numbers from 1 to n:");
+      int  num=sc.nextInt();
+        for(int i = 1; i <= num; i++)
+        {
+            n = i;
+            while(n > 0)
+            {
+                b = n % 10;
+                sum = sum + (b * b * b);
+                n = n / 10;
+            }
+            if(sum == i)
+            {
+                System.out.print(i+" ");
+            }
+            sum = 0;
+        }
+    }
+}
+==========================================================================================
+97.write a java program to print given number is perfect number or not.
+import java.util.Scanner;
+public class Perfect
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter number");
+        int n=sc.nextInt();
+        int sum=0;
+        for(int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                sum=sum+i;
+            }
+        }
+        if(sum==n){
+            System.out.println(n+" is a perfect number");
+        }
+        else{
+            System.out.println(n+" not a perfect number");
+        }
+    }
+}
+=================================================================================================
+98.write a java program to print sum of perfect number.
+import java.util.*;
+public class PerfectNumbers
+{
+public static void main(String arg[])
+{
+int sum=0;
+  Scanner sc=new Scanner(System.in);
+  System.out.println("enter value:");
+  int n=sc.nextInt();
+for(int i=0;i<n;i++)
+{
+sum=0;
+for(int j=1;j<i;j++)
+{
+if(i%j==0)
+{
+sum=sum+j;
+}
+}
+if(sum==i && sum!=0)
+System.out.print(i);
+}
+}
+}
+===============================================================================================
+99.write a java program to print given number is strong number or not.
+import java.util.*;
+public class Strong
+{
+public static void main(String[] args) {
+int n,i;
+int fact,lastdig;
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number : " );
+n = sc.nextInt();
+int total = 0;
+int temp = n;
+while(n != 0)
+{
+i = 1;
+fact= 1;
+lastdig = n % 10;
+while(i <= lastdig)
+{
+fact = fact * i;
+i++;
+}
+total = total + fact;
+n = n / 10;
+}
+if(total == temp)
+System.out.println(temp+ " is a strong number");
+else
+System.out.println(temp+ " is not a strong number");
+}
+}
+================================================================================================
+100.write a a java program to print 1 to n strong numbers.
+import java.util.Scanner;
+public class StrongAll{
+
+ public static void main(String[] args) {
+  Scanner cs=new Scanner(System.in);
+  int firstnumber, endnumber, i;
+        System.out.println("Enter the First number:");
+        firstnumber=cs.nextInt();
+        System.out.println("Enter the Last number:");
+        endnumber=cs.nextInt();
+    System.out.println("Strong numbers between "+firstnumber+" and "+endnumber+" are:");
+    for(i=firstnumber;i<=endnumber;i++)
+      {
+       int num2=i;
+       int num1=i;
+       int sum=0;
+       int fact=1;
+      while(num1!=0)
+      {   fact=1;
+          int rem=num1%10;
+          num1=num1/10;
+          for(int j=1;j<=rem;j++)
+           fact=fact*j;
+          sum=sum+fact;
+      }
+      if(sum==num2)
+       System.out.println(i+" ");
+      }
+ }
+}
+=======================================================================================================
+101.write a java program to print using nested for loop stars.
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)//1<=5
+       {
+         for(int j=0;j<5;j++){//0<=5
+           System.out.print("*" +" ");    
+         }
+         System.out.println();
+       }
+    
+    }
+  }
+========================================================================================================
+102.write a java to print 
+                                     0
+                                     1 1
+                                     2 2 2
+                                     3 3 3 3
+                                     4 4 4 4 4
+import java.util.*;
+class Sample1{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)
+       {
+         for(int j=0;j<=i;j++){
+           System.out.print(i);    
+         }
+         System.out.println();
+       }
+    
+    }
+  }
+===============================================================================================================
+103.write a java program to print given pattern 
+                 *
+                 * *
+                 * * * 
+                 * * * *
+                 * * * * *
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)
+       {
+         for(int j=0;j<=i;j++){
+           System.out.print("*" +" ");    
+         }
+         System.out.println();
+       }
+    
+    }
+  }
+===================================================================
+104.write a java program to print given pattern
+                 * * * * *
+                 * * * *
+                 * * *
+                 * *
+                 *
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)
+       {
+         for(int j=i;j<5;j++){
+           System.out.print("*" +" ");    
+         }
+         System.out.println();
+       }
+    
+    }
+  }
+=========================================================================
+105.write a java program to print given pattern
+                           * * * * 
+                             * * *
+                               * *
+                                 *
+   
+mport java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)
+       {
+         for(int j=0;j<=i;j++){
+           System.out.print("  ");
+         }
+         for(int j=i;j<5;j++){
+           System.out.print("* ");
+         }
+
+         
+        System.out.println();
+       }
+    
+    }
+  }
+=====================================================================================
+106.write a java progrm to print given pattern
+                                  *
+                                * * 
+                              * * *
+                            * * * *  
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+     int a=1;
+     for(int i=0;i<5;i++)
+       {
+         for(int j=i;j<5;j++){
+           System.out.print(" ");
+         }
+         for(int j=0;j<=i;j++){
+           System.out.print("*");
+         }
+
+         
+        System.out.println();
+       }
+    
+    }
+  }
+=================================================================================
+107.write a java program to print given pattern
+                     *
+                    * *
+                   * * *
+                  * * * * 
+    import java.util.*;
+class Sample{​​
+public static void main(String args[])
+{​​ 
+for(int i=0;i<5;i++)
+{​​
+for(int j=5-i;j>1;j--){​​
+System.out.print(" ");
+}​​
+for(int j=0;j<=i;j++){​​
+System.out.print("* ");
+}​​
+
+System.out.println();
+}​​
+}​​
+}​​
+​============================================================================================
+108.write a java program to print given pattern
+                a
+               b c
+              d e f
+             g h i j
+            k l m n o
+import java.util.*;
+class Sample{
+  public static void main(String args[])
+  { 
+   char ch='a';
+     
+     for(int i=0;i<5;i++)
+       {
+         for(int j=5-i;j>1;j--){
+           System.out.print(" ");
+         }
+         for(int j=0;j<=i;j++){
+           System.out.print(ch++ +" ");
+         }
+
+         
+        System.out.println();
+       }
+    
+    }
+  }
+    
+====================================================================================================
+109.write a java program to print array elements.
+class Sample2{
+  public static void main(String args[])
+  { 
+   int a[]={23,45,56,78,89};
+
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+   
+    
+    }
+  }
+===============================================================================================================
+110.write a java program to print scanner class array elements.
+import java.util.*;
+class Sample3{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter size");
+    int size=sc.nextInt();
+   int a[]=new int[size];
+    System.out.println("enter array values");
+    for(int i=0;i<a.length;i++){//i=2
+      a[i]=sc.nextInt();
+    }
+System.out.println("Array elements");
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+   
+    
+    }
+  }
+========================================================================================================
+111.write a java program to print string data in array.
+import java.util.*;
+class Sample4{
+  public static void main(String args[])
+  { 
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter size");
+    int size=sc.nextInt();
+   String a[]=new String[size];
+    System.out.println("enter array values");
+    for(int i=0;i<a.length;i++){//i=2
+      a[i]=sc.next();
+    }
+System.out.println("Array elements");
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+   
+    
+    }
+  }
+===========================================================================================================
+112.write a java program to print given array even numbers.
+import java.util.*;
+class Sample5{
+  public static void main(String args[])
+  { 
+    int a[]=new int[5];
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter array elements");
+    for(int i=0;i<a.length;i++){
+      a[i]=sc.nextInt();
+    }
+    for(int i=0;i<a.length;i++){
+      if(a[i]%2==0){
+         System.out.println("even number"+a[i]);
+      }
+     
+    }
+    
+    }
+  }
+=======================================================================================================
+113.write a java program  using array print armstrong number.
+import java.util.*;
+class Armstrong3{​​
+public static void main(String args[])
+{​​ 
+int a[]={​​324,121,454,456,678,153,371}​​;
+int temp,rem,sum=0;
+System.out.println("amstrong numbers");
+for(int i=0;i<a.length;i++){​​
+temp=a[i];
+sum=0;
+while(temp>0){​​
+rem=temp%10;
+sum=sum+(rem*rem*rem)
+temp=temp/10;
+}​​
+if(a[i]==sum){​​
+System.out.println(a[i]);
+}​​
+}​​
+}​​
+}​​
+================================================================================================
+114.write a java program using array print palindrome number.
+import java.util.*;
+class Palindrome1{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678};
+    int temp,rem,rev=0;
+      System.out.println("plaindrome numbers");
+    for(int i=0;i<a.length;i++){
+        temp=a[i];
+        rev=0;
+        while(temp>0){
+          rem=temp%10;
+          rev=rev*10+rem;
+          temp=temp/10;  
+        }
+     
+      if(a[i]==rev){
+        System.out.println(a[i]);
+      }
+      
+    }
+    
+    }
+  }
+=============================================================================================
+115.write a java program to copy one array to another array.
+class CopyArray 
+{    
+public static void main(String[] args) 
+    {
+        int [] arr1 = new int [] {1, 2, 3, 4, 5};
+        int arr2[] = new int[arr1.length];    
+        for (int i = 0; i < arr1.length; i++) 
+        {     
+            arr2[i] = arr1[i];     
+        }      
+        System.out.println("Elements of original array: ");    
+        for (int i = 0; i < arr1.length; i++) 
+        {     
+           System.out.print(arr1[i] + " ");    
+        }     
+        System.out.println(); 
+        System.out.println("Elements of new array: ");    
+        for (int i = 0; i < arr2.length; i++) 
+        {     
+           System.out.print(arr2[i] + " ");    
+        }     
+    }    
+}    
+==================================================================================================================
+116.Write a JAVA program to count total number of even and odd elements in an array.
+public class CountNegative{
+	
+	public static void main(String[] args) {
+		int i,count = 0;
+		int[] count_NegArr = {-20,56,87,-85,63,32,95,-102};
+		
+for(i=0;i<count_NegArr.length;i++)//0<8,1<8,2<8,3<8,4<8,5<8,6<8,7<8,8<8
+		{
+			if(count_NegArr[i] < 0) {//-20<0,56<0,87<0,-85<0,63<0,32<0,95<0,-102<0
+				count++;//-20,-85,-102 count=3
+			}
+			
+		}
+		System.out.println("The Total Number of Negative Array Items = " + count);
+	}
+}
+========================================================================================================================
+117.write a java program to delete paticular data.
+import java.util.Scanner;
+public class Delete
+{
+    public static void main(String[] args) 
+    {
+        int n, x, flag=1, loc=0;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter no. of elements you want in array:");
+        n = s.nextInt();
+        int a[] = new int[n];
+        System.out.println("Enter all the elements:");
+        for (int i = 0; i < n; i++) 
+        {
+            a[i] = s.nextInt();
+        }
+        System.out.print("Enter the element you want to delete:");
+        x = s.nextInt();
+        for (int i = 0; i < n; i++) 
+        {
+            if(a[i] == x)
+            {
+                flag =1;
+                loc = i;
+                break;
+            }
+            else
+            {
+                flag = 0;
+            }
+        }
+        if(flag == 1)
+        {
+            for(int i = loc+1; i < n; i++)
+            {
+                a[i-1] = a[i];
+            }
+            System.out.print("After Deleting:");
+            for (int i = 0; i < n-2; i++) 
+            {
+                System.out.print(a[i]+",");
+            }
+            System.out.print(a[n-2]);
+        }
+        else
+        {
+            System.out.println("Element not found");
+        }
+    }
+}
+=================================================================================================================
+118.write a java program duplicate elements.
+class Duplicate{
+  public static void main(String args[])
+  { 
+    int a[]={10,5,20,7,10,5};
+  int count=0;
+    System.out.println("Duplicates elements");
+    for(int i=0;i<a.length;i++){
+      count=0;
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+          count++;
+        }
+        
+      }
+      if(count>0){
+        System.out.println(a[i]);
+      }
+    }
+   
+    }
+   
+ }
+==============================================================================================================
+119.Write a JAVA program to count total number of even and odd elements in an array.
+
+class EvenOdd
+{  
+public static void main(String args[])
+{  
+int a[]={1,2,5,6,3,8,9};  
+  int evencount=0,oddcount=0;
+for(int i=0;i<a.length;i++){
+  if(a[i]%2==0){
+    evencount++;
+  }
+  else{
+    oddcount++;
+  }
+}
+  System.out.println("total number of even number count"+evencount);
+   System.out.println("total number of odd number count "+oddcount);
+}
+}
+=============================================================================================================
+120.write a java program to print frequency of each number.
+class Frequency1{
+  public static void main(String args[])
+  { 
+    int a[]={1,2,1,3,2,1,4};
+    int fr[]=new int[a.length];
+    int visited=-1;
+  int count=0;
+    System.out.println("frequency elements");
+    for(int i=0;i<a.length;i++){
+      count=1;
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]==a[j]){
+          count++;
+          fr[j]=visited;
+        }
+       }
+      if(fr[i]!=visited){
+        fr[i]=count;
+      }
+    }
+  System.out.println(" elements |frequency ");
+    for(int i=0;i<a.length;i++){
+      if(fr[i]!=visited){
+      System.out.println(a[i]+"       "+fr[i]);
+      }
+    }
+   
+    }
+    }
+==========================================================================================================
+121.find the data correct or not.
+import java.util.*;
+class Fruit{
+  public static void main(String args[]){
+    Scanner s=new Scanner(System.in);
+    String a[]={"Apple","Banana","Orange","Watermelon"};
+    System.out.println("Enter the Fruit name");
+    String name=s.next();
+    int found=0;
+    for(int i=0;i<a.length;i++){
+      if(a[i].equals(name)){
+        found++;
+        break;
+      }
+    
+    }
+    if(found==1){
+      System.out.println("item found");
+    }
+    else{
+      System.out.println("Item not found");
+    }
+  }
+}
+===============================================================================================================
+122.write a java program to print minimum element using index position.
+class Index{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371,6,28};
+    int min=a[0],index=0;
+    for(int i=0;i<a.length;i++){
+      if(a[i]<min){
+        min=a[i];
+        index=i;
+      }
+    }
+  System.out.println("Min element is "+min+" found at "+ (index)+"th index");
+    }
+  }
+==================================================================================================================
+123.write a java program to print insert new element at specific position.
+import java.util.*;
+class Insertion{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("enter size");
+int n=sc.nextInt();
+int a[]=new int[n+1];
+System.out.println("Enter array elements");
+for(int i=0;i<n;i++){
+a[i]=sc.nextInt();
+}
+System.out.println("enter index position");
+int index_pos=sc.nextInt();
+System.out.println("enter new element");
+int ele=sc.nextInt();
+for(int i=n-1;i>=index_pos;i--){
+a[i+1]=a[i];
+}
+a[index_pos]=ele;
+System.out.println("after insertion");
+for(int i=0;i<a.length;i++){
+System.out.println(a[i]);
+}
+}
+}
+=================================================================================================================
+124.write a java program to given matrix less than 5 elements usisg m*n matrix.
+import java.util.*;
+class Lessthan{
+  public static void main(String args[]){
+    Scanner s=new Scanner(System.in);
+    System.out.println("enter rows size");
+    int row=s.nextInt();
+    System.out.println("enter columns size");
+    int col=s.nextInt();
+    int a[][]=new int[row][col];
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        a[i][j]=s.nextInt();
+      }
+    }
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        if(a[i][j]<=5){
+       System.out.print(a[i][j]+" ");
+      }
+      }
+      System.out.println();
+    }
+    }
+    }
+=========================================================================================================
+125.matrix without scanner.
+class Matrix{
+  public static void main(String args[]){
+    int a[][]={{12,34,45},{34,56,78},{78,9,10}};
+    for(int i=0;i<3;i++){
+      for(int j=0;j<3;j++){
+       System.out.print(a[i][j]+" ");
+      }
+      System.out.println();
+    }
+    }
+    }
+==========================================================================================================
+126.matrix with scanner.
+import java.util.*;
+class Matrix1{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter row size");
+    int row=sc.nextInt();
+    System.out.println("enter col size");
+    int col=sc.nextInt();
+    int a[][]=new int[row][col];
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        a[i][j]=sc.nextInt();
+      }
+    }
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+       System.out.print(a[i][j]+" ");
+      }
+      System.out.println();
+    }
+    }
+    }
+================================================================================================================
+127.matrix calaculate even numbers.
+import java.util.*;
+class MatrixEven{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter row size");
+    int row=sc.nextInt();
+    System.out.println("enter col size");
+    int col=sc.nextInt();
+    int a[][]=new int[row][col];
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        a[i][j]=sc.nextInt();
+      }
+    }
+    for(int i=0;i<row;i++){
+      for(int j=0;j<col;j++){
+        if(a[i][j]%2==0){
+       System.out.print(a[i][j]+" ");
+        }
+      }
+      System.out.println();
+    }
+    }
+    }
+======================================================================================================
+128.maximum number using index
+class Maximum{
+  public static void main(String args[])
+  { 
+    int a[]={52,24,85,75,36,95,48,125,63};
+    int max=a[0],index=0;
+    
+    for(int i=0;i<a.length;i++){
+      if(a[i]>max){
+        max=a[i];
+        index=i;
+      }
+    }
+      
+      System.out.println("Max element is "+max+" found at "+ (index)+"th index");
+    }
+  }
+=========================================================================================================
+129.minimum number using index position.
+class Minimum{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371,6,28};
+    int min=a[0],index=0;
+    
+    for(int i=0;i<a.length;i++){
+      if(a[i]<min){
+        min=a[i];
+        index=i;
+      }
+    }
+      
+      System.out.println("Min element is "+min+" found at "+ (index)+"th index");
+    }
+  }
+=========================================================================================================================
+130.perfect number using array.
+class Perfect3{
+  public static void main(String args[])
+  { 
+    int a[]={324,121,454,456,678,153,371,6,28};
+    int temp,rem,sum=0;
+      System.out.println("perfect numbers");
+    for(int i=0;i<a.length;i++){
+      sum=0;
+      for(int j=1;j<=a[i]/2;j++){
+        if(a[i]%j==0){
+          sum=sum+j;
+        }
+      }
+      if(sum==a[i]){
+        System.out.println(a[i]);
+      }
+       
+      
+    }
+    
+    }
+  }
+==================================================================================================
+131.prime number array.
+class PrimeNumber2 {
+  public static void main(String args[])
+  {
+    int a[]={2,5,9,11,13,15};
+    int count;
+    System.out.println("prime numbers are");
+    for(int i=0;i<a.length;i++){
+      count=0;
+      for(int j=1;j<=a[i];j++){
+      if(a[i]%j==0){
+        count++;
+      }
+    }
+    if(count==2){
+      System.out.println(a[i]);
+    }
+  }
+}
+}
+=============================================================================================================
+132.sorting elements in an array.
+class Sorting{
+  public static void main(String args[])
+  { 
+    int a[]={10,5,20,7};
+    int temp;
+    for(int i=0;i<a.length;i++){
+      for(int j=i+1;j<a.length;j++){
+        if(a[i]>a[j]){
+          temp=a[i];
+          a[i]=a[j];
+          a[j]=temp;
+          
+        }
+      }
+    }
+    System.out.println("after sorting");
+    for(int i=0;i<a.length;i++){
+      System.out.println(a[i]);
+    }
+    }
+  }
+========================================================================================================
+133.count unique number using array.
+public class Unique{
+    
+    public static void main(String args[]){
+        int count=1;
+      int arr[]={23,45,67,67,90,23,23,50};
+      
+      for(int i=0;i<arr.length;i++){
+          
+          for(int j=i+1;j<arr.length;j++){
+              
+              if(arr[i]==arr[j]){
+                  count++;
+                  arr[j]=0;
+              }
+          }
+          if(arr[i]!=0 && count==1){
+          System.out.println(arr[i]+" : "+count);
+          }
+          count=1;
+      }
+      }
+}
+==============================================================================================================
+134.unique number using array.
+public class Unique1 {
+   public static void main (String[] args) {
+      int arr[] = {1,5,9,1,4,9,6,9,7,15,19};
+      //int n = arr.length;
+      int i, j;
+      System.out.println("The array is: ");
+      for (i = 0; i <arr.length; ++i)
+      System.out.println(arr[i] + " ");
+      System.out.print("The distinct elements of above array are: ");
+      for (i = 0; i <arr.length; i++) {
+         for (j = 0; j < i; j++)
+         if (arr[i] == arr[j])
+            break;
+         if (i == j)
+         System.out.print( arr[i] + " ");
+      }
+   }
+}
+======================================================================================================================
+135.write a java program add sum of two matrixs using thrid matrix.
+import java.util.Scanner;
+class AdditionMatrix
+{
+public static void main(String args[])
+{
+int row,col,i,j;
+Scanner in=new Scanner(System.in);
+System.out.println("Enter the number of rows");
+row = in.nextInt();
+System.out.println("Enter the number columns");
+col = in.nextInt();
+int mat1[][] = new int[row][col];
+int mat2[][] = new int[row][col];
+int res[][] = new int[row][col];
+System.out.println("Enter the elements of matrix1");
+for(i=0;i<row;i++)
+{ 
+for(j=0;j<col;j++)
+mat1[i][j]=in.nextInt();
+
+System.out.println();
+}
+System.out.println("Enter the elements of matrix2");
+
+for(i=0;i<row;i++)
+{
+for(j=0;j<col;j++ )
+mat2[i][j]=in.nextInt();
+System.out.println();
+}
+for(i=0;i<row;i++)
+for (j=0;j<col;j++ )
+res[i][j] = mat1[i][j] + mat2[i][j] ; 
+
+System.out.println("Sum of matrices:-");
+
+for(i=0;i<row;i++)
+{ 
+for(j=0;j<col;j++ )
+System.out.print(res[i][j]+" ");
+
+System.out.println();
+}
+
+}
+}
+=========================================================================================
+136.area of rectangle using static method without return type.
+class AreaRect1 {
+  
+    static void area()
+      {
+      int l,b,area;
+      l=10;
+      b=15;
+      area=l*b;
+      System.out.println(area);
+      }
+  public static void main(String args[]){
+   area();
+  }
+}
+=========================================================================================
+137.write a java program using static method using return type.
+class AreaRect2 {
+  
+    static int area()
+      {
+      int l,b,area;
+      l=10;
+      b=15;
+      area=l*b;
+      return area;
+      }
+  public static void main(String args[]){
+    int result=area();
+    System.out.println(result);
+  }
+}
+=====================================================================================
+138.//without return type and with parameters
+class AreaRect3 {
+  
+    static void area(int l, int b)
+      {
+     int area;
+      area=l*b;
+      System.out.println(area);
+      }
+  public static void main(String args[]){
+    area(10,15);
+   
+  }
+}
+==========================================================================================
+139.with return type and with paramaters.
+class AreaRect4 {
+  static int area(int l, int b)
+  {
+    int area;
+    area=l*b;
+    return area;
+  }
+  public static void main(String args[])
+  {
+  int result=area(10,15);
+    System.out.println(result);
+  }
+}
+===============================================================================================
+140./*Book
+
+name
+price
+author
+
+author
+
+name
+age
+place*/
+
+class Author{
+  String name;
+  int age;
+  String place;
+  
+  Author(String name,int age,String place){
+    this.name=name;
+    this.age=age;
+    this.place=place;
+  }
+}
+
+class Book{
+  String name;
+  int price;
+  Author author;
+  Book(String name,int price,Author author){
+    this.name=name;
+    this.price=price;
+    this.author=author;
+  }
+}
+class Book1{
+  public static void main(String args[]){
+    Author author1=new Author("Ravindranath tagore",95,"Nellore");
+  
+    Book book=new Book("Getaanjali",250,author1);
+     
+    System.out.println(book.name+" "+book.price);
+    System.out.println("========book Information==========");
+    System.out.println(author1.name+" "+author1.age+" "+author1.place);
+    
+    
+    
+    
+  }
+}
+===============================================================================================
+141.write a java program to print employee id,name,department,salary and phone number main class as employee
+derived from another class.
+class Employee1{
+  int eid;
+  String ename;
+  String edept;
+  int esalary;
+  long ephoneno;
+ void grossSalary(int bsalary){
+    if(bsalary<10000){
+      int gs=2000+2000+bsalary;
+      System.out.println(gs);
+    }
+    else{
+      int gs=1000+1000+bsalary;
+      System.out.println(gs);
+    }
+  }
+
+  void insurence(int bsalary){
+    if(bsalary<10000){
+      System.out.println("Not eligible");
+    }
+    else{
+      System.out.println("eligible");
+    }
+  }
+}
+
+class Employee{
+  public static void main(String args[]){
+    Employee1 e1=new Employee1();
+    e1.eid=12;
+    e1.ename="lalitha";
+    e1.edept="Accounts";
+    e1.esalary=25000;
+    e1.ephoneno=2345677L;
+        System.out.println(e1.eid+" "+e1.ename+" "+e1.edept+" "+e1.esalary+" "+e1.ephoneno);
+    e1.grossSalary(e1.esalary);
+    e1.insurence(e1.esalary);
+
+  }   
+  }
+=====================================================================================================
+142./*Create a class to print the area of a square and a rectangle. The class has two methods with the same name but 
+different number of parameters. The method for printing area of rectangle has two parameters which are length and 
+breadth respetively while the other method for printing area of square has one parameter which is side of square.*/
+class Area{
+  void print(int l,int b){
+    System.out.println("area of rectangle is:"+(l*b));
+  }
+  void print(int s){
+    System.out.println("area of square is:"+(s*s));
+  }
+}
+class Home{
+  public static void main(String args[]){
+    Area ar=new Area();
+    ar.print(10,50);
+    ar.print(8);
+  }
+}
+=========================================================================================================
+143./*Create a class named 'PrintNumber' to print various numbers of different datatypes by creating different methods with
+ the same name 'printn' having a parameter for each datatype.*/
+class PrintNumber{
+  void printn(int a, int b){
+    System.out.println(a+ " "+b);
+  }
+  void printn(int a, int b,int c){
+    System.out.println(a+ " "+b+" "+c);
+  }
+  void printn(float a, int b){
+    System.out.println(a+ " "+b);
+  }
+  void printn(float a, float b){
+    System.out.println(a+ " "+b);
+  }
+}
+class Home1{
+  public static void main(String args[]){
+    PrintNumber pn=new PrintNumber();
+    pn.printn(12,20);
+    pn.printn(15,52,87);
+    pn.printn(12.8f,15);
+    pn.printn(85.2f,25.2f);
+  }
+}
+==================================================================================
+144./*Create a class to print an integer and a character with two methods having the same name but different sequence of 
+the integer and the character parameters.
+For example, if the parameters of the first method are of the form (int n, char c), then that of the second method will be of the form (char c, int n).*/
+class Para{
+  void form(int n,char c){
+    System.out.println(n+" "+c);
+  }
+  void form(char c,int n){
+    System.out.println(c+" "+n);
+  }
+}
+class Home2{
+  public static void main(String args[]){
+    Para pa=new Para();
+    pa.form(5,'d');
+    pa.form('b',8);
+  }
+}
+===============================================================================================
+145./*Create a class 'Student' with three data members which are name, age and address. The constructor of the class 
+assigns default values name as "unknown", age as '0' and address as "not available". It has two members with the same 
+name 'setInfo'. First method has two parameters for name and age and assigns the same whereas the second method takes
+ has three parameters which are assigned to name, age and address respectively. Print the name, age and address of 
+10 students.
+Hint - Use array of objects*/
+import java.util.*;
+class Student{
+  String name;
+  int age;
+  String address;
+  // constructor
+  Student(){
+    this.name="unknown";
+    this.age=0;
+    this.address="not aviable";
+  }
+  void setInfo(int age,String name){
+    this.age=age;
+    this.name=name;
+  }
+  void setInfo(String name,int age,String address){
+    this.name=name;
+    this.age=age;
+    this.address=address;
+  }
+}
+class Home3{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    Student s[]=new Student[10];
+    for(int i=0;i<10;i++){
+    s[i]=new Student();
+      s[i].setInfo(sc.next(),sc.nextInt(),sc.next());
+    }
+    for(int i=0;i<10;i++){
+      System.out.println(s[i].name+" "+s[i].age+" "+s[i].address);
+    }
+  }
+}
+======================================================================================
+146./*Create a class 'Degree' having a method 'getDegree' that prints "I got a degree". It has two subclasses namely 'Undergraduate' and 'Postgraduate' each having a method with the same name that prints "I am an Undergraduate" and "I am a Postgraduate" respectively. Call the method by creating an object of each of the three classes.*/
+class Degree{
+  void getDegree(){
+    System.out.println("I got a degree");
+  }
+}
+class Undergraduate extends Degree{
+  void getDegree(){
+    System.out.println("I am an Undergraduate");
+  }
+}
+class Postgraduate extends Degree{
+  void getDegree(){
+    System.out.println("I got a Postgraduate");
+  }
+}
+class Home4{
+  public static void main(String args[]){
+    Degree de=new Degree();
+    de.getDegree();
+    Undergraduate ug=new Undergraduate();
+    ug.getDegree();
+     Postgraduate pg=new Postgraduate();
+    pg.getDegree();
+  }
+}
+==============================================================================================
+147./*A boy has his money deposited $1000, $1500 and $2000 in banks-Bank A, Bank B and Bank C respectively. We have to print the money deposited by him in a particular bank.
+Create a class 'Bank' with a method 'getBalance' which returns 0. Make its three subclasses named 'BankA', 'BankB' and 'BankC' with a method with the same name 'getBalance' which returns the amount deposited in that particular bank. Call the method 'getBalance' by the object of each of the three banks.*/
+class Bank{
+  int getBalance(){
+    return 0;
+  }
+}
+class BankA extends Bank{
+  int getBalance(int balance){
+   return balance;
+  }
+}
+class BankB extends Bank{
+  int getBalance(int balance){
+    return balance;
+  }
+}
+class BankC extends Bank{
+  int getBalance(int balance){
+    return balance;
+  }
+}
+class Home5{
+  public static void main(String args[]){
+    BankA ba1=new BankA();
+    BankB ba2=new BankB();
+    BankC ba3=new BankC();
+    System.out.println("$"+ba1.getBalance(1000));
+    System.out.println("$"+ba2.getBalance(1500));
+    System.out.println("$"+ba3.getBalance(2000));
+  }
+}
+===========================================================================================
+148.write a java program to print using inheritance concept.
+class Vehicle{
+  void run(){
+    System.out.println("Vehicle is running");
+  }
+}
+class Bike extends Vehicle{
+  void run(){
+    System.out.println("Bike is running");
+  }
+}
+
+class Home6{
+  public static void main(String args[]){
+    Bike b=new Bike();
+    b.run();
+  }
+}
+=================================================================================================
+149.create bank class print same methods in two classes method name is rateofinterest print those two bank classes.
+class Bank{
+  void rateOfInterest(){
+    System.out.println("Interest is 80ps");
+  }
+}
+class SBI extends Bank{
+   void rateOfInterest(){
+    System.out.println("Interest is 60ps");
+  }
+}
+class HDFC extends Bank{
+   void rateOfInterest(){
+    System.out.println("Interest is 70ps");
+  }
+}
+class Home7{
+  public static void main(String args[]){
+    HDFC hdfc=new HDFC();
+    hdfc.rateOfInterest();
+  }
+}
+=======================================================================================================
+150.using super keyword.
+class Bank{
+  int IFSCcode=123444;
+  void rateOfInterest(){
+    System.out.println("Interest is 80ps");
+  }
+}
+class SBI extends Bank{
+  int IFSCcode=567890;
+   void rateOfInterest(){
+    System.out.println("Interest is 60ps");
+  }
+}
+class HDFC extends Bank{
+  int IFSCcode=9876;
+   void rateOfInterest(){
+    System.out.println("Interest is 70ps");
+     super.rateOfInterest();
+  }
+   void printIFSC(){
+       System.out.println("Parent IFSC:"+super.IFSCcode);
+       System.out.println("childclass IFSC:"+IFSCcode);
+     }
+}
+class Home8{
+  public static void main(String args[]){
+    HDFC hdfc=new HDFC();
+    System.out.println(hdfc.IFSCcode);
+    hdfc.rateOfInterest();
+    hdfc.printIFSC();
+  }
+}
+================================================================================
+151.write a program using super keyword in student class variable are id,name using paramterized constrcutor
+and one more class employee class have extra variable salary using super and paramterized constructor.
+class Student{
+  int id;
+  String name;
+  Student(int id,String name){
+    this.id=id;
+    this.name=name;
+  }
+  
+}
+class Emp extends Student{
+  int salary;
+  Emp(int id,String name,int salary){
+    super(id,name);
+    this.salary=salary;
+  }
+  void display(){
+    System.out.println(id+" "+name+" "+salary);
+  }
+}
+class Home9{
+  public static void main(String args[]){
+    
+  Emp e=new Emp(15,"lokesh",50000);
+    e.display();
+    
+  }
+}
+================================================================================================
+152./*Suppose we want to store the information about students and teachers in a school. The information to be stored includes the name, age and marks of students and the name, age and salary of the teachers.
+Here, name and age have to be stored for both students and teachers and we also know that both students and teachers are persons.
+Therefore, we can make Person as a class with name and age as attributes, and can make Student and Teacher as the subclasses of Person. In the Student class, we can define an additional marks attribute and in the Teacher class an additional salary attribute.
+Now let’s implement this in Java using super wherever necessary.*/
+class Person{
+  String name;
+  int age;
+  Person(String name,int age){
+    this.name=name;
+    this.age=age;
+  }
+}
+class Students extends  Person{
+  int marks;
+  Students(String name,int age,int marks){
+    super(name,age);
+    this.marks=marks;
+  }
+  void display(){
+    System.out.println(name+" "+age+" "+marks);
+  }
+}
+class Teachers extends Person{
+  int salary;
+  Teachers(String name,int age,int salary){
+    super(name,age);
+    this.salary=salary;
+  }
+  void display(){
+    System.out.println(name+" "+age+" "+salary);
+  }
+}
+class Home10{
+  public static void main(String args[]){
+    Teachers te=new Teachers("lalitha",28,50000);
+    Students st=new Students("lokesh",22,595);
+    te.display();
+    st.display();
+  }
+}
+======================================================================================
+153./*Create a class named 'Member' having the following members:
+Data members
+1 - Name
+2 - Age
+3 - Phone number
+4 - Address
+5 - Salary
+It also has a method named 'printSalary' which prints the salary of the members.
+Two classes 'Employee' and 'Manager' inherits the 'Member' class. The 'Employee' and 'Manager' classes have data members 'specialization' and 'department' respectively. Now, assign name, age, phone number, address and salary to an employee and a manager by making an object of both of these classes and print the same.*/
+class Member{
+  String name;
+  int age;
+  long phone_number;
+  String address;
+  int salary;
+  void printSalary(){
+    System.out.println("print slary:"+salary);
+  }
+  }
+class Employe extends Member{
+  String specialization;
+  String department;
+  
+}
+class Manager extends Member{
+  String specialization;
+  String department;
+}
+class Member1{
+  public static void main(String args[]){
+    Employe emp=new Employe();
+    emp.name="Lokesh";
+    emp.age=23;
+    emp.phone_number=7013840036l;
+    emp.address="chittela(v),tiruvuru(m),NTR(dist),Andhra Pradesh";
+    emp.salary=25000;
+    emp.specialization="B.tech";
+    emp.department="Developer";
+   
+    System.out.println(emp.name+" "+emp.age+" "+emp.phone_number+" "+emp.address+" "+emp.salary+" "+emp.specialization+" "+emp.department);
+     emp.printSalary();
+    Manager ma=new Manager();
+    ma.name="Lalitha";
+    ma.age=28;
+    ma.phone_number=8524713654l;
+    ma.address="main road,anjaneya street,tiruvuru,andhra pradesh";
+    ma.salary=40000;
+    ma.specialization="M.tech";
+    ma.department="Senior developer";
+     System.out.println(ma.name+""+ma.age+" "+ma.phone_number+" "+ma.address+" "+ma.salary+" "+ma.specialization+" "+ma.department);
+    ma.printSalary();
+    
+  }
+}
+==========================================================================================================
+154./*Create a class named 'Rectangle' with two data members 'length' and 'breadth' and two methods to print the area and perimeter of the rectangle respectively. Its constructor having parameters for length and breadth is used to initialize length and breadth of the rectangle. Let class 'Square' inherit the 'Rectangle' class Print the area and perimeter of a rectangle and a square.*/
+class Rectangle{
+  int length;
+  int breadth;
+  Rectangle(int l,int b){
+    length=l;
+    breadth=b;
+  }
+  void area(){
+    int area=length*breadth;
+    System.out.println("area of rectangle:"+area);
+    
+  }
+  void perimeter(){
+    int peri=(2*length)+(2*breadth);
+    System.out.println("perimeter of rectangle:"+peri);
+  }
+}
+class Square extends Rectangle{
+  Square(int s){
+    super(s,s);
+  }
+}
+class Member2{
+  public static void main(String args[]){
+    Rectangle r=new Rectangle(10,20);
+    Square s=new Square(10);
+    r.area();
+    r.perimeter();
+    s.area();
+    s.perimeter();
+  }
+}
+================================================================================================
+155./*Create a class named 'Shape' with a method to print "This is This is shape". Then create two other classes named 
+'Rectangle', 'Circle' inheriting the Shape class, both having a method to print "This is rectangular shape" and "This
+ is circular shape" respectively. Create a subclass 'Square' of 'Rectangle' having a method to print "Square is a 
+rectangle". Now call the method of 'Shape' and 'Rectangle' class by the object of 'Square' class.*/
+class Shape{
+  void print_Shape(){
+    System.out.println("This is This is shape");
+  }
+}
+class Rectangle3 extends Shape{
+  void print_Rectangle(){
+   System.out.println("This is rectangluar shape");
+}
+}
+class Circle extends Shape{
+  void print_Circle(){
+  System.out.println("This is circular shape");
+}
+}
+class Square1 extends Rectangle3{
+  void print(){
+    System.out.println("Square is a rectangle");
+}
+}
+class Member3{
+  public static void main(String args[]){
+    Square1 s=new Square1();
+    s.print_Shape();
+    s.print_Rectangle();
+    s.print();
+  }
+}
+=================================================================================================
+156.mulitplication class print different parameter pass in the same method name.
+class Multi{
+  void sum(int c,int d){
+    System.out.println("sum is:"+(c*d));
+  }
+  void sum(int c,int d,int e){
+    System.out.println("sum is:"+(c*d*e));
+  }
+  void sum(int c,float d){
+    System.out.println("sum is:"+(c*d));
+  }
+  void sum(float c,float d){
+    System.out.println("sum is:"+(c*d));
+  }
+  void sum(float c,int d){
+    System.out.println("sum is:"+(c*d));
+  }
+  void sum(float c,int d,int e){
+    System.out.println("sum is:"+(c*d*e));
+  }
+}
+class Multiplication4{
+  public static void main(String args[]){
+    Multi mu=new Multi();
+    mu.sum(10,5);
+    mu.sum(10,7,8);
+    mu.sum(15,18.2f);
+    mu.sum(13.2f,15.8f);
+    mu.sum(10.5f,8);
+    mu.sum(16.5f,8,5);
+  }
+}
+==================================================================================================
+157.write a program to print how many players and name of the game we can take game as one class and 
+read that data two different game class using super keyword. 
+class Game{
+  int players;
+  String name;
+  Game(int pla,String na){
+    players=pla;
+    name=na;
+  }
+     void display(){
+    System.out.println("number of players"+players);
+    System.out.println("name of the game"+name);
+  }
+  }
+class Kabaddi extends Game{
+  Kabaddi(int pla1,String na1){
+    super(pla1,na1);
+  }
+ }
+  class Cricket extends Game{
+    Cricket(int pla2,String na2){
+      super(pla2,na2);
+    }
+}
+class Operation{
+  public static void main(String args[]){
+    Kabaddi ka=new Kabaddi(9,"Kabaddi");
+    ka.display();
+    Cricket ci=new Cricket(13,"Cricket");
+    ci.display();
+  }
+}
+================================================================================================
+158.without return type and without paramters perefect number program.
+ class Perfect5
+{
+ static void sum1(){  
+      int n=6;
+        int sum=0;
+        for(int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                sum=sum+i;
+            }
+        }
+        if(sum==n){
+            System.out.println(n+" is a perfect number");
+        }
+        else{
+            System.out.println(n+" not a perfect number");
+        }
+    }
+  public static void main(String args[]){
+    sum1();
+  }
+}
+
+=================================================================================================
+159.with return type and without parameters on perfect program.
+class Perfect6{
+static int perfectNumber(){
+    int n=6,sum=0,count=0;
+    for(int i=1;i<=n/2;i++){
+      if(n%i==0){
+           sum=sum+i;
+      }
+    }
+      if(sum==n){
+      return 1;
+      }
+      else{
+        return 0;
+      }
+  }
+  
+  public static void main(String args[]){
+    //call the method
+     int result=perfectNumber();
+    if(result==1){
+      System.out.println("perfect number");
+    }
+    else{
+      System.out.println("not perfect");
+    }
+    }
+    }
+ 
+
+=======================================================================================================
+160.without return type and with paramters using perfect program.
+ class Perfect7
+{
+ static void sum1(int n){  
+        int sum=0;
+        for(int i=1;i<=n/2;i++)
+        {
+            if(n%i==0)
+            {
+                sum=sum+i;
+            }
+        }
+        if(sum==n){
+            System.out.println(n+" is a perfect number");
+        }
+        else{
+            System.out.println(n+" not a perfect number");
+        }
+    }
+  public static void main(String args[]){
+    sum1(6);
+  }
+}
+=====================================================================================================
+161.with return type and with parameters using perfect number program.
+class Perfect8{
+static int perfectNumber(int n){
+    int sum=0,count=0;
+    for(int i=1;i<=n/2;i++){
+      if(n%i==0){
+           sum=sum+i;
+      }
+    }
+      if(sum==n){
+      return 1;
+      }
+      else{
+        return 0;
+      }
+  }
+  
+  public static void main(String args[]){
+    //call the method
+     int result=perfectNumber(6);
+    if(result==1){
+      System.out.println("perfect number");
+    }
+    else{
+      System.out.println("not perfect");
+    }
+    }
+    }
+ 
+========================================================================================================
+162.write a program student class we take 3 subject mark .using parameterized constructor print average in display method.
+class Student{
+  int eng;
+  int mat;
+  int sci;
+  Student(int eng,int mat,int sci){
+    this.eng=eng;
+    this.mat=mat;
+    this.sci=sci;
+  }
+  void display(){
+    System.out.println((eng+mat+sci)/3);
+  }
+}
+class Sample1{
+  public static void main(String args[]){
+    Student stu1=new Student(85,87,90);
+    stu1.display();
+    Student stu2=new Student(80,95,98);
+    stu2.display();
+    Student stu3=new Student(91,88,75);
+    stu3.display();
+  }
+}
+===================================================================================================
+163.string equals method.
+class StringExample{
+  public static void main(String args[]){
+    String s1="java";
+    String s2="java";
+    String s3=new String("java");
+    String s4=new String("java");
+    System.out.println(s1);
+    System.out.println(s2);
+    System.out.println(s4);
+    System.out.println(s3);
+    if(s1==s3){
+      System.out.println("equals");
+    }
+    else{
+      System.out.println("not equals");
+    }
+  }
+}
+========================================================================================================
+164./*lalitha
+  for
+  length of the string
+s[i]=='a'||s[i]=='e'||*/
+import java.util.*;
+class StringExample1{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a string:");
+    String str=sc.next();
+    for(int i=0;i<str.length();i++){
+      if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'){
+        System.out.println("vowels are:"+str.charAt(i));
+      }
+    }
+  }
+}
+=====================================================================================================
+165.given string how many alphbets and number are there.
+import java.util.*;
+class StringExample2{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter a string:");
+    String str=sc.next();
+    for(int i=0;i<str.length();i++){
+      if((str.charAt(i)>='a')&&(str.charAt(i)<='z')){
+        System.out.print(str.charAt(i));
+      }
+    }
+    System.out.println();
+    for(int i=0;i<str.length();i++){
+      if((str.charAt(i)>='0')&&(str.charAt(i)<='9')){
+        System.out.print(str.charAt(i));
+      }
+    }
+  }
+}
+=======================================================================================================
+166.write a java program two string are equal are not.
+class StringExample3 {
+  public static void main(String args[]) {
+   String str="hi mam you are wow";
+    String rev=" ";
+    String words[]=str.split(" ");
+    
+    
+    for(int i=0;i<words.length;i++){
+     
+    
+    for(int j=words[i].length()-1;j>=0;j--){
+      rev=rev+words[i].charAt(j);
+    rev=" ";
+    }
+    if(words[i].equals(rev)){
+      System.out.println(rev);
+    }
+    }
+  }
+}
+========================================================================================================
+167.comparing two string using compare method.
+class StringExample3{
+  public static void main(String args[]){
+    String s1="Hello";
+    String s2="Hello";
+    String s3="hallo";
+    System.out.println(s1.compareTo(s2));
+    System.out.println(s2.compareTo(s3));
+  }
+}
+========================================================================================================
+168.String contains.
+class StringExample3{
+  public static void main(String args[]){
+    String str="hii learners this is lokesh";
+    System.out.println(str.endsWith("w"));
+    System.out.println(str.contains("learn"));
+    System.out.println(str.contains("this is"));//this==thid
+  }
+  }
+========================================================================================================
+169.compare two string equal or not.
+class StringExample3{
+  public static void main(String args[]){
+    String s1="lokesh";
+    String s2="Lokesh";
+    String s3=new String("lokesh");
+    System.out.println(s1.equals(s2));
+    System.out.println(s2.equals(s3));
+  }
+}
+========================================================================================================
+170. string getBytes:
+class StringExample3{
+  public static void main(String args[]){
+    String s1="@lokesh";
+    String s2="bitlabs&";
+    byte[] arr=s2.getBytes();
+    for(int i=0;i<arr.length;i++){
+      System.out.println(arr[i]);
+    }
+  }
+}
+======================================================================================================
+171.string indexof:
+class StringExample4{
+  public static void main(String args[]){
+    String s1="hi learners this is lokesh";
+    int index1=s1.indexOf("this");
+    int index2=s1.indexOf("is");
+    System.out.println(index1+" "+index2);
+    int index3=s1.indexOf("lokesh",2);
+    System.out.println(index3);
+  }
+}
+===============================================================================================
+172.string isempty:
+class StringExample5{
+  public static void main(String args[]){
+    String s1="hi learners this is lokesh";
+    String s2="";
+    System.out.println(s1.isEmpty());
+    System.out.println(s2.isEmpty());
+  }
+}
+=================================================================================================
+173.string join
+class StringExample6{
+  public static void main(String args[]){
+    String str=String.join("/","hi","learners","bitlabs");
+    System.out.println(str);
+  }
+}
+======================================================================================================
+174.lastindexOf
+class StringExample7{
+  public static void main(String args[]){
+    String s1="this is lokesh";
+    int index1=s1.lastIndexOf('o');
+    int index2=s1.lastIndexOf('s',9);
+    System.out.println(index1);
+    System.out.println(index2);
+  }
+}
+=======================================================================================================
+175.replace string.
+class StringExample12{
+  public static void main(String args[]){
+    String s1="this is lokesh from bitlabs";
+    String replaceString=s1.replace('i','x');
+    System.out.println(replaceString);
+  }
+}
+==================================================================================================
+176.startsWith.
+class StringExample13{
+  public static void main(String args[]){
+    String s1="hi friends happy learning";
+    System.out.println(s1.startsWith("hi"));
+    System.out.println(s1.startsWith("happy"));
+    System.out.println(s1.startsWith("hi friends"));
+    
+  }
+}
+===============================================================================================
+177.substring.
+class StringExample14{
+  public static void main(String args[]){
+    String s1="hi friends happy learning";
+    System.out.println(s1.substring(5,15));
+    String substr1=s1.substring(6);
+    System.out.println(substr1);
+  }
+}
+===============================================================================================
+178.toCharArray.
+class StringExample15{
+  public static void main(String args[]){
+    String s1="hello friends";
+    char ch[]=s1.toCharArray();
+    int len=ch.length;
+    System.out.println("char array length:"+len);
+    System.out.println("char array elements:");
+    for(int i=0;i<len;i++){
+      System.out.println(ch[i]);
+    }
+    
+  }
+}
+==================================================================================================
+179.lowercase
+class StringExample16{
+  public static void main(String args[]){
+    String s1="hi frIEND HAPPY learning";
+    String s2=s1.toLowerCase();
+    System.out.println(s2);
+  }
+}
+===================================================================================================
+180.touppercase
+class StringExample17{
+  public static void main(String args[]){
+    String s1="hi frIEND HAPPY learning";
+    String s2=s1.toUpperCase();
+    System.out.println(s2);
+  }
+}
+==================================================================================================
+181.trim() 
+class StringExample18{
+  public static void main(String args[]){
+    String s1=" hi learners  ";
+    System.out.println(s1+"welcome");
+    System.out.println(s1.trim()+" welcome");
+
+  }
+}
+==================================================================================================
+182.wordlength
+class StringExample19 {
+  public static void main(String args[]) {
+   String s1="hi lalitha how are you";
+    String words[]=s1.split(" ");
+    System.out.println(words.length);
+    for(int i=0;i<words.length;i++){
+      System.out.println(words[i]+":"+words[i].length());
+    }
+  }
+}
+====================================================================================================
+183.palindrome string.
+class StringExample20 {
+  public static void main(String args[]) {
+   String s1="madam";
+    String rev="";
+    for(int i=s1.length()-1;i>=0;i--){
+     rev=rev+s1.charAt(i);
+    }
+    if(s1.equals(rev)){
+      System.out.println("Palindrome");
+    }
+    else{
+      System.out.println("Not palindrome");
+    }
+ 
+  }
+}
+=================================================================================================
+184.student class we have to take id,name,average and age using seeter and geeter methods and parameterized constructor.
+class StudentData
+{
+   private int stuID;
+   private String stuName;
+   private int stuAge;
+  private float stuavg;
+   StudentData()
+   {
+       //Default constructor
+       stuID = 5;
+       stuName = "New Student";
+       stuAge = 18;
+       stuavg=82;
+   }
+   StudentData(int num1, String str, int num2, float avg)
+   {
+       //Parameterized constructor
+       stuID = num1;
+       stuName = str;
+       stuAge = num2;
+       stuavg=avg;
+   }
+   //Getter and setter methods
+   public int getStuID() {
+       return stuID;
+   }
+   public void setStuID(int stuID) {
+       this.stuID = stuID;
+   }
+   public String getStuName() {
+       return stuName;
+   }
+   public void setStuName(String stuName) {
+       this.stuName = stuName;
+   }
+   public int getStuAge() {
+       return stuAge;
+   }
+   public void setStuAge(int stuAge) {
+       this.stuAge = stuAge;
+   }
+  public float getStuavg()
+  {
+    return stuavg;
+  }
+  public void setStuavg(float stuavg)
+  {
+    this.stuavg=stuavg;
+}
+}
+public class Student
+{
+public static void main(String args[])
+{
+//This object creation would call the default constructor
+StudentData myobj = new StudentData();
+System.out.println("Student Name is: "+myobj.getStuName());
+System.out.println("Student Age is: "+myobj.getStuAge());
+System.out.println("Student ID is: "+myobj.getStuID());
+System.out.println("Student average is: "+myobj.getStuavg());
+/*This object creation would call the parameterized
+* constructor StudentData(int, String, int)*/
+StudentData myobj2 = new StudentData(555, "Chaitanya", 25,85);
+System.out.println("Student Name is: "+myobj2.getStuName());
+System.out.println("Student Age is: "+myobj2.getStuAge());
+System.out.println("Student ID is: "+myobj2.getStuID());
+System.out.println("Student average is:"+myobj2.getStuavg());
+  }
+}
+=======================================================================================================
+185.student class rollno,name,grade,branch and mobilenumber and print some method.
+class Student1{
+  int rollno;
+  String name;
+  char grade;
+  String branch;
+  long mobileno;
+void read(){
+  System.out.println(name+" reading");
+}
+void write(){
+  System.out.println(name+" Writing"); 
+}
+  void listen(){
+    System.out.println(name+" Listening");
+  }
+}
+class Student{
+  public static void main(String args[]){
+    Student1 std1=new Student1();
+    std1.rollno=897;
+    std1.name="lokesh";
+    std1.grade='B';
+    std1.branch="CSE";
+    std1.mobileno=7013840036l;
+    std1.read();
+    std1.write();
+    std1.listen();
+    System.out.println(std1.rollno+" "+std1.name+" "+std1.grade+" "+std1.branch+" "+std1.mobileno);
+
+    Student1 std2=new Student1();
+    std2.rollno=234;
+    std2.name="sindhu";
+    std2.grade='B';
+    std2.branch="IT";
+    std2.mobileno=4569871235l;
+    std2.read();
+    std2.write();
+    std2.listen();
+    System.out.println(std2.rollno+" "+std2.name+" "+std2.grade+" "+std2.branch+" "+std2.mobileno);
+    Student1 std3=new Student1();
+    std3.rollno=456;
+    std3.name="abhi";
+    std3.grade='B';
+    std3.branch="MECH";
+    std3.mobileno=6598741230l;
+    std3.read();
+    std3.write();
+    std3.listen();
+    System.out.println(std3.rollno+" "+std3.name+" "+std3.grade+" "+std3.branch+" "+std3.mobileno);
+  }   
+  }
+==================================================================================================
+186.// swap of two number;
+ //  without return type and without parameters.
+class Swapping2 {
+  static void swap(){
+  int a=10,b=11;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  System.out.println(a+" "+b);
+  }
+  public static void main(String args[]) {
+    swap();
+  }
+}
+===============================================================================================
+187.   with return type and without parameters.
+class Swapping3 {
+  static int swap(){
+  int a=10,b=11;
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  return a;
+  return b;
+  }
+  public static void main(String args[]) {
+    int result=swap();
+    System.out.println(a+" "+b);
+  }
+}
+===============================================================================================
+188.with return type and without parameters.
+class Swapping4 {
+  static void swap(int a, int b){
+  a=a+b;
+  b=a-b;
+  a=a-b;
+ System.out.println(a+" "+b);
+  }
+  public static void main(String args[]) {
+    swap(10,20);
+    
+  }
+}
+==================================================================================================
+189. with return type and without parameters.
+class Swapping5 {
+  static int swap(int a, int b){
+  
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  return a;
+  return b;
+  }
+  public static void main(String args[]) {
+    int result=swap(10,20);
+    System.out.println(a+" "+b);
+  }
+}
+===================================================================================================
+190.vehicle class derive from bus class we written millage,gare and speed using display method.
+class Bus{
+  int millage;
+  int gare;
+  int speed;
+  Bus(int millage,int gare,int speed){
+    this.millage=millage;
+    this.gare=gare;
+    this.speed=speed;
+  }
+   void display(){
+    System.out.println(millage+" "+gare+" "+speed);
+  }
+}
+  
+  class Vehicle{
+  public static void main(String args[]){
+     
+      Bus bu=new Bus(15,6,100);
+      bu.display();
+     Bus bu1=new Bus(20,5,70);
+      bu1.display();
+    Bus bu2=new Bus(25,7,60);
+      bu2.display();
+    
+    }
+  }
+==================================================================================================
+191./*write a java program to print
+  product details with:product id,product brand and product quantity and methods are ordereligiblity.
+  order with:order id, order current day, order current date and order city*/
+import java.util.*;
+class Product {
+  String pname;
+  int pid;
+  String pbrand;
+  int pquantity; 
+  void orderEligiblity(){
+    if(pquantity<10){
+      System.out.println("order cannot be taken");
+    }
+    else{
+      System.out.println("order taken");
+    }
+  }
+  }
+class Order{
+  int oid;
+  //String oday;
+  String city;
+  void print(){
+  java.util.Date date = new java.util.Date(); 
+  System.out.println(date);
+  }
+}
+class Work{
+  public static void main(String args[]){
+    Product pro=new Product();
+    pro.pname="mobile";
+    pro.pid=2567;
+    pro.pbrand="realme 9 pro 5G";
+    pro.pquantity=15;
+    Order ord=new Order();
+    ord.oid=1236588;
+    ord.city="Tiruvuru";
+    ord.print();
+    //ord.date;
+    System.out.println(pro.pname+" "+pro.pid+" "+pro.pbrand+" "+pro.pquantity);
+    
+    System.out.println(ord.oid+" "+ord.city);
+    
+    
+  }
+}
+==================================================================================================
+192.student class take the inputs from input method and display method.
+import java.util.*;
+class Student3{
+  int roll;
+  String name;
+  int marks;
+  char grade;
+  String branch;
+  Scanner sc=new Scanner(System.in);
+  void input(){
+    //int i=0;
+    System.out.println("enter student roll number");
+    roll=sc.nextInt();
+    System.out.println("enter student name");
+    name=sc.next();
+    System.out.println("enter student marks");
+    marks=sc.nextInt();
+    System.out.println("enter grade");
+    grade=sc.next().charAt(0);
+    System.out.println("enter branch");
+    branch=sc.next();
+  }
+  void display(){
+    System.out.println("roll number"+roll);
+     System.out.println("name"+name);
+     System.out.println("marks"+marks);
+     System.out.println("grade"+grade);
+     System.out.println("branch"+branch);
+  }
+}
+class Work1{
+  public static void main(String args[]){
+    Student3 stu[]=new Student3[5];
+    for(int i=0;i<5;i++){
+      stu[i]=new Student3();
+      stu[i].input();
+    }
+    for(int i=0;i<5;i++){
+      stu[i].display();
+    }
+  }
+}
+====================================================================================================
+193.write a program student class id,name,marks,grade and branch using paramterized constrctor.
+class Student4{
+  int sid;
+  String sname;
+  int smarks;
+  char sgrade;
+  String sbranch;
+  Student4(){
+    sid=123;
+    sname="loki";
+    smarks=480;
+    sgrade='B';
+    sbranch="CSE";
+  } 
+  Student4(int id,String name,int marks,char grade,String branch){
+    sid=id;
+    sname=name;
+    smarks=marks;
+    sgrade=grade;
+    sbranch=branch;
+  }
+  Student4(int sid,int smarks){
+    this.sid=sid;
+    this.smarks=smarks;
+  }
+  }
+
+
+class Work2{
+  public static void main(String args[]){
+    Student4 s=new Student4();
+    System.out.println(s.sid);
+    System.out.println(s.sname);
+    System.out.println(s.smarks);
+    System.out.println(s.sgrade);
+    System.out.println(s.sbranch);
+    Student4 s1=new Student4(2558,"sai",480,'B',"ECE");
+    System.out.println(s1.sid+" "+s1.sname+" "+s1.smarks+" "+s1.sgrade+" "+s1.sbranch);
+    Student4 s2=new Student4(465,550);
+    System.out.println(s2.sid+" "+s2.smarks);
+    
+    
+  }
+       
+  }   
+=================================================================================================
+194.animal class take some attaributes and extends one dog  we can print that.(single inheritance)
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread);  
+  }
+}
+
+class Work3{
+  public static void main(String args[]){
+    Dog puppy=new Dog();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.bark();
+  }
+}
+=======================================================================================================
+195.multi-level inheritance.
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class Cat extends Dog{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor); 
+  }
+  
+}
+
+class Work4{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+}
+==================================================================================================
+196.hubrid inheritance
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class Cat extends Animal{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor);  
+  }
+  
+}
+
+class Work5{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+}
+===============================================================================================
+197.hybrid inheritance.
+class Animal{
+  String color;
+  int no_legs;
+  String bread;
+  void eat(){
+    System.out.println("eating");
+  }  
+  void run(){
+    System.out.println("running");
+  }
+}
+class Dog extends Animal{
+  void bark(){
+    System.out.println("Bow Bow......");
+  }
+  
+}
+class BabyDog extends Dog{
+  void weep(){
+    System.out.println("Weeping.....");
+  }
+  
+}
+class Cat extends Animal{
+  String eyecolor;
+  void meow(){
+    System.out.println("Meow meow......");
+  }
+
+  void display(){
+    System.out.println(color +" "+no_legs+" "+bread +" "+ eyecolor); 
+  }
+  
+}
+
+class Work6{
+  public static void main(String args[]){
+    Cat puppy=new Cat();
+    puppy.color="black";
+    puppy.no_legs=4;
+    puppy.bread="jarman shepherd";
+    puppy.eyecolor="blue";
+    puppy.display();
+    puppy.eat();
+    puppy.run();
+    puppy.meow();
+  }
+}
+===============================================================================================
+198./*Create a class named 'Rectangle' with two data members 'length' and 'breadth' and two methods to print the area and 
+perimeter of the rectangle respectively. Its constructor having parameters for length and breadth is used to initialize
+ length and breadth of the rectangle. Let class 'Square' inherit the 'Rectangle' class Print the area and perimeter of 
+a rectangle and a square.
+Now repeat the above example to print the area of 10 squares.
+Hint-Use array of objects*/
+import java.util.*;
+class Rectangle{
+  int length;
+  int breadth;
+  Rectangle(int l,int b){//(s,s)
+    length=l;//s
+    breadth=b;//s
+  }
+  void area(){
+    int area=length*breadth;//s*s
+    System.out.println("area of rectangle:"+area);
+    
+  }
+  void perimeter(){
+    int peri=(2*length)+(2*breadth);//(2*s)+(2*s)
+    System.out.println("perimeter of rectangle:"+peri);
+  }
+}
+class Square extends Rectangle{
+  Square(int s){
+    super(s,s);
+  }
+}
+class Work7{
+  public static void main(String args[]){
+    int side;
+    Rectangle r=new Rectangle(10,20);
+    Square s[]=new Square[10];
+    Scanner sc=new Scanner(System.in);
+    for(int i=0;i<10;i++){
+      System.out.println("enter side"+(i+1)+" details");
+      side=sc.nextInt();
+      s[i]=new Square(side);
+       s[i].area();
+    s[i].perimeter();
+    }
+    r.area();
+    r.perimeter();
+    
+  }
+}
+==================================================================================================
+199.Has a relationship 
+class Address{
+  String state;
+  String city;
+  String streetname;
+  int drno;
+  Address(String state,String city,String streetname,int drno){
+    this.state=state;
+    this.city=city;
+    this.streetname=streetname;
+    this.drno=drno;
+  }
+}
+class Employee{
+  int eid;
+  String ename;
+  String edept;
+  int esalary;
+  Address address;
+
+  Employee(int eid,String ename,String edept,int esalary,Address address){
+    this.eid=eid;
+    this.ename=ename;
+    this.edept=edept;
+    this.esalary=esalary;
+    this.address=address;
+  }
+  void display(){
+    System.out.println(eid+" "+ename+" "+edept+" "+esalary);
+    System.out.println(address.state+" "+address.city+" "+address.streetname+" "+address.drno);
+}
+}
+class Work8{
+  public static void main(String args[]){
+    Address address1=new Address("AP","Tiruvuru","ayyappa colony",55);
+    Address address2=new Address("AP","Mylavaram","anjaneya Colony",123);
+
+    Employee emp1=new Employee(536,"lokesh","developers",25000,address1);
+    Employee emp2=new Employee(541,"sai","IT",20000,address2);
+    emp1.display();
+    emp2.display();
+    
+   
+  }
+}
+===================================================================================================
+200.take two classes product and lineitem product attributes id,name and description using parameterized constrcutor
+and lineitem attribute id,quantity and product using has a relationship. 
+class Product{
+  int id;
+  String name;
+  String description;
+  Product(int id,String name,String description){
+    this.id=id;
+    this.name=name;
+    this.description=description;
+  }
+}
+
+class LineItem{
+  int id;
+  int quantity;
+  Product product;
+  LineItem(int id,int quantity,Product product){
+    this.id=id;
+    this.quantity=quantity;
+    this.product=product;
+  }
+}
+class Work9{
+  public static void main(String args[]){
+    Product product1=new Product(1,"Mobile","Realme 9 pro 5G red color");
+    Product product2=new Product(2,"Mobilecase","Realme 9 pro 5G white color");
+
+    LineItem list1=new LineItem(1,4,product1);
+     LineItem list2=new LineItem(2,5,product2);
+
+    System.out.println(list1.id+" "+list1.quantity);
+    System.out.println("****Product1 Information****");
+    System.out.println(product1.id+" "+product1.name+" "+product1.description);
+    System.out.println(list2.id+" "+list2.quantity);
+     System.out.println("****Product2 Information****");
+    System.out.println(product2.id+" "+product2.name+" "+product2.description);
+      }
+}
+==================================================================================================
+201./*Football player
+
+name
+football
+
+Football
+type
+size
+weight*/
+class Football{
+  String type;
+  int size;
+  int weight;
+  
+  Football(String type,int size,int weight){
+    this.type=type;
+    this.size=size;
+    this.weight=weight;
+  }
+}
+
+class Football_Player{
+  String name;
+  Football football;
+  Football_Player(String name,Football football){
+    this.name=name;
+    this.football=football;
+}
+}
+class Work10{
+  public static void main(String args[]){
+    Football football1=new Football("cosco",15,20);
+  
+    Football_Player player1=new Football_Player("Ronalado",football1);
+     
+    System.out.println(player1.name);
+    System.out.println("========player Information==========");
+    System.out.println(football1.type+" "+football1.size+" "+football1.weight);
+    
+     }
+}
+==================================================================================================
+202.take country class read the city class,state class we print the data.
+import java.util.*;
+class City{
+  String Cityname;
+  
+  City(String Cityname){
+    this.Cityname=Cityname;
+   // this.address=address;
+  }
+}
+class State{
+  String Sname;
+  City city[]=new City[5];
+  State(String Sname,City city[]){
+    this.Sname=Sname;
+    this.city=city;
+  }
+}
+class Country{
+  String Cname;
+  State state;
+  Country(String Cname,State state){
+    this.Cname=Cname;
+    this.state=state;
+  }
+}
+
+class Work11{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+   
+   City city[]=new City[5];
+    System.out.println("enter cities");
+    for(int i=0;i<5;i++){
+      city[i]=new City(sc.next());
+    }
+     City city1[]=new City[5];
+    System.out.println("enter cities");
+    for(int i=0;i<5;i++){
+      city1[i]=new City(sc.next());
+    }
+    State state=new State("AP",city);
+    State state1=new State("telgana",city1);
+    
+    
+
+    Country country=new Country("India",state);
+    
+    Country country1=new Country("India",state1);
+     System.out.println("Country is : "+country.Cname);
+    System.out.println("State is : "+state.Sname);
+    System.out.println("Ciites are");
+    for(int i=0;i<5;i++){
+       System.out.println(city[i].Cityname);
+    }
+    System.out.println("State is : "+state1.Sname);
+   
+    for(int i=0;i<5;i++){
+       System.out.println(city1[i].Cityname);
+    }
+  }
+}
+====================================================================================================
+203.student class attributes rollno and name using seeter and geeter methods.
+class Student{
+  private int rollno;
+  private String name;
+
+ 
+
+
+  //setters are used to assign the value
+  void setRollno(int rollno){
+    this.rollno=rollno;
+  }
+  void setName(String name){
+    this.name=name;
+  }
+
+ 
+
+  //getters are used to print the data
+  int getRollno(){
+    return rollno;
+  }
+  String getName(){
+    return name;
+  }
+}
+class Work12{
+  public static void main(String args[]){
+    Student st=new Student();
+    st.setRollno(536);
+    st.setName("lokesh");
+    System.out.println(st.getRollno()+" "+st.getName());
+  }
+}
+=================================================================================================
+204.take employee class attributes are id,name and salary using setter and getter method.
+class Employee{
+  private int id;
+  private String name;
+  private int salary;
+//setters are used to assign the value
+  void setId(int id){
+    this.id=id;
+  }
+  void setName(String name){
+    this.name=name;
+  }
+  void setSalary(int salary){
+    this.salary=salary;
+  }
+  
+//getters are used to print the data
+  int getId(){
+    return id;
+  }
+  String getName(){
+    return name;
+  }
+  int getSalary(){
+    return salary;
+  }
+}
+class Work13{
+  public static void main(String args[]){
+    Employee emp=new Employee();
+    emp.setId(536);
+    emp.setName("lokesh");
+    emp.setSalary(35000);
+    System.out.println(emp.getId()+" "+emp.getName()+" "+emp.getSalary());
+  }
+}
+================================================================================================
+205./*Create  a    class    Account    class     with     balance     as   data   member.    Create     twoconstructors  (no argument, and two arguments) and methods to withdraw and depositbalance*/
+
+class Account{
+  int balance;
+ int pin;
+Account(){
+System.out.println("default");
+}
+Account(int balance,int pin){
+  this.balance=balance;
+  this.pin=pin;
+}
+int Withdraw(int withd){
+  System.out.println("withdraw amount is divisible by 100");
+  return balance-withd;
+}
+int deposit(int balan){
+  System.out.println("deposit only 100,200,500 notes");
+  return balance+balan;
+}
+}
+
+class Account1{
+  public static void main(String args[]){
+    Account ac=new Account(10000,3690);
+    System.out.println(ac.balance);
+    System.out.println(ac.pin);
+    System.out.println(ac.Withdraw(100));
+    System.out.println(ac.deposit(200));
+  }
+}
+==================================================================================================
+206./*A class named Arithmetic with a method named add that takes  integers as parameters and returns an integer denoting their sum.
+A class named Adder that inherits from a superclass named Arithmetic.
+Your classes should not be be .
+
+Input Format
+
+You are not responsible for reading any input from stdin; a locked code stub will test your submission by calling the add method on an Adder object and passing it  integer parameters.
+
+Output Format
+
+You are not responsible for printing anything to stdout. Your add method must return the sum of its parameters.
+
+Sample Output
+
+The main method in the Solution class above should print the following:
+
+My superclass is: Arithmetic
+42 13 20*/
+class Arithmetic{
+  int add(int x,int y){
+    return x+y;
+  }
+}
+class Adder extends Arithmetic{
+ 
+}
+class Arithmetic1{
+  public static void main(String args[]){
+    Adder ad=new Adder();
+    System.out.println("my superclass is:"+ad.getClass().getSuperclass().getName());
+    System.out.print(ad.add(10,32)+" "+ad.add(10,3)+" "+ad.add(10,10));
+  }
+}
+==================================================================================================
+207./*ATM Operation
+Enter pin
+1234
+4 digit pin
+if it is valid display  bellow options
+1.Withdraw
+2.Deposit
+3.check balance
+5.exit
+select option
+1
+if pin is not valid
+display message "Invalid pin"
+Do you want try again
+y
+Enter pin
+1234
+if it is valid display  bellow options
+1.Withdraw
+2.Deposit
+3.check balance
+5.exit
+if pin is not valid
+
+Do you want try it again
+N*/
+import java.util.*;
+class Atm{
+  public static void main(String args[]){
+    Scanner s=new Scanner(System.in);
+    char ch;
+    do{
+      System.out.println("Enter the pin");
+    int pin=s.nextInt();
+    int count=0;
+    int amount = 25000;
+   while(pin>0){
+      count++;
+      pin=pin/10;
+    }
+    if(count==4){
+      System.out.println("1.Withdraw\n2.Deposit\n3.Check balance\n4.Exit ");
+      System.out.println("Select one option");
+      int select=s.nextInt();
+      if(select==1){
+        System.out.println("Enter the amount to withdraw");
+        int amount1 = s.nextInt();
+        amount = amount -amount1;
+        System.out.println("Your amount is "+amount1);
+      }
+      else if(select==2){
+        System.out.println("Enter the amount you wan to depoist");
+        int amount2 = s.nextInt();
+        amount = amount + amount2;
+        System.out.println("Deposit successfully "+amount2);
+      }
+      else if(select==3){
+        System.out.println("Your amount is "+amount);
+      }
+       else if(select==4){
+      System.out.println(" Thanks for visit");
+       }
+    }
+    else{
+      System.out.println("Incorrect pin");
+    }
+    
+    System.out.println("Do you want search again");
+    ch=s.next().charAt(0);
+    }
+      while(ch=='y');
+    
+  }
+}
+===================================================================================================
+208./*Create a base class Teacher and a sub class ComputerTeacher.
+     class ComputerTeacher extends the designation and collegename properties and work() method from base Teacher class,
+     you need not declare these properties and method in ComputerTeacher sub class .
+     Try accessing these properties using child class object in Main method.
+ 
+     Sample Output:
+     Designation       CollegeName
+     ComputerTeacher      IIT*/
+class Teacher{
+    String Designation="ComputerTeacher";
+    String CollegeName="IIT";
+    void work(){
+      System.out.println("Designation"+Designation);
+      System.out.println("CollegeName"+CollegeName);
+    }
+  }
+  class ComputerTeacher extends Teacher{
+    public static void main(String args[]){
+      ComputerTeacher ct=new ComputerTeacher();
+      ct.work();
+  }
+}
+==================================================================================================
+209./*Write a program to display current date-time. Hint: java.util package contains Date class.
+  
+   Sample Output:
+   Date in Indian Timezone (IST) : 18-02-21 10:20:195 IST*/
+import java.util.*;
+import java.text.SimpleDateFormat;
+class CurrentDateTime{
+  public static void main(String args[]){
+    SimpleDateFormat format=new SimpleDateFormat("dd-MM-yyyy HH:mm:ss z");
+    Date today =new Date();
+    format.setTimeZone(TimeZone.getTimeZone("IST"));
+    System.out.println(format.format(today));
+  }
+}
+=====================================================================================================
+210./*Create a class named User having private attributes
+Attributes
+Datatype
+
+name
+String
+username
+String
+password
+String
+contactDetail
+ContactDetail
+
+Create a class named ContactDetail having private attributes
+Attributes
+Datatype
+mobile
+String
+alternateMobile
+String
+landLine
+String
+email
+String
+address
+String
+
+Include getter and setters for all attributes in both the classes
+Include default and parameterized constructors for both the classes in the following order
+User(String name, ContactDetail contactDetail, String username,String password)
+ContactDetail(String mobile, String alternateMobile,String landLine, String email, String address)
+Create a driver class called Main. In the Main method, obtain input from the user and display all the details.*/
+class  ContactDetail{
+   private String mobile;
+   private String alternateMobile;
+   private String landLine;
+   private String email;
+   private String address;
+  //default constructor
+  ContactDetail(){
+    System.out.println("this is contactdetails default constructor");
+  }
+  //parameterized constructor
+   ContactDetail(String mobile,String alternateMobile,String landLine,String email,String address){
+     this.mobile=mobile;
+     this.alternateMobile=alternateMobile;
+     this.landLine=landLine;
+     this.email=email;
+     this.address=address;
+   }
+  void setMobile(String mobile){
+    this.mobile=mobile;
+  }
+  void setAlternateMobile(String alternateMobile){
+  this.alternateMobile=alternateMobile;
+  }
+  void setLandLine(String landLine){
+  this.landLine=landLine;
+  }
+  void setEmail(String email){
+  this.email=email;
+  }
+  void setAddress(String address){
+    this.address=address;
+  }
+  String getMobile(){
+    return mobile;
+  }
+  String getAlternateMobile(){
+  return alternateMobile;
+  }
+  String getLandLine(){
+  return landLine;
+  }
+  String getEmail(){
+  return email;
+  }
+  String  getAddress(){
+    return address;
+  }
+}
+
+class User{
+  
+private String name;
+
+private String username;
+
+private String password;
+ContactDetail contactDetail;
+  //default constrcutor
+  User(){
+    System.out.println("this is user default constructor");
+  }
+  //parameterized constructor
+  User(String name, ContactDetail contactDetail, String username,String password){
+    this.name=name;
+    this.contactDetail=contactDetail;
+    this.username=username;
+    this.password=password;
+  }
+void setName(String name){
+  this.name=name;
+  }
+  void setContactDetail(ContactDetail contactDetail){
+    this.contactDetail=contactDetail;
+  }
+  void setUserName(String userName){
+    this.username=username;
+  }
+  void setPassword(String password){
+    this.password=password;
+  }
+  String getName(){
+  return name;
+  }
+  String getUserName(){
+    return username;
+  }
+  String setPassword(){
+    return password;
+  }
+  
+}
+class Driver{
+  public static void main(String args[]){
+    
+ContactDetail cd=new ContactDetail("7013840036","9502022817","08673-253252","manikantadevesetti5@gmail.com","tiruvuru");
+    User ur=new User("Lokesh",cd,"Lokesh@123","Manikanta@12");
+    }
+}
+ 
+=====================================================================================================
+211.    
+/*Placement -- Ready     maybe     No
+
+   WAP to accept   Assignement_score,  Mentors_feedback_score, C20 score
+
+  --> The learner should pass in all the 3 subjects and passmarks is 50 in each.
+  -->  if the leaner got passed in 3 subjects then find out total score.
+         ---> 70% from C20, 20% from Assignment , 10 % from Mentors_feedback
+
+                  90 , 78, 98
+
+    --> Based on total score dispaly "Ready" , "maybe" ,"No"
+    
+           if Total_score >80   --> Ready
+            50-80    --> Maybe
+          below 50  --> NO
+  ---> if learners got failed in any one of the subjects, display subject name along with score.
+
+           you got failed in assignemnts and your score is 40*/
+import java.util.*;
+class Example1 {
+  public static void main(String args[]) {
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter assignment score");
+    int ass=sc.nextInt();
+    System.out.println("enter mentor feedback score");
+    int men=sc.nextInt();
+    System.out.println("enter c20 score");
+    int c20=sc.nextInt();
+    /*The learner should pass in all the 3 subjects and passmarks is 50 in each.*/
+    if(ass>=50 && men>=50 && c20>=50)
+    {
+      int total=((70/100)*c20)+((20/100)*ass)+((10/100)*men);
+      if(total>=80)
+      {
+        System.out.println("He/She is ready for placement");
+      }
+      else if(total<80)
+      {
+        System.out.println("He/She is may be not eligible for placement because He/She doubts in some topics");
+      }
+      else 
+      {
+        System.out.println("He/She not ready for placement");
+      }
+    }
+      
+    else{
+      
+      if(ass<50)
+    {
+      System.out.println("He/She get failed in assignment He/She is not eligible for placement"+ass);
+    }
+      if(c20<50 )
+    {
+      System.out.println("He/She get failed in c20 He/She is not eligible for placement"+c20);
+  }
+     if(men<50)
+    {
+      System.out.println("He/She get failed in mentor feedback  He/She is not eligible for placement"+men);
+}
+  }
+}
+}
+====================================================================================================
+212.highest frequency in string.
+import java.util.Scanner;
+
+public class Highest {
+	
+	public static void main(String[] args) {
+		String maxOccStr;
+		int i, max = 0;
+		int[] charFreq = new int[256];
+		
+		Scanner sc= new Scanner(System.in);
+
+		System.out.print("\nEnter Any Text =  ");
+		maxOccStr = sc.nextLine();
+		
+		for(i = 0; i < maxOccStr.length(); i++)
+		{
+			charFreq[maxOccStr.charAt(i)]++;
+		}
+		for(i = 0; i < 256; i++) 
+		{
+			if(charFreq[i] > charFreq[max]) {
+				max = i;
+			}
+		}
+		System.out.println("The Maximum Occurring Character = "+ max);
+		
+   System.out.format(" Character Occurs  Times "+ max,charFreq[max]);	
+	}
+}
+==================================================================================================
+213.//Write a program in Java to read a statement from console, convert it into upper case and again print on console. (Don’t use inbuilt function)
+import java.util.*;
+class Last
+  {
+    public static void main(String args[])
+    {
+      Scanner in=new Scanner(System.in);
+      //String str="i love bitlabs";
+      System.out.println("lower case string:");
+      String str=in.nextLine();
+      char stArr[]=str.toCharArray();
+      
+      for(int i=0;i<stArr.length;i++)
+        {
+          if(stArr[i] >= 'a' && stArr[i] <= 'z')
+          {
+            stArr[i]=(char)((int) stArr[i]-32);
+          }
+        }
+          System.out.print("upper case string is:");
+          for(int i=0;i<stArr.length;i++)
+            {
+              System.out.print(stArr[i]);
+            }
+        }
+    
+  }
+==============================================================================================
+214.//Create class Utility with three static methods add() the first add will take 2 arguments, add them and return result,
+import java.util.Scanner;
+class Utility
+  {
+    
+    public static int add(int a, int b)
+    {
+      int c = a+b;
+    
+      return c;
+    }
+  }
+     class NewProgram
+      {
+     
+    public static void main(String[] args)
+    {
+      int a, b, c;
+     
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter the first number");
+       a = sc.nextInt();
+      System.out.println("Enter the second number");
+       b = sc.nextInt();
+      Utility u = new Utility();
+      add(a, b);
+      System.out.println("The reults is"+c);
+     
+    }
+   
+  }
+========================================================================================================
+215.create a game class assign attributes players,name of the game take any two games extends from game class
+using super keyword.
+class Game{
+  int players;
+  String name;
+  Game(int pla,String na){
+    players=pla;
+    name=na;
+  }
+     void display(){
+    System.out.println("number of players"+players);
+    System.out.println("name of the game"+name);
+  }
+  }
+class Kabaddi extends Game{
+  Kabaddi(int pla1,String na1){
+    super(pla1,na1);
+  }
+ }
+  class Cricket extends Game{
+    Cricket(int pla2,String na2){
+      super(pla2,na2);
+    }
+}
+class Operation{
+  public static void main(String args[]){
+    Kabaddi ka=new Kabaddi(9,"Kabaddi");
+    ka.display();
+    Cricket ci=new Cricket(13,"Cricket");
+    ci.display();
+  }
+}
+======================================================================================================
+216./*Create a class named Pizza that stores information about a single pizza. It should containthe following:  
+
+1.Private  instance  variables  to  store  the  size  of  the  pizza  (either  small,  medium,or large), the  number of  cheese toppings, the number of pepperoni toppings, andthe number of ham toppings. 
+
+2.Constructor(s) that set all of the instance variables.
+3.Public methods to get and set the instance variables.
+4.A public method named calcCost( ) that returns a double that is the cost of the pizza.
+Pizza cost is determined by:
+Small: $10 + $2 per topping
+Medium: $12 + $2 per topping
+Large: $14 + $2 per topping  
+
+ 6.public method named getDescription( ) that returns a String containing the pizzasize, quantity of each topping.*/
+import java.util.*;
+class Pizza{
+  private String sizeOfPizza;
+  private int numOfCheTopp;
+  private int numOfPepTopp;
+  private int numOfHamTopp;
+  Pizza( String sizeOfPizza,int numOfCheTopp,int numOfPepTopp, int numOfHamTopp){
+    this.sizeOfPizza=sizeOfPizza;
+    this.numOfCheTopp=numOfCheTopp;
+    this.numOfPepTopp=numOfPepTopp;
+    this.numOfHamTopp=numOfHamTopp;
+  }
+  
+  void setSizeOfPizza(String sizeOfPizza){
+     this.sizeOfPizza=sizeOfPizza;
+  }
+  void setNumOfCheTopp(int numOfCheTopp){
+    this.numOfCheTopp=numOfCheTopp;
+  }
+  void setNumOfPepTopp(int numOfPepTopp){
+    this.numOfPepTopp=numOfPepTopp;
+  }
+  void setNumOfHamTopp(int numOfHamTopp){
+    this.numOfHamTopp=numOfHamTopp;
+  }
+  String getSizeOfPizza(){
+     return sizeOfPizza;
+  }
+  int getNumOfCheTopp(){
+    return numOfCheTopp;
+  }
+  int getNumOfPepTopp(){
+    return numOfPepTopp;
+  }
+  int getNumOfHamTopp(){
+    return numOfHamTopp;
+  }
+ /* Small: $10 + $2 per topping
+Medium: $12 + $2 per topping
+Large: $14 + $2 per topping */ 
+
+  double calcCost(){
+    double cost=0;
+    if(sizeOfPizza.equals("small")){
+      cost=10+(numOfCheTopp*2)+(numOfPepTopp*2)+(numOfHamTopp*2);
+      }
+     if(sizeOfPizza.equals("medium")){
+      cost=12+(numOfCheTopp*2)+(numOfPepTopp*2)+(numOfHamTopp*2);
+      }
+     if(sizeOfPizza.equals("large")){
+      cost=14+(numOfCheTopp*2)+(numOfPepTopp*2)+(numOfHamTopp*2);
+       
+      }
+    return cost;
+  }
+    String getDescription(){
+      return "size of pizza:"+sizeOfPizza+"cheese quality:"+numOfCheTopp+"pepper quality:"+numOfPepTopp+"ham quality:"+numOfHamTopp;
+class PizzaStore{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter pizze size(small/medium/large):");
+    String sizeOfPizza=sc.next();
+    System.out.println("number of cheese toppings:");
+    int numOfCheTopp=sc.nextInt();
+    System.out.println("number of pepper toppings:");
+    int numOfPepTopp=sc.nextInt();
+    System.out.println("number of ham toppings:");
+    int numOfHamTopp=sc.nextInt();
+    Pizza pz=new Pizza(sizeOfPizza,numOfCheTopp,numOfPepTopp,numOfHamTopp);
+    System.out.println(pz.getDescription());
+    return;
+  }
+}
+====================================================================================================
+217./*Valid Initial Configuration
+ 
+Nurikabe logical game (sometimes called Islands in the Stream) is a binary determination puzzle. The puzzle is played on a typically rectangular grid of cells, some of which contain numbers. You must decide for each cell if it is white or black (by clicking on them) according to the following rules:
+
+All of the black cells must be connected.
+Each numbered cell must be part of a white island of connected white cells.
+Each island must have the same number of white cells as the number it contains (including the numbered cell).
+Two islands may not be connected.
+There cannot be any 2x2 blocks of black cells.
+Unnumbered cells start out grey and cycle through white and black when clicked. Initially numbered cells are white in color.
+ 
+Problem Statement:
+Write a program to check whether the given board configuration is a valid initial configuration. Below figure is the sample valid initial configuration.
+ 
+ 
+ 
+Input Format:
+First line of the input is an integer N that gives the number of rows and columns of the grid.
+Next N lines will have the board configuration with N*N cells. Assume that the maximum number in a cell can be 10. Grey colored cells are represented by the integer 20 in the matrix representation of the input configuration.
+ 
+Output Format:
+Output "Yes" (without quotes) if the given configuration is a valid initial configuration. Print "No" otherwise (without quotes).
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+5
+20 20 1 20 3
+20 20 20 20 20
+20 20 20 20 20
+20 20 20 20 20
+6 20 3 20 20
+ 
+Sample Output 1:
+Yes
+ 
+Sample Input 2:
+5
+20 20 1 20 3
+20 20 20 20 20
+20 20 12 20 20
+20 20 20 20 20
+6 20 3 20 20
+ 
+Sample Output 2:
+No*/
+ import java.util.*;
+class Puzzle{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter size of rows and columns");
+    int n=sc.nextInt();
+    int count=0;
+    int a[][]=new int[n][n];
+    System.out.println("Enter the elements");
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        a[i][j]=sc.nextInt();
+      }
+    }
+    for(int i=0;i<n;i++){
+      for(int j=0;j<n;j++){
+        if(a[i][j]>10 && a[i][j]==20){
+          count=1;
+          break;
+        }
+      }
+    }
+    if(count==1){
+      System.out.println("YES");
+    }
+    else{
+      System.out.println("NO");
+    }
+  }
+}
+======================================================================================================
+218.take student class and take 3 subjects and print avg of those three subjects using parameterized constructor.
+class Student{
+  int eng;
+  int mat;
+  int sci;
+  Student(int eng,int mat,int sci){
+    this.eng=eng;
+    this.mat=mat;
+    this.sci=sci;
+  }
+  void display(){
+    System.out.println((eng+mat+sci)/3);
+  }
+}
+class Sample1{
+  public static void main(String args[]){
+    Student stu1=new Student(85,87,90);
+    stu1.display();
+    Student stu2=new Student(80,95,98);
+    stu2.display();
+    Student stu3=new Student(91,88,75);
+    stu3.display();
+  }
+}
+========================================================================================================
+219.take a student class on that we have some attributes id,name,age and average of student usind default constructor 
+and parameterized constructor and we can use seeter and getters method.
+class StudentData
+{
+   private int stuID;
+   private String stuName;
+   private int stuAge;
+  private float stuavg;
+   StudentData()
+   {
+       //Default constructor
+       stuID = 5;
+       stuName = "New Student";
+       stuAge = 18;
+       stuavg=82;
+   }
+   StudentData(int num1, String str, int num2, float avg)
+   {
+       //Parameterized constructor
+       stuID = num1;
+       stuName = str;
+       stuAge = num2;
+       stuavg=avg;
+   }
+   //Getter and setter methods
+   public int getStuID() {
+       return stuID;
+   }
+   public void setStuID(int stuID) {
+       this.stuID = stuID;
+   }
+   public String getStuName() {
+       return stuName;
+   }
+   public void setStuName(String stuName) {
+       this.stuName = stuName;
+   }
+   public int getStuAge() {
+       return stuAge;
+   }
+   public void setStuAge(int stuAge) {
+       this.stuAge = stuAge;
+   }
+  public float getStuavg()
+  {
+    return stuavg;
+  }
+  public void setStuavg(float stuavg)
+  {
+    this.stuavg=stuavg;
+}
+}
+public class Student
+{
+public static void main(String args[])
+{
+//This object creation would call the default constructor
+StudentData myobj = new StudentData();
+System.out.println("Student Name is: "+myobj.getStuName());
+System.out.println("Student Age is: "+myobj.getStuAge());
+System.out.println("Student ID is: "+myobj.getStuID());
+System.out.println("Student average is: "+myobj.getStuavg());
+/*This object creation would call the parameterized
+* constructor StudentData(int, String, int)*/
+StudentData myobj2 = new StudentData(555, "Chaitanya", 25,85);
+System.out.println("Student Name is: "+myobj2.getStuName());
+System.out.println("Student Age is: "+myobj2.getStuAge());
+System.out.println("Student ID is: "+myobj2.getStuID());
+System.out.println("Student average is:"+myobj2.getStuavg());
+  }
+}
+=========================================================================================================
+220./*read one string from user for example the string is admin@124 from this alphabets 5, special-1,digits-3*/
+import java.util.*;
+class Alphabet{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter string");
+    String str=sc.next();
+    int alph=0;
+    int digi=0;
+    int spl=0;
+   char str1;
+   for(int i=0;i<str.length();i++){
+      str1=str.charAt(i);
+      if((str1>='a' && str1<='z')||(str1>='A' && str1<='Z')){
+        alph++;
+         } 
+       if(str1>='0' && str1<='9'){
+    
+      digi++;
+    
+      }
+      else{
+      
+        spl++;
+        
+      }
+    }
+    System.out.println("alphabet"+alph);
+    System.out.println("digit"+digi);
+    System.out.println("special"+spl);
+  }
+}
+ 
+=====================================================================================================
+221./*Best Programmer
+ 
+Baldwin High School's Best Programmer Contest is organized today and the contest hones the students coding skills by making them solve different challenges. Based on the speed and accuracy with which the students finish the challenges, the Event coordinators will rank the participants and reward them.
+ 
+The entry level challenge was just one problem which the students has to program for. The problem reads like:
+ 
+A positive integer, n, is said to be perfect  if the sum of its proper divisors equals the number itself. (Proper divisors include 1 but not the number itself.) If this sum is less than n, the number is deficient, and if the sum is greater than n, the number is abundant.
+ 
+The Event coordinators wanted to prepare the answer key for all the problems given in the contest so as to evaluate the submissions of the participants.
+ 
+Hence create a class named NumberType with the following method.
+ 
+
+Method Name
+Description
+
+int findType(int)
+This method return 1 if the given integer is a deficient number, return 0 if it is a perfect number and return -1 if it is a abundant number.
+
+ 
+Create a driver class called Main. In the Main method, obtain input from the user in the console and display the number along with its classification by calling the findType method present in the NumberType class.
+ 
+[Note: Strictly adhere to the Object Oriented Specifications given in the problem statement.
+All class names, attribute names and method names should be the same as specified in the problem statement. Create separate classes in separate files.]]
+ 
+Input Format:
+The input consists of an integer that corresponds to the given number.
+ 
+Output Format:
+Output should display if the given number is a perfect, abundant or deficient number.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+4
+ 
+Sample Output 1:
+4 is a deficient number
+ 
+Sample Input 2:
+6
+ 
+Sample Output 2:
+6 is a perfect number
+ 
+Sample Input 3:
+12
+ 
+Sample Output 3:
+12 is an abundant number*/
+import java.util.*;
+class NumberType
+  {
+    public static int findType(int n){
+      int sum=0;
+      for(int i=1;i<=n/2;i++){
+        if(n%i==0){
+          sum=sum+i;
+        }
+        
+      }
+     
+      if (sum==n){
+        return 1;
+      }
+      else if(sum>n){
+        return 0;
+      }
+      else{
+        return -1;
+      }
+    }
+  }
+public class DataTypesExample {
+   public static void main(String args[]) {
+      Scanner sc=new Scanner(System.in);
+     int num=sc.nextInt();
+    int result= NumberType.findType(num);
+     if(result==1){
+       System.out.println("perfect number");
+     }
+     else if(result==0){
+         System.out.println("defecient number");
+     }
+     else{
+         System.out.println("abundent number");
+     }
+     
+   }
+}
+========================================================================================================
+222./*Mona set off with great zeal to the "Fun Fair 2017". There were numerous activities in the fair, though Mona liked the Candy game. Delicious candies were wrapped in colourful foiled sheets with some random numbers on each of the candies. The game coordinators then formed many groups of few candies together, such that each candy group makes an integer and hid them all around the room. The objective of the game is that the players should look for the occurrences of number four anywhere in the integers (candy groups) placed in the room.
+ 
+Mona started off with the game where there are many such integers, for each of them she should calculate the number of occurrences of the digit 4 in the decimal representation. Can you please help her in succeeding the game?
+ 
+Input Format:
+The only line of input contains a single integer from the candy group.
+ 
+Output Format:
+Output should contain the number of occurrences of the digit 4 in the respective integer from the candy groups that Mona gets.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+447474
+ 
+Sample Output 1:
+4
+ 
+Sample Input 2:
+12
+ 
+Sample Output 2:
+0*/
+import java.util.*;
+class FunFair{
+  public static void main(String args[]){
+    int count=0;
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    for(int i=0;n>0;i++){
+      if(n%10==4){
+        count++;
+      }
+      n=n/10;
+    }
+    System.out.println(count);
+  }
+}
+====================================================================================================
+223.given string minimum word.
+class Minimum{
+  public static void main(String args[]){
+    String str="hi mam you are wow";
+    String s[]=new String[5];
+     s=str.split(" ");
+    int arr[]=new int[5];
+    for(int i=0;i<s.length;i++){
+      arr[i]=s[i].length();
+      System.out.println(arr[i]);
+    }
+    int min=arr[0];
+    for(int j=0;j<arr.length;j++){
+      if(min>arr[j]){
+        min=arr[j];
+      }
+
+    }
+    for(int k=0;k<s.length;k++){
+      if(min==s[k].length()){
+        System.out.println("minimum word is:"+s[k]);
+      }
+    }
+    
+  }
+}
+======================================================================================================
+224./*Best Mobile Plan
+ 
+St. Patrick Convent organizes a project exhibition "Innovative Minds" every year with an objective to 
+provide the platform and unleash the potential of the students by showcasing their innovative projects.
+Albert is a science expert and is a topper at his high school. He became interested about the project 
+exhibition and enrolled his name for the same.
+ 
+Albert’s Dad has a cell phone but often seemed to worry about the price plans for his phone that best fits
+ for his usage pattern and monthly expenses. There are two options, each plan has different costs for 
+daytime minutes, evening minutes and weekend minutes.
+ 
+
+Plan
+Costs
+
+daytime
+evening
+weekend
+
+A
+100 free minutes then
+25 paise per minute
+15 paise per minute
+20 paise per minute
+
+B
+250 free minutes then
+45 paise per minute
+35 paise per minute
+25 paise per minute
+
+ 
+Having this as a spark for his project, Albert decided to design a handy application that will input the 
+number of each type of minutes and output the cheapest plan for this usage pattern,using the format shown
+ below. In the case that the two plans are the same price, output both plans.
+ 
+He needs your help to evaluate his project and suggest corrections.
+ 
+Hence create a class named BestMobilePlan with the following method.
+
+ 
+ 
+
+Method Name
+Description
+
+void printPlanDetails(int,int,int)
+This method should display the cheapest plan for this usage pattern.
+
+ 
+Create a driver class called Main. In the Main method, obtain input from the user in the console and call the printPlanDetails method present in BestMobilePlan class. 
+[Note: Strictly adhere to the Object Oriented Specifications given in the problem statement. Convert paise to rupees.
+All class names, attribute names and method names should be the same as specified in the problem statement. Create separate classes in separate files.]
+ 
+ Input Format:
+First line of the input is an integer that gives the usage during the daytime in minutes.
+Second line of the input is an integer that gives usage during the evening in minutes.
+Third line of the input is an integer that gives usage during the night in minutes.
+ 
+Output Format:
+Output should print the cheapest plan for this usage pattern. In the case that the two plans are the same 
+price, output both plans.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+251
+10
+60
+ 
+Sample Output 1:
+Plan A costs 51.25
+Plan B costs 18.95
+Plan B is cheapest
+ 
+Sample Input 2:
+162
+61
+66
+ 
+Sample Output 2:
+Plan A costs 37.85
+Plan B costs 37.85
+Plan A and B are the same price*/
+ import java.util.*;
+class BestMobile{
+  public void PlanDetail(int day,int eve,int week){
+    double cost1,cost2;
+    if(day>100){
+      cost1=(day-100)*0.25+(eve*0.15)+(week*0.20);
+      
+    }
+    else{
+      cost1=(eve*0.15)+(week*0.20);
+    }
+    if(day>250){
+      cost2=(day-250)*0.45+(eve*0.35)+(week*0.25);
+    }
+    else{
+      cost2=(eve*0.35)+(week*0.25);
+    }
+    System.out.println("Plan A price is "+cost1);
+     System.out.println("Plan B price is "+cost2);
+    if((int)cost1>(int)cost2){
+      System.out.println("Plan 2 is cheapest");
+    }
+    else if((int)cost1<(int)cost2) {
+      System.out.println("Plan 1 is cheapest");
+    }
+    else{
+      System.out.println("same");
+    }
+  }
+}
+
+class MobilePlan{
+  public static void main(String args[]){
+    BestMobile b=new BestMobile();
+    Scanner sc=new Scanner(System.in);
+    System.out.println("Enter the daytime min");
+    int a=sc.nextInt();
+     System.out.println("Enter the Evening min");
+    int b1=sc.nextInt();
+     System.out.println("Enter the Weekend min");
+    int c=sc.nextInt();
+    
+      b.PlanDetail(a,b1,c);
+  }
+}
+=========================================================================================================
+225./*Nice Number
+ 
+" The Greatest Furniture Expo" is a biggest fair exhibiting furniture products, services and equipment, interior services, decoration plans, modular kitchen accessories, bedroom furniture, stylish sittings etc in the Furniture industry. It is a 4-day event and on the inaugural day of the event, the Event coordinators have announced for a Lucky lottery contest.
+ 
+According to the Lucky lottery, the visitors’ entry tickets are collected and the visitors whose ticket numbers are nice numbers are chosen as winners and attractive discount coupons are distributed to the winners. A nice number is a positive integer which has exactly 4 divisors.
+ 
+The Event coordinators wanted to know if a specific’s entry ticket number is a nice number or not.
+ 
+Hence create a class named NiceNumber with the following method.
+ 
+
+Method Name
+Description
+
+int findType(int)
+This method return 1 if the number is nice or return 0 if it is not a nice number.
+
+ 
+Create a driver class called Main. In the Main method, obtain input from the user in the console and display "Nice" if the given ticket number is a nice number. Print "Not Nice" otherwise by calling the findType method present in NiceNumber class.
+ 
+[Note: Strictly adhere to the Object Oriented Specifications given in the problem statement.
+All class names, attribute names and method names should be the same as specified in the problem statement. Create separate classes in separate files.]
+ 
+Input Format:
+First line of the input is an integer that corresponds to the entry ticket number of a visitor.
+ 
+Output format:
+Output should display "Nice"(without quotes) if the given ticket number is a nice number. Print "Not Nice"(without quotes) otherwise.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+6
+ 
+Sample Output 1:
+Nice
+ 
+Sample Input 2:
+4 
+Sample Output 2:
+Not Nice*/ 
+import java.util.*;
+ class NiceNumber{
+    public static int findType (int n)
+    { 
+        int count=0;
+    for(int i=2;i<=n/2;i++)//1<=3,2<=3
+    {
+        if(n%i==0)//3%1==0,3%2
+        {
+            count++;//1
+        }
+    }
+    if(count==2)
+    {
+        return 1;
+    }
+    else 
+    
+        return 0;
+ 
+}
+}
+class NiceExample{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int num=sc.nextInt();
+    int result=NiceNumber.findType(num);
+    if(result==1){
+      System.out.println("nice");
+
+    }
+    else{
+      System.out.println("not nice");
+    }
+  }
+}
+=====================================================================================================
+226./*read String 'Hi mam You are wow'.we have to find the String palindrome words.*/
+class Palindrome{
+  public static void main(String args[]){
+  String s="hi mam you are wow";
+    String str[]=new String[5];
+    str=s.split(" ");
+    String revs="";
+    for(int i=0;i<str.length;i++){//str[0]=hii,[1]=mam,....[n]wow
+    revs="";
+    for(int j=str[i].length()-1;j>=0;j--){
+      revs=revs+str[i].charAt(j);
+    }
+    if(str[i].equals(revs)){
+      System.out.println(str[i]+" ");
+    }
+    }
+
+ 
+
+  }
+}
+=======================================================================================================
+227./*Super Quiz Bee is a famous quiz Competition that tests students on a wide variety of academic subjects. This week’s competition was a Team event and students who register for the event will be given a unique registration code N. The participants are teamed into 10 teams and the team to which a participant is assigned to depends on the absolute difference between the first and last digit in the registration code.
+ 
+The event organizers wanted your help in writing an automated program that will ease their job of assigning teams to the participants. If the registration number given is less than 10, then the program should display "Invalid Input".
+ 
+Input Format:
+The only line of input contains an integer N.
+ 
+Output Format:
+Output the absolute difference between the first and last digit of N.
+Refer sample input and output for formatting specifications.
+ 
+Sample Input 1:
+345
+ 
+Sample Output 1:
+2
+ 
+Sample Input 2:
+9
+Sample Output 2:
+Invalid Input*/
+import java.util.*;
+class Quiz{
+  public static void main(String args[]){
+    int n,s,g,i;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter number");
+    n=sc.nextInt();
+    int arr[]=new int[10];
+    if(n/10==0){//456
+      System.out.println("Invalid Input");
+    }
+    else{
+    for( i=0;n>0;i++){//456>0,45>0,4>0
+      s=n%10;//456%10=6,45%10=5,4%10=0
+      n=n/10;//456/10=45,45/10=4,4/10=0
+      arr[i]=s;//arr[0]=6,arr[1]=4,arr[2]=0
+    }
+    
+    g=(arr[0]-arr[i-1]);//6-4
+    System.out.println(g);
+  }
+}
+}
+==================================================================================================
+228.write a java program to print 3 letters in your sentence.
+import java.util.*;
+class Word{
+  public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter paragraph");
+    String str=sc.nextLine();
+    String str1[]=str.split(" ");
+    for(int i=0;i<str1.length;i++){
+      if(str1[i].length()==3){
+        System.out.println(str1[i]);
+      }
+    }
+  }
+}
+=====================================================================================================

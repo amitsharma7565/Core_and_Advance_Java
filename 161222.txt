@@ -1,0 +1,17 @@
+add
+addFirst
+addLast
+offer
+offerFirst
+offerLast
+peek--retrieve
+peekFirst
+peekLast
+poll--retrieve and remove
+pollFirst
+pollLast
+push
+pop
+remove
+removeFirst
+removeLast

@@ -1,17 +1,20 @@
-class Unique {
-   public static void main (String[] args) {
-      int arr[] = {1,5,9,1,4,9,6,9,7,15,19};
-      int i, j;
-      System.out.println("The array is: ");
-      for (i = 0; i <arr.length; ++i)
-      System.out.println(arr[i] + " ");
-      System.out.print("The distinct elements of above array are: ");
-      for (i = 0; i <arr.length; i++) {
-         for (j = 0; j < i; j++)
-         if (arr[i] == arr[j])
-            break;
-         if (i == j)
-         System.out.print( arr[i] + " ");
+class Unique{
+  public void uni(int arr[]){
+    for(int i=0;i<arr.length;i++){
+      int count=0;
+      for(int j=0;j<arr.length;j++){
+        if(arr[i]==arr[j]){
+          count++;
+        }
       }
-   }
+      if(count==2){
+        System.out.println(arr[i]);
+      }
+  }
+  }
+  public static void main(String args[]){
+    int array[]={1,2,3,3,4,5,1,2};
+    Unique u=new Unique();
+    u.uni(array);
+  }
 }

@@ -1,49 +1,117 @@
-// Create a class 'Student' with three data members which are name, age and address. The constructor of the class 
-// assigns default values name as "unknown", age as '0' and address as "not available". It has two members with the same 
-// name 'setInfo'. First method has two parameters for name and age and assigns the same whereas the second method takes
-//  has three parameters which are assigned to name, age and address respectively. Print the name, age and address of 
-// 10 students.
-// Hint - Use array of objects*/
+// Student
+// rollno
+// name
+// marks
+// grade
+
+// 10 Information Arraylist
+
+// StudentDao  interface
+// inserting student
+// searching for student
+// dispaly all students
+// updating student
+// deleting student
+
+// StudentDaoImpl class
+// implement
+
+// main class
+// you can create object and you can perform operation
 import java.util.*;
 class Student{
+  int rollno;
+  int marks;
   String name;
-  int age;
-  String address;
+  String grade;
   // constructor
-  Student(){
-    name="unknown";
-    age=0;
-    address="not avaible";
-  }
-  public void setInfo(String name, int age){
-    this.age=age;
+  Student(int rollno,int marks,String name, String grade){
+    this.rollno=rollno;
+    this.marks=marks;
     this.name=name;
+    this.grade=grade;
+    
   }
-  public void setInfo(String name, int age, String address){
-    this.age=age;
-    this.name=name;
-    this.address=address;
+}
+interface StudentDao{
+  public void insertStudent(ArrayList<Student> a);
+  public void serachStudent(ArrayList<Student> a,int rollno);
+  public void displayStudent(ArrayList<Student> a);
+  public void updateStudent(ArrayList<Student> a,int rollno);
+  public void deleteStudent(ArrayList<Student> a,int rollno);
+}
+
+class StudentDaoImpl implements StudentDao{
+  public void insertStudent(ArrayList<Student> a){
+   
+    for(Student obj:a){
+      System.out.println(obj.rollno+" "+obj.marks+" "+obj.name+" "+obj.grade);
+    }
+  }
+  public void serachStudent(ArrayList<Student> a,int rollno){
+    for(Student obj:a){
+      if(obj.rollno==rollno){
+         System.out.println(obj.rollno+" "+obj.marks+" "+obj.name+" "+obj.grade);
+      }
+      else{
+        System.out.println("roll not matched");
+      }
+    }
+  }
+   public void displayStudent(ArrayList<Student> a){
+     for(Student obj:a){
+        System.out.println(obj.rollno+" "+obj.marks+" "+obj.name+" "+obj.grade);
+     }
+   }
+  public void updateStudent(ArrayList<Student> a,int rollno){
+    for(Student obj:a){
+      if(obj.rollno==rollno){
+        obj.marks=400;
+        System.out.println(obj.rollno+" "+obj.marks+" "+obj.name+" "+obj.grade);
+      }
+      else{
+        System.out.println("Record not matched");
+      }
+    }
+  }
+  public void deleteStudent(ArrayList<Student> a,int rollno){
+    Student std=null;
+    for(Student obj:a ){
+      if(obj.rollno==rollno){
+        std=obj;
+      }
+      
+    }
+    if(std==null){
+        System.out.println("invalid");
+      }
+      else{
+        a.remove(std);
+        System.out.println("Deleted ");
+      }
   }
 }
 
+
 class Student1{
   public static void main(String args[]){
-    Scanner sc=new Scanner(System.in);
-    // array
-    Student s[]=new Student[2];
-    for(int i=0;i<2;i++){
-      // object
-     s[i]=new Student();
-      System.out.println("Enter the "+i+ "student details");
-      System.out.println("Enter the name");
-      String n=sc.next();
-      System.out.println("Enter the age");
-      int a=sc.nextInt();
-      System.out.println("Enter the address");
-      String c=sc.next();
-      s[i].setInfo(n,a);
-      s[i].setInfo(n,a,c);
-      System.out.println(s[i].age+" "+s[i].name+" "+s[i].address);
-    }
+    Student s=new Student(1,300,"Amit","B");
+    Student sa=new Student(2,700,"Amit1","Z");
+    Student sb=new Student(3,600,"Amit2","D");
+    Student sc=new Student(4,500,"Amit3","A");
+    Student sd=new Student(4,400,"Amit4","c");
+    StudentDao s1= new StudentDaoImpl();
+    ArrayList<Student> a1=new ArrayList<Student>();
+    a1.add(s);
+    a1.add(sa);
+    a1.add(sb);
+    a1.add(sc);
+    a1.add(sd);
+    s1.insertStudent(a1);
+    s1.serachStudent(a1,2);
+    s1.displayStudent(a1);
+    s1.updateStudent(a1,3);
+    s1.deleteStudent(a1,3);
+    s1.displayStudent(a1);
   }
 }

@@ -1,27 +1,44 @@
-/* 2. Write a program which will illustrate NumberFormatException. Create a test method, with in the test method accept two numbers 
-   using next() method of scanner class. Convert into numerical values and print addition of two numbers. 
-   Please write your comments regarding NumberFormatException such as "When NumberFormatException will occur in this program?"
+/* 3. Write a program to accept firstName, lastName and mobileNumber in string format. 
+   Print number of characters in firstName and lastName, and print sum of digits of a mobileNumber. 
+   Handle NumberFormatException while converting mobileNumber to long.
 */
 import java.util.*;
 public class NumberFormatException {
-  public static void test(int a,int b){
-    System.out.println(a+b);
-  }
+
     public static void main(String args[]) {
+      long mobileNumberSum=0;
+      int fNamecount=0;
+      int lNamecount=0;
       Scanner sc=new Scanner(System.in);
-      System.out.println("Enter the values");
-      String num1=sc.next();
-      String num2=sc.next();
-      int c,d;
-      c=Integer.parseInt(num1);
-      d=Integer.parseInt(num2);
-      try{
-        // NumberFormatException will occur
-        test(c,d);
+      System.out.println("Enter the First name");
+      String fName=sc.next();
+      System.out.println("Enter the Last name");
+      String lName=sc.next();
+      for(int i=0;i<fName.length();i++){
+        fNamecount++;
       }
-      catch(Exception e){
-        System.out.println(e);
+      System.out.println("Number of characters in firstName : "+fNamecount);
+
+      for(int i=0;i<lName.length();i++){
+        lNamecount++;
       }
+      System.out.println("Number of characters in lastName : "+lNamecount);
       
+      System.out.println("Enter the Mobile number");
+      String mobileNumber=sc.next();
+    // int mNum=Integer.parseInt(mobileNumber);
+      try{
+        // Handle NumberFormatException while converting mobileNumber to long.
+      long mNum=Long.parseLong(mobileNumber); 
+      while(mNum>0){
+        long rem=mNum%10;
+        mobileNumberSum=mobileNumberSum+rem;
+        mNum=mNum/10;
+      }
+      System.out.println("sum of digits of a mobileNumber"+mobileNumberSum);
+    }
+    catch(Exception e){
+      System.out.println(e);
+    }
     }
 }

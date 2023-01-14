@@ -1,0 +1,59 @@
+File handling-
+
+
+File f=new File("abc.txt");
+First is check any physical file is aviaible for not. If it is aviable then f
+simple refres that file.and if not avialble we just creating java file object to 
+represent the name abc.txt
+This line not create the file. so we need to create the file then we use 
+
+f.createNewFile();===========>  (it create the file)
+f.exists();====>it return true if file present.
+
+
+-------------------------------------------------------------------
+
+make a directory or folder
+
+then we use 
+File f=new File("amit");
+f.mkdir(); ====> it makes directory or folder 
+
+
+
+
+--------------------------------------------------------------
+File constructor
+
+
+1. File f=new File(String name); ==========> if you want to create a file and create 
+														directory in current directory than use
+                                          this.
+
+
+2. File f=new File(String subdirname, String name); ========> 
+											if you want to make a file in some directory then 
+										   we use this constructor
+
+
+3. File f=new File(File subdir, String name);======> 
+ 
+if you want to make a file in some directory then 
+we use this constructor
+
+
+
+
+
+===============================================================
+Important methods present in file.
+
+1. f.exists();=====> File Present or not
+2. f.createNewFile();
+3. f.mkdir(); ======> make a folder or directory
+4. f.file();======> f point to file or drictory
+5. f.drictory();========> f point to file or drictory.
+6. f.list() ======> it return file and directory and store in string array.
+7. f.length() =====> number of charcter------ return type is long
+8. f.delete() =====> delete the file
+9. 

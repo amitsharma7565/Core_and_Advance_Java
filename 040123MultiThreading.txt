@@ -1,0 +1,26 @@
+class ThreadSample extends Thread{
+public void run(){//running
+   for(int i=1;i<=10;i++){
+      System.out.println(i);
+     try{
+       Thread.sleep(10000);//waiting state
+     }
+     catch(InterruptedException e){
+       System.out.println(e);
+     }
+     
+     
+   }
+   
+  }
+  
+}
+class Demo{
+public static void main(String args[]){
+  ThreadSample t1=new ThreadSample();
+  ThreadSample t2=new ThreadSample();
+  t1.start();
+  t2.start();//ready/runnable  
+}
+  
+}

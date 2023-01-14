@@ -1,0 +1,92 @@
+/* 5. Write a program to find prime numbers from given two arrays and store in 3rd array. 
+      Handle ArrayIndexOutOfBoundsException while storing values into 3rd array.
+*/
+import java.util.*;
+public class ArrayIndexOutOfBoundsException {
+    public static void main(String args[]) {
+      int arr1[]={11,12,13,14,15,16,17,18,19};
+      int arr2[]={1,7,3,9,3,6,2,8,17};
+      // perform opertion i first array
+      System.out.println("Array 1 prime number");
+      for(int i=0;i<arr1.length;i++){
+        int count=0;
+        for(int j=1;j<=arr1[i];j++){
+          if(arr1[i]%j==0){
+            count++;
+          }
+        }
+        if(count==2){
+          System.out.println(arr1[i]);
+        }
+      }
+      // perform opertion in arr2
+      System.out.println("Array2 prime number");
+      for(int i=0;i<arr2.length;i++){
+        int count2=0;
+        for(int j=1;j<=arr2[i];j++){
+          if(arr2[i]%j==0){
+            count2++;
+          }
+        }
+        if(count2==2){
+          System.out.println(arr2[i]);
+        
+        }
+        
+      }
+      
+    }
+}
+
+
+
+
+----------------------------
+/* 2. Write a program to perform ATM operations such as deposit, withdraw and balance enquiry. Display list of options for user selection. 
+   Accept option from the user and execute specified method. throw Exception when user trying to withdraw amount more than 3 times.
+*/
+import java.util.*;
+public class ATMOperations {
+  public static void display(){
+    System.out.println("Select Options \n 1. Deposit amount \n 2. Withdraw amount \n 3. Balance Enquiry");
+  }
+
+    public static void main(String args[]) {
+      char ch;
+      Scanner sc=new Scanner(System.in);
+      display();
+      try{
+          do{
+        System.out.println("Enter the option");
+        int num=sc.nextInt();
+        if(num==1){
+          System.out.println("amount deposit");
+        }
+        else if(num==2){
+          System.out.println("amount withdraw");
+        }
+        else if(num==3){
+          System.out.println("Balance Equriy");
+        }
+        else{
+          System.out.println("Invalid input");
+        }
+       System.out.println("do you want to print again (y/n)");
+         ch=sc.next().charAt(0);
+      }while(ch =='y');
+      }
+      catch(Exception e){
+        System.out.println(e);
+      }
+    
+    }
+}
+
+
+
+
+Imagine you are building a program that processes and stores data from a 
+large number of text files. You want to ensure that the program is able to handle 
+files of any size, but you also want to be notified if a file is unusually large. 
+You could create a custom exception called LargeFileException that is thrown when 
+the size of a file exceeds a certain threshold. 

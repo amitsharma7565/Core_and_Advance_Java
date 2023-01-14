@@ -1,0 +1,139 @@
+class Table {
+    // creating synchronized method called displayTable(int num)
+         synchronized void displayTable(int num) {
+            for(int i=1;i<=10;i++) {
+                    // print num*i
+                    System.out.println(num*i);
+                    try {
+                        //calling sleep() method
+                            Thread.sleep(1000);
+                       }
+                    catch(Exception e){
+                        System.out.println(e);
+                      }
+                }
+         }
+}
+class Thread1 extends Thread {
+    Table t;
+        // creating constructor for Thread1
+        Thread1(Table t){
+            this.t=t;
+          }
+    // overriding run() and calling displayTable() with Table class object
+       public void run() {
+                t.displayTable(2);
+       }
+}
+class Thread2 extends Thread {
+    Table t;
+    // creating constructor for Thread
+           Thread2(Table t){
+        this.t=t;
+        }
+    // overriding run() and calling displayTable() with Table class object
+
+ 
+
+         public void run() {
+               t.displayTable(5);
+         }
+}
+public class Synchronization_Example {
+        public static void main(String args[]) {
+               //creating object for Table class, Thread1 and Thread2 classes
+                Table obj=new Table();
+                Thread1 t1=new Thread1(obj);
+               Thread2 t2=new Thread2(obj);
+               // calling start() using t1 and t2
+                t1.start();
+                t2.start();
+      }
+}
+
+
+#deadlock
+
+class Thread1 extends Thread {
+    // creating two reference variables for object class
+    Object ob1="Abc";
+    Object ob2="Xyz";
+    // overriding run() method
+    public void run(){
+        //while(true){
+         // locking ob1   
+                  synchronized(ob1){
+                    System.out.println("Ob1 locked by "+Thread.currentThread().getName());
+                    try{
+                        // calling sleep() method
+                            Thread.sleep(1000);
+                    }
+                    catch(Exception e){
+                               System.out.println(e);
+                     }
+            // locking ob2
+                synchronized(ob2){
+                        System.out.println("Ob2 locked by "+Thread.currentThread().getName());
+                }
+            }
+        //}
+    }
+}
+class Thread2 extends Thread {
+    // creating two reference variables for object class
+    Object ob1="Abc";
+        Object ob2="Xyz";
+    //override run() method
+        public void run(){
+               //while(true) {
+            // locking ob2
+                synchronized(ob2){
+                        System.out.println("Ob2 locked by "+Thread.currentThread().getName());
+                     try{
+                    // calling sleep() method
+                            Thread.sleep(1000);
+                    }
+                    catch(Exception e){
+                            System.out.println(e);
+                    }
+                    // locking ob1
+                    synchronized(ob1){
+                            System.out.println("Ob1 locked by "+Thread.currentThread().getName());
+                    }
+                }
+               //}
+       }
+}
+public class DeadLock_Example {
+   
+    public static void main(String args[]) {
+       
+        // creating object for Thread1 and Thread2
+        Thread1 t1=new Thread1();
+        Thread2 t2=new Thread2();
+    // calling start() with t1 and t2
+        t1.start();
+        t2.start();
+       
+    }
+}
+
+
+
+=-=============================
+garabel collection 
+public class Demo {
+ 
+    public static void main(String args[]) {
+  Demo std=new Demo();
+     // System.out.println(std);
+      std=null;
+     
+   System.gc();  
+    
+    }
+   public void finalize(){
+     System.out.println("garbage collected");
+     
+   }
+}

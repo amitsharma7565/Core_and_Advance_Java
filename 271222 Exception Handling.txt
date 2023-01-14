@@ -1,0 +1,243 @@
+----------------------------------------------
+Exception Handling
+-----------------------------------------------
+import java.util.*;
+class Demo{
+  public static void main(String args[]){
+  String pwd="admin@123";
+    //NumberFormatException
+    try{
+       System.out.println(Integer.parseInt(pwd));
+    }   
+    catch(Exception e){
+      System.out.println(e);
+     
+    }
+  System.out.println("Exception handled");
+   
+    
+  }
+}
+
+-----------------------------------------
+import java.util.*;
+class Demo{
+  public static void main(String args[]){
+  String pwd="123";
+    int div;
+    //NumberFormatException
+    try{
+       System.out.println(Integer.parseInt(pwd));
+      div=23/10;
+      int arr[]={12,34,56,78};
+      System.out.println(arr[8]);
+    }  
+    catch(ArithmeticException e){
+      e.printStackTrace();
+  
+    }
+    catch(NumberFormatException e){
+      e.printStackTrace();
+    }
+    catch(Exception e){
+      e.printStackTrace();
+    }
+    
+    
+  System.out.println("Exception handled");
+   
+    
+  }
+}
+--------------------------------------
+import java.util.*;
+class Demo{
+  public static void main(String args[]){
+  String pwd="123";
+    int div;
+    //NumberFormatException
+    try{
+       System.out.println(Integer.parseInt(pwd));
+      try{
+         div=23/10;
+      int arr[]={12,34,56,78};
+      System.out.println(arr[8]);
+      }
+     catch(ArithmeticException e){
+      e.printStackTrace();
+  
+    }
+    catch(NumberFormatException e){
+      e.printStackTrace();
+    }
+      catch(Exception e){
+      e.printStackTrace();
+    }
+    }  
+    catch(Exception e){
+      e.printStackTrace();
+    }
+    
+    
+    
+  System.out.println("Exception handled");
+   
+    
+  }
+}
+
+--------------------
+Five type of keyword in Exception Handling
+1. try
+2. Catch
+3. finally
+4.throws
+4.throw
+-------------
+finally keyword in exceptions.
+-----------------
+import java.util.*;
+class Demo{
+  public static void main(String args[]){
+  String pwd="2123";
+    int div;
+    //NumberFormatException
+   
+   try{
+      System.out.println(Integer.parseInt(pwd));
+     }
+     catch(Exception e){
+       e.printStackTrace();
+     }
+  
+    finally{
+      System.out.println("finally block executed");
+    }
+    
+    System.out.println("Exception handled");
+    
+   
+    
+    
+    
+    
+  }
+---------------------
+throw
+
+1. import java.util.*;
+class Demo{
+ 
+  public static void mobileValidation(String mobile){
+    if(mobile.length()==10){
+      System.out.println("Vaild mobile number");
+    }
+    else{
+      throw new ArithmeticException("Invalid Mobile number");
+    }
+  }
+  public static void main(String args[]){
+try{
+    mobileValidation("986756342");
+}
+catch(Exception e){
+// e.printStackTrace();
+  System.out.println(e.getMessage());
+}
+  
+    
+    
+  }
+}
+---------------
+import java.util.*;
+class Demo{
+ 
+  public static void validate(int age){
+    if(age>18){
+      System.out.println("Eligible");
+    }
+    else{
+      throw new NumberFormatException("under age");
+    }
+  }
+  public static void main(String args[]){
+try{
+    validate(12);
+}
+catch(Exception e){
+// e.printStackTrace();
+  System.out.println(e.getMessage());
+}
+  
+    
+    
+  }
+}
+==================================================
+throws- it is used for create a custom Exception.
+--------------------------------------------------
+import java.util.*;
+ 
+class InvalidMobileNumberException extends Exception{
+  public InvalidMobileNumberException(String str){
+    super(str);
+  }	
+}
+ 
+class Demo{
+ 
+  public static void MobileValidation(String mobile) throws InvalidMobileNumberException{
+    if(mobile.length()==10){
+      System.out.println("valid mobile number");
+    }
+    else{
+      throw new InvalidMobileNumberException("Invalid Mobile number");
+    }
+  }
+  public static void main(String args[]){
+try{
+    MobileValidation("22234");
+}
+catch(Exception e){
+// e.printStackTrace();
+  System.out.println(e.getMessage());
+}
+  
+    
+    
+  }
+}
+-----------------------------
+2 
+import java.util.*;
+import java.io.*;
+class InvalidAgeException extends Exception{
+  public InvalidAgeException(String str){
+    super(str);
+  }
+}
+ 
+class Demo{
+ 
+  public static void ageValidation(int age) throws InvalidAgeException{
+    if(age>18){
+      System.out.println("Eligible");
+    }
+    else{
+      throw new InvalidAgeException("Under age");
+    }
+  }
+  public static void main(String args[]){
+try{
+    ageValidation(12);
+}
+catch(InvalidAgeException e){
+// e.printStackTrace();
+  System.out.println(e.getMessage());
+}
+  
+    
+    
+  }
+}

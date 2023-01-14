@@ -1,0 +1,10 @@
+1. StringReverse
+2. //WAP to find first occurrence of a character in a given string
+WAP to find last occurrence of a character in a given string
+
+[3:51 PM] Lalitha Ujjaneni
+    WAP to search all occurrences of a character in given string.
+​[4:09 PM] Lalitha Ujjaneni
+    WAP to count frequency of each character in a string
+​[4:11 PM] Lalitha Ujjaneni
+    WAP to print reverse case of a given string

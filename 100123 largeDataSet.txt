@@ -1,0 +1,74 @@
+import java.io.*;
+class Demo{
+  public static void main(String args[]){
+ 
+    try{
+      FileReader fr=new FileReader("Match.csv");
+      BufferedReader br=new BufferedReader(fr);
+      int rcount=0;
+    
+      String str=null;
+      while((str=br.readLine())!=null){
+        if(rcount<=5){
+          System.out.println(str);
+        }
+        else{
+          break;
+        }
+        rcount++;
+      }
+     // System.out.println("No.of row: "+rcount);
+    }
+    catch(IOException e){
+      System.out.println(e);
+    }
+    
+  }
+ 
+}
+==========================================================
+import java.io.*;
+class Demo{
+  public static void main(String args[]){
+ 
+    try{
+      FileReader fr=new FileReader("Match.csv");
+      BufferedReader br=new BufferedReader(fr);
+      int mcount=0;
+    
+      String str=null;
+      str=br.readLine();	
+       String matches[]=str.split(",");
+       for(int i=0;i<matches.length;i++){
+         if(matches[i].equals("Season_Year")){
+           System.out.println(i);
+         }
+       }
+      
+      // while((str=br.readLine())!=null){
+      // //  String matches[]=str.split(",");
+      //   //for(int i=0;i<matches.length;i++){
+      //    // if (matches[i].equals("Season_Year")){
+      //       System.out.println(matches[i].indexOf("Season_Year"));
+      //     }
+      //   }
+   
+        // if(matches[5].equals("2017")){
+        //   mcount++;
+       // }
+      
+   // System.out.println("No.of matches in 2017 are: "+mcount);
+    }
+    catch(IOException e){
+      System.out.println(e);
+    }
+    
+  }
+ 
+}
+
+================================
+//no.of macthes in particuar city
+//maxvalue of win range
+//min value of win range
+//how many time got toss as feild and bating particular team

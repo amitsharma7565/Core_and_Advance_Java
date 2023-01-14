@@ -1,0 +1,317 @@
+import java.io.*;
+public class Convert{
+  public static void main(String [] args) throws IOException{
+    FileInputStream fis=new FileInputStream("input.txt");
+    int c;
+    String str="";
+    String str2="";
+    while((c=fis.read())!=-1){
+      
+      str=str+(char)c;
+    }
+      System.out.println(str);
+ 
+    String [] arr=str.split(" ");
+    
+    for(int i=0;i<arr.length;i++){
+      
+      char [] ch=arr[i].toCharArray();  //Hai {'H','a','i'}
+      
+      for(int j=0;j<ch.length;j++){
+    
+        if(Character.isUpperCase(ch[j])){
+          char d = Character.toLowerCase(ch[j]);
+            
+           str2=str2+d;
+        }
+        else{
+          char d = Character.toUpperCase(ch[j]);
+           
+             str2=str2+d;
+        }
+        
+      }
+      str2=str2+" ";
+    }
+    System.out.println(str2);
+    FileOutputStream fout=new FileOutputStream("output.txt");
+   char ch[] = str2.toCharArray();
+        for (int i = 0; i < str2.length(); i++) {
+           
+            // we will write the string by writing each
+            // character one by one to file
+            fout.write(ch[i]);
+        }
+    
+  }
+}
+=============================
+all charcter covert into uppercase
+import java.io.*;
+public class Convert{
+  public static void main(String [] args) throws IOException{
+    FileInputStream fis=new FileInputStream("input.txt");
+    int c;
+    String str="";
+    String str2="";
+    while((c=fis.read())!=-1){
+      
+      str=str+(char)c;
+    }
+      System.out.println(str);
+ 
+    String [] arr=str.split(" ");
+    
+    for(int i=0;i<arr.length;i++){
+      
+      char [] ch=arr[i].toCharArray();  //Hai {'H','a','i'}
+      
+      for(int j=0;j<ch.length;j++){
+          char d = Character.toUpperCase(ch[j]);
+           str2=str2+d;  
+      }
+      str2=str2+" ";
+    }
+    System.out.println(str2);
+    FileOutputStream fout=new FileOutputStream("output.txt");
+   char ch[] = str2.toCharArray();
+        for (int i = 0; i < str2.length(); i++) {
+           
+            // we will write the string by writing each
+            // character one by one to file
+            fout.write(ch[i]);
+        }
+    
+  }
+}
+============================================
+to find frequency 
+
+import java.io.*;
+import java.util.*;
+ 
+public class FindingFre {
+ 
+  public static void main(String[] args) throws IOException {
+    // FileInputStream fis = new FileInputStream("input"); // Byte stream
+    FileReader fis1 = new FileReader("input"); // Charcter stream
+    BufferedReader br = new BufferedReader(fis1);
+    String str;
+    String[] arr = new String[80];
+    ArrayList<String> al = new ArrayList<String>();
+    while ((str = br.readLine()) != null) {
+      System.out.println(str);
+      arr = str.split(" ");
+      Collections.addAll(al, arr);
+    }
+  int count=0;
+    int [] fre=new int[al.size()];
+    
+    for (int i = 0; i < al.size(); i++) {
+      count=1;
+      for(int j=i+1;j<al.size();j++){
+        if(al.get(i).equals(al.get(j))){
+          count++;
+            fre[j]=-1;
+        }
+      }
+      if(fre[i]!=-1){
+        fre[i]=count;
+      }
+    }
+ 
+    for(int i=0;i<al.size();i++){
+      if(fre[i]!=-1){
+      System.out.println(al.get(i)+"          "+fre[i]);
+      }
+    }
+ 
+  }
+}
+============================================================
+logest and shortest word int the String
+import java.io.*;
+import java.util.*;
+ 
+public class FindingFre {
+ 
+  public static void main(String[] args) throws IOException {
+    // FileInputStream fis = new FileInputStream("input"); // Byte stream
+    FileReader fis1 = new FileReader("input"); // Charcter stream
+    BufferedReader br = new BufferedReader(fis1);
+    String str;
+    String[] arr = new String[80];
+    ArrayList<String> al = new ArrayList<String>();
+    while ((str = br.readLine()) != null) {
+      System.out.println(str);
+      arr = str.split(" ");
+      Collections.addAll(al, arr);
+    }
+  String logest="";
+  String smallest="";
+  int min=20;
+    int max=0;
+    
+    int [] fre=new int[al.size()];
+    
+    for (int i = 0; i < arr.length; i++) {
+      int a=arr[i].length();
+        if(a>max){
+          max=a;
+          logest=arr[i];
+        }
+        else if(a<min){
+          min=a;
+          smallest=arr[i];
+        }
+      }
+     System.out.println(logest);
+    System.out.println(smallest);
+  }
+}
+-----------------------------------
+import java.io.*;
+import java.util.*;
+ 
+public class FindingFre {
+ 
+  public static void main(String[] args) throws IOException {
+    // FileInputStream fis = new FileInputStream("input"); // Byte stream
+    FileReader fis1 = new FileReader("input"); // Charcter stream
+    BufferedReader br = new BufferedReader(fis1);
+    String str;
+    
+    ArrayList<String> al = new ArrayList<String>();
+    while ((str = br.readLine()) != null) {
+      
+      String []arr = str.split(" ");
+      for(int k=0;k<arr.length;k++){
+        al.add(arr[k]);
+      }
+      String logest="";
+      String smallest="";
+      int min=20;
+      int max=0;
+    
+      int [] fre=new int[al.size()];
+    
+     for (int i = 0; i < arr.length; i++) {
+      int a=arr[i].length();
+        if(a>max){
+          max=a;
+          logest=arr[i];
+        }
+        else if(a<min){
+          min=a;
+          smallest=arr[i];
+        }
+      }
+     System.out.println("Lognest word in line : "+logest);
+    System.out.println("Smallest word in each line : "+smallest);
+      System.out.println();
+      al.clear();
+    }
+  
+  }
+}
+----------------------------------------
+LOGEST CHARCTER AND SHORTEST CHARCTER
+import java.io.*;
+import java.util.*;
+ 
+public class FindingFre {
+ 
+  public static void main(String[] args) throws IOException {
+    // FileInputStream fis = new FileInputStream("input"); // Byte stream
+    FileReader fis1 = new FileReader("input"); // Charcter stream
+    BufferedReader br = new BufferedReader(fis1);
+    String str;
+    
+    ArrayList<String> al = new ArrayList<String>();
+    while ((str = br.readLine()) != null) {
+      
+      String []arr = str.split(" ");
+      for(int k=0;k<arr.length;k++){
+        al.add(arr[k]);
+      }
+      String logest="";
+      String smallest="";
+      int min=20;
+      int max=0;
+    
+      int [] fre=new int[al.size()];
+    
+     for (int i = 0; i < arr.length; i++) {
+      int a=arr[i].length();
+        if(a>max){
+          max=a;
+          logest=arr[i];
+        }
+        else if(a<min){
+          min=a;
+          smallest=arr[i];
+        }
+      }
+     System.out.println("Lognest word in line : "+logest);
+    System.out.println("Smallest word in each line : "+smallest);
+      System.out.println();
+      al.clear();
+    }
+  
+  }
+}
+=============================
+/* 1. Write a Java program to print list of repeated words and list of non-repeated words in a given file and 
+      print number of repeated words and number of non-repeated words.
+ 
+     Sample Input: Create text file and write some data to the file.
+ 
+     Expected Output:
+     Repeated words: 
+     // Display all words which are repeating
+     Number of repeated words: 33
+     Non-Repeated Words: 
+     // Display all words which are not repeating
+     Number of repeated words: 12
+*/
+ 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+public class RepeatedNonRepeatedWords {
+ 
+    public static void main(String args[]) {
+        System.out.println("Create text file and write some data to the file");
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        int count=0;
+        int ncount=0;
+        String[] words = input.split(" ");
+        Map<String,String> wordMap = new HashMap<String,String>();                
+        Map<String,String> printedMap = new HashMap<String,String>();
+        for(int i=0;i<words.length;i++) {
+            String word = words[i].toUpperCase(); 
+            if(wordMap.get(word)!=null) 
+            {
+                if(printedMap.get(word)==null)
+                { 
+                    count++;
+                    printedMap.put(word, word); 
+                }
+            }
+            else 
+            {
+                ncount++;
+                wordMap.put(word, word);
+                
+            }
+        }
+        System.out.println("Number of repeated words: "+count);
+        System.out.println("Number of non-repeated words:"+ncount);
+    
+ 
+    }
+} 
+
+
+

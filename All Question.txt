@@ -1091,7 +1091,8 @@ public class Week
     }
 }
 ====================================================================================================================
-44.*Write a JAVA program to input basiJAVAsalary of an employee and calculate its Gross salary according to following: 
+44.*Write a JAVA program to input basiJAVAsalary of an employee and calculate its 
+Gross salary according to following: 
 
     BasiJAVASalary <= 10000 : HRA = 20%, DA = 80% 
 

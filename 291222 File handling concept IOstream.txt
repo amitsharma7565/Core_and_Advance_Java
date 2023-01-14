@@ -1,0 +1,275 @@
+class Demo{
+ 
+  public static void main(String args[]){
+    try{
+       File file=new File("data.txt");
+    if(file.createNewFile()){
+      System.out.println(file.getName());
+    }
+    else{
+      System.out.println("already existed");
+    }
+    }
+    catch(IOException e){
+      e.printStackTrace();
+    }
+   
+    
+    
+  }
+}
+---------------------------------------------------
+class Demo{
+ 
+  public static void main(String args[]){
+    	
+       File file=new File("data.txt");
+    if(file.exists()){
+      System.out.println(file.getName());
+      System.out.println("absolute path"+file.getAbsolutePath());
+      System.out.println("is file writeable"+file.canWrite());
+      System.out.println("is file readable"+file.canRead());
+      System.out.println(file.length());
+      }
+    else{
+      System.out.println("the file doesnot exist");
+    }
+    
+ 
+   
+    
+    
+  }
+}
+--------------------------------------------------------
+class Demo{
+ 
+  public static void main(String args[]){
+    
+       File file=new File("data.txt");
+    if(file.delete()){
+      System.out.println(file.getName());
+      
+      }
+    else{
+      System.out.println("the file doesnot exist");
+    }
+    
+ 
+   
+    
+    
+  }
+}
+----------------------------------------------
+import java.io.*;
+ 
+ 
+class Demo{
+ 
+  public static void main(String args[]){
+  
+   // String path=;
+    
+      File file=new File("/home/runner/Fast-Track-Java-Lalithaujjaneni/bitLabs/tarabai/files");
+      
+        
+        String files[]=file.list();
+        for(int i=0;i<files.length;i++){
+          System.out.println(files[i]);
+        }
+ 
+    
+      
+    }
+       
+    
+  }
+-----------------------
+import java.io.*;
+class Demo{
+ 
+  public static void main(String args[]) throws IOException{
+    FileReader fr=new FileReader("data1.txt");
+   BufferedReader br=new BufferedReader(fr);
+    String str=br.readLine();
+    while(str!=null){
+      
+        System.out.println(str);
+      str=br.readLine();
+    
+  }      
+    
+  }
+  }
+
+-----------------------------------------
+import java.io.*;
+class Demo{
+ 
+  public static void main(String args[]) throws IOException{
+ 
+     BufferedReader br=new BufferedReader(new FileReader("output.txt"));
+      String str;
+    while((str=br.readLine())!=null){
+      for(int i=0;i<str.length();i++){
+        if(str.charAt(i)=='a'||str.charAt(i)=='e'||str.charAt(i)=='i'||str.charAt(i)=='o'||str.charAt(i)=='u'){
+          System.out.print(str.charAt(i));
+        }
+      }
+    }
+    
+  }
+---------------------------------------------------
+Question 
+
+1. Write a Java program to read 5 students information like Student_id, 
+student_name, marks and city and store in Students.txt file using FileWriter 
+class. if data is stored successfully read the five students data and display it 
+on console.
+Note: Append the data if Students.txt file is not empty.
+import java.io.*;
+class Student{
+  public static void main(String args[]) throws IOException{
+    BufferedWriter br=new BufferedWriter(new FileWriter("studentdata.txt"));
+   // br.write("student-id,student-name,student-marks,city");
+    //br.newLine();
+    br.write("123,lokesh,450,tiruvuru");
+    br.newLine();
+    br.write("256,amit,455,Vijayawada");
+    //br.newLine();
+    br.close();
+    BufferedReader rd=new BufferedReader(new FileReader("studentdata.txt"));
+    String str;
+    while((str=rd.readLine())!=null){
+    //  for(int i=0;i<str.length();i++){
+      String[] words=str.split(",");
+     // for(int i=1;i<words.length;i++){
+        System.out.println("student-id:"+words[0]);
+        System.out.println("Student-name:"+words[1]);
+        System.out.println("Student-marks:"+words[2]);
+        System.out.println("city:"+words[3]);
+      //}
+    }
+  }
+}
+
+2. Write a Java program to read data from data.txt file using BufferedReader class and find following
+-->Number of lines
+--> Number of words
+--> Number of characters (including spaces)
+--> Number of characters (excluding spaces)
+/* Write a Java program to read data from data.txt file using BufferedReader class and find following
+-->Number of lines
+--> Number of words
+--> Number of characters (including spaces)
+--> Number of characters (excluding spaces)*/
+import java.io.*;
+class Data{
+  public static void main(String args[]) throws IOException{
+    int count=0,ncount=0,ccount=0,nscount=0;
+    BufferedReader b=new BufferedReader(new FileReader("studentdata.txt"));
+    String str;
+    //Number of lines
+ 
+    while((str=b.readLine())!=null){
+      if(str!=null){
+      count++;
+     
+      }
+      if(str!=null){
+        String[] str1=str.split(",");
+   
+    //for(int i=0;i<str1.length;i++){
+      ncount=ncount+str1.length;
+  
+    }
+      ccount=ccount+str.length();
+      for(int i=0;i<str.length();i++){
+        if(str.charAt(i)!=' '){
+          nscount++;
+        }
+      }
+     
+ 
+      }
+    System.out.println("number of lines:"+count);
+    System.out.println("number of words:"+ncount);
+    System.out.println("number of characters:"+ccount);
+    System.out.println("number of space:"+nscount);
+    // System.out.println("number of lines:"+count);
+   
+    //while((str=b.readLine())!=null){
+   
+  
+  }
+}
+----------------------------------
+3. Write a Java program to read data from data.txt file using BufferedReader class and find frequency of given word in a file.
+ 
+Sample Input:
+Enter word to find frequency: bitLabs
+ 
+Expected Output :
+bitLabs frequency is : 14
+4. 4. Write a Java program to find following from a given path
+--> Number of text files.
+--> Number of document files (doc and docx formats)
+--> Number of PDF files.
+--> Number of audio files
+--> Number of video files
+--> Number of image files (jpeg,gif,png)
+ 
+Sample input:
+Enter path: C://Users/Mydata
+ 
+Expected Ouput:
+Number of text files : 5
+Number of document files : 3
+Number of PDF files. : 4
+Number of audio files : 2
+Number of video files : 5
+Number of image files : 20
+
+5. 5. Suresh wants to delete empty files from his local machine, help him to write a Java program to accept path and delete empty files.
+Note: Please specify the file count before deletion and after deletion. and display the count that are deleted.
+ 
+Sample input:
+Enter path: C://Users/Mydata
+ 
+Expected Ouput:
+Before deletion the file count is: 30
+After deletion the file count is : 23
+7 files Deleted successfully.
+
+6. 6. Write a Java program to read data from Tech_mentors_details.txt, 
+softskills_mentors_details and store in to Mentors_details.txt file using 
+FileInputStream and FileOutputStream classes.
+
+    
+7. Write a Java program to read data from data.txt file using BufferedReader class and find following and write result in report.txt file.
+--> number of words in each line
+--> Longest word in each line
+--> Smallest word in each line
+Expected Report.txt file
+Number of words in line 1: 12 , Longest word is "bitLabs" and smallest word is "is".
+Number of words in line 2: 8 , Longest word is "programming" and smallest word is "java".
+Number of words in line 3: 15, Longest word is "networking" and smallest word is "the".
+Number of words in line 4: 7 , Longest word is "application" and smallest word is "web".
+
+
+8. Write a Java program to read data from data.txt file and find following
+--> Frequency of each word in a file
+--> Density of each word in a file
+--> Top 3 density words
+
+
+9. Write a Java program to create Pojo class called Student which includes
+ variables like Sid, name, marks and city. Serialize Student class and store in 
+studentDetails.ser file using FileOuputStream and ObjectOutputStream. Read data 
+from studentDetails.ser file using FileInputStream and ObjectInputStream classes 
+and display student details on console.
+
+-------------------------------------------------------
+
+ 

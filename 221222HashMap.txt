@@ -1,0 +1,107 @@
+
+
+hashmap
+comprator
+comparable
+
+
+
+// Employee
+// id
+// name
+// department
+// Salary
+
+
+import java.util.*;
+class Employee{
+  int id;
+  String name;
+  String dept;
+  int salary;
+
+  // constructor
+  Employee(int id, String name, String dept, int salary){
+    this.id= id;
+    this.name=name;
+    this.dept=dept;
+    this.salary=salary;
+  }
+}
+//  create interface
+interface EmployeeData{
+  public void insert(Employee emp);
+  // public void search();
+  // public void display();
+  // public void delete();
+  // public void update();
+}
+
+// define the method then create the class
+class EmployeeImp implements EmployeeData{
+  public void insert(Employee emp){
+    ArrayList<Employee>a=new ArrayList<Employee>();
+    a.add(emp);
+    for(Employee obj:a){
+      System.out.println(obj.id+" "+obj.name+" "+obj.dept+" "+obj.salary);
+    }
+  }
+}
+// main class
+class Employee1{
+  public static void main(String args[]){
+   EmployeeData s=new EmployeeImp();
+    Employee e=new Employee(1,"Amit0","developer0",70001);
+    s.insert(e);
+  }
+}
+
+
+=================================================================
+Hashmap
+
+
+    import java.util.*;
+class Demo{​​
+  public static void main(String args[]){​​
+    HashMap<Integer,String> map=new HashMap<Integer,String>();
+    map.put(1,"Apple");
+    map.put(2,"Mango");
+    map.put(3,"Banana");
+    map.put(4,"Orange");
+    
+      for( Map.Entry m:map.entrySet()){​​
+        System.out.println(m.getValue()+" "+m.getKey());
+      }​​
+   
+  }​​
+}​​
+-------------------------------------------------------
+    import java.util.*;
+class Demo{​​
+  public static void main(String args[]){​​
+    HashMap<Integer,Student> map=new HashMap<Integer,Student>();
+    
+    map.put(1,new Student(123,"lalitha"));
+    map.put(2,new Student(345,"Amit"));
+    map.put(3,new Student(567,"Anitha"));
+    map.put(123,new Student(789,"lavanya"));
+    
+      for( Map.Entry m:map.entrySet()){​​
+        Student std=(Student)m.getValue();
+        System.out.println(m.getKey());
+        System.out.println(std.rollno+" "+std.name);
+      }​​
+   
+  }​​
+}​​
+class Student{​​
+  int rollno;
+  String name;
+  Student(int rollno,String name){​​
+    this.rollno=rollno;
+    this.name=name;
+  }​​
+  
+}​​
+ 

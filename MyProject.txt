@@ -1,0 +1,374 @@
+
+---------------------
+POM file
+---------------------
+package com.hospital;
+
+public class PatientInfo {
+	private String name, gender, city,address, date_of_admission, guardian_name, guardian_address,recovery;
+	private int id,age;
+	private long addhar_card,contact_number,guardian_contact_number;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getGender() {
+		return gender;
+	}
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city = city;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
+	public String getDate_of_admission() {
+		return date_of_admission;
+	}
+	public void setDate_of_admission(String date_of_admission) {
+		this.date_of_admission = date_of_admission;
+	}
+	public String getGuardian_name() {
+		return guardian_name;
+	}
+	public void setGuardian_name(String guardian_name) {
+		this.guardian_name = guardian_name;
+	}
+	public String getGuardian_address() {
+		return guardian_address;
+	}
+	public void setGuardian_address(String guardian_address) {
+		this.guardian_address = guardian_address;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public long getAddhar_card() {
+		return addhar_card;
+	}
+	public void setAddhar_card(long addhar_card) {
+		this.addhar_card = addhar_card;
+	}
+	public long getContact_number() {
+		return contact_number;
+	}
+	public void setContact_number(long contact_number) {
+		this.contact_number = contact_number;
+	}
+	public long getGuardian_contact_number() {
+		return guardian_contact_number;
+	}
+	public void setGuardian_contact_number(long guardian_contact_number) {
+		this.guardian_contact_number = guardian_contact_number;
+	}
+	public String getRecovery() {
+		return recovery;
+	}
+	public void setRecovery(String recovery) {
+		this.recovery = recovery;
+	}
+	
+}
+===========================================================
+-------
+DAO Layer
+-------
+
+package com.hospital;
+
+public interface DaoInterface {
+	public void patientRegistration(PatientInfo p);
+	public void viewAllPatient();
+	public void searchPatientById(int id);
+	public void deletePatientById(int id);
+	public void searchPatientByCity(String city);
+	public void searchPatientByAgeGroup(int start,int end);
+	public void markPatientRecoveryById(int id);
+}
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+package com.hospital;
+import java.sql.*;
+public class DaoImpls implements DaoInterface {
+	Connection con=null;
+	DaoImpls(){
+//		register the driver 
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+//			get connection 
+			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/hospital","root","root");
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+		
+	}
+	
+	public void patientRegistration(PatientInfo p) {
+		try {
+			PreparedStatement pstmt=con.prepareStatement("insert into patientinfo values(?,?,?,?,?,?,?,?,?,?,?,?,?)");
+			pstmt.setString(1, null);
+			pstmt.setString(2,p.getName());
+			pstmt.setInt(3,p.getAge());
+			pstmt.setString(4,p.getGender());
+			pstmt.setLong(5,p.getAddhar_card());
+			pstmt.setLong(6,p.getContact_number());
+			pstmt.setString(7,p.getCity());
+			pstmt.setString(8,p.getAddress());
+			pstmt.setString(9,p.getDate_of_admission());
+			pstmt.setString(10,p.getGuardian_name());
+			pstmt.setString(11,p.getGuardian_address());
+			pstmt.setLong(12, p.getGuardian_contact_number());
+			pstmt.setString(13,p.getRecovery());
+			
+			int i= pstmt.executeUpdate();
+			if(i>0) {
+				System.out.println("Patient data inserted successfully");
+			}
+			else {
+				System.out.println("not inserted please try again");
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+
+}
+//	Display all patient
+	public void viewAllPatient() {
+		try {
+		Statement st=con.createStatement();
+		ResultSet rs;
+			rs = st.executeQuery("select*from patientinfo");
+			while(rs.next()) {
+				System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4)+" "+rs.getLong(5)+" "+rs.getLong(6)+" "+rs.getString(7)+" "+rs.getString(8)+" "+rs.getString(9)+" "+rs.getString(10)+" "+rs.getString(11)+" "+rs.getLong(12)+" "+rs.getString(13));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+//	search patient by id 
+	public void searchPatientById(int id) {
+		try {
+		Statement st=con.createStatement();
+		ResultSet rs;
+		
+			rs = st.executeQuery("select*from patientinfo where id='"+id+"'");
+			while(rs.next()) {
+				System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4)+" "+rs.getLong(5)+" "+rs.getLong(6)+" "+rs.getString(7)+" "+rs.getString(8)+" "+rs.getString(9)+" "+rs.getString(10)+" "+rs.getString(11)+" "+rs.getLong(12)+" "+rs.getString(13));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+//	delete a patient by id
+	public void deletePatientById(int id) {
+		try {
+			Statement st=con.createStatement();
+			int i=st.executeUpdate("delete from patientinfo where id='"+id+"'");
+			if(i>0) {
+				System.out.println("patient data deleted sucessfully");
+			}
+			else {
+				System.out.println("Not deleted please try again");
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+//	search a patient based by city
+	public void searchPatientByCity(String city) {
+		try {
+			Statement st=con.createStatement();
+			ResultSet rs= st.executeQuery("select* from patientinfo where city= '"+city+"'");
+			while(rs.next()) {
+				System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4)+" "+rs.getLong(5)+" "+rs.getLong(6)+" "+rs.getString(7)+" "+rs.getString(8)+" "+rs.getString(9)+" "+rs.getString(10)+" "+rs.getString(11)+" "+rs.getLong(12)+" "+rs.getString(13));
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+//	search a patient by age group 
+	public void searchPatientByAgeGroup(int start,int end) {
+		try {
+			Statement st=con.createStatement();
+			ResultSet rs= st.executeQuery("select*from patientinfo where age between '"+start+"' and '"+end+"' ");
+			while(rs.next()) {
+				System.out.println(rs.getInt(1)+" "+rs.getString(2)+" "+rs.getInt(3)+" "+rs.getString(4)+" "+rs.getLong(5)+" "+rs.getLong(6)+" "+rs.getString(7)+" "+rs.getString(8)+" "+rs.getString(9)+" "+rs.getString(10)+" "+rs.getString(11)+" "+rs.getLong(12)+" "+rs.getString(13));
+			}
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+	
+//	recovery status of patient based on id
+	public void markPatientRecoveryById(int id) {
+		try {
+			Statement st= con.createStatement();
+			int i= st.executeUpdate("update patientinfo set recover='"+"Recoverd"+"' where id= '"+id+"'");
+			if(i>0) {
+				System.out.println("patient has been recoverd successfully");
+			}
+			else {
+				System.out.println("Recover status not change");
+			}
+		}
+			catch(Exception e) {
+				System.out.println(e);
+			}
+	}
+}
+
+	
+==========================================================================
+
+--------------
+Main class
+---------------
+package com.hospital;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+public class AargoyaHospital {
+//	int id,age;
+//	String name, gender, city, address, date_of_admission, guardian_name, guradian_address,recover;
+//	long addhar_card, contact_number, guradian_contact_number;
+	public static void main(String args[]) throws IOException{
+		DaoInterface d1=new DaoImpls();
+//		PatientInfo pt=new PatientInfo();
+		PatientInfo pt[]=new PatientInfo[3];
+		Scanner sc= new Scanner(System.in);
+		
+		boolean ch= true;
+		try {
+			FileReader fr= new FileReader("Book1.csv");
+			BufferedReader br= new BufferedReader(fr);
+			while(ch) {
+				System.out.println("**********MENU***********");
+				System.out.println("1.Patient Registration\n2.View All Patient\n3.Search Pateint by ID\n4.Search Patient by City\n5.Search Patient by age group\n6. Change the Recovery Status\n7. Delete the patient by id\n0. For exit  ");
+				System.out.println("Enter the choice");
+				int num=sc.nextInt();
+				switch(num) {
+				case 1:
+					String str;
+					while((str=br.readLine())!=null) {
+						int i=0;
+						pt[i]=new PatientInfo();
+						String arr[]=str.split(",");
+						pt[i].setName(arr[0]);
+						if(arr[1].length()<=2) {
+							pt[i].setAge(Integer.parseInt(arr[1]));
+						}
+						else {
+							System.out.println("invalid age");
+							break;
+						}
+						
+						pt[i].setGender(arr[2]);
+						
+						if(arr[3].length()==12) {
+							
+							pt[i].setAddhar_card(Long.parseLong(arr[3]));
+						}	
+						else {
+							System.out.println("invalid addhar card number");
+							break;
+						}
+						if(arr[4].length()==10) {
+							pt[i].setContact_number(Long.parseLong(arr[4]));
+						}
+						else {
+							System.out.println("contact number invalid");
+							break;
+						}
+						
+						pt[i].setCity(arr[5]);
+						pt[i].setAddress(arr[6]);
+						pt[i].setDate_of_admission(arr[7]);
+						pt[i].setGuardian_name(arr[8]);
+						pt[i].setGuardian_address(arr[9]);
+						pt[i].setGuardian_contact_number(Long.parseLong(arr[10]));
+						pt[i].setRecovery(arr[11]);
+						
+						d1.patientRegistration(pt[i]);
+						i++;
+					}	
+					break;
+				case 2:
+					System.out.println("here is all patient");
+					d1.viewAllPatient();
+					break;
+				case 3:
+					System.out.println("Enter the patient ID");
+					int pId=sc.nextInt();
+					d1.searchPatientById(pId);
+					break;
+				case 4: 
+					System.out.println("Enter the city");
+					String pCity= sc.next();
+					d1.searchPatientByCity(pCity);
+					break;
+				case 5:
+					System.out.println("Enter the age start and end ");
+					int start=sc.nextInt();
+					int end= sc.nextInt();
+					d1.searchPatientByAgeGroup(start, end);
+					break;
+				case 6:
+					System.out.println("Enter the id for recovery ");
+					int rId= sc.nextInt();
+					d1.markPatientRecoveryById(rId);
+					break;
+				case 7:
+					System.out.println("Enter the id for delete the patient info");
+					int dId= sc.nextInt();
+					d1.deletePatientById(dId);
+					break;
+				default:
+					ch=false;
+					break;
+				}
+				
+			}
+			
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	
+	}
+}
+

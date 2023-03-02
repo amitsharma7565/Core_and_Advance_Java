@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:p="http://www.springframework.org/schema/p"
+      xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+  <bean class="com.Entity.Employee" name="emp"  c:id="101" c:name="Amit" c:salary="1000"/>
+  
+  <bean class="com.Entity.Employee" name="emp2">
+  <constructor-arg name="id">
+  <value>102</value>
+  </constructor-arg>
+  <constructor-arg name="name">
+  <value>"Sharma"</value>
+  </constructor-arg>
+  <constructor-arg name="salary">
+  <value>10000</value>
+  </constructor-arg>
+  </bean>
+  
+  <bean class="com.Entity.Employee" name="emp3">
+  <constructor-arg name="id" value="103" />
+  <constructor-arg name="name" value="Vishal"/>
+  <constructor-arg  name ="salary" value="10000"/>
+  </bean>
+  
+  <bean class= "com.Entity.Ambiguity" name="amb" c:a="2" c:b="2"  />
+  
+   <bean class="com.Entity.Ambiguity" name="amb2">
+  <constructor-arg name="a" value="2" type="int"/>
+  <constructor-arg name="b" value="2" type="int" />
+  
+  </bean>
+
+  
+  
+
+</beans>

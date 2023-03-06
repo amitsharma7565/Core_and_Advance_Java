@@ -57,12 +57,8 @@ tr:nth-child(even) {
 					<a href="update/${e.id}">Edit</a>
 					</td>
 				</tr>
-			</c:forEach>
+			</c:forEach>	
 		</tbody>
 	</table>
-	
-
-
-
 </body>
 </html>

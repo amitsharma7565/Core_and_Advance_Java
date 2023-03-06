@@ -71,8 +71,8 @@
 			</div>
 
 			<div class="form-group">
-				<label for="dept">Choose a Department:</label> <select name="dept"
-					id="dept">
+				<label for="dept">Choose a Department:</label>
+				 <select name="dept" id="dept">
 					<option value="Select">Select</option>
 					<option value="Developer">Developer</option>
 					<option value="Testing">Testing</option>

@@ -1,0 +1,8 @@
+class CheckContent{
+  public static void main(String args[]){
+    String str1="PHP Exercises and Python Exercises";
+    String str2="PHP Exercises and Python Exercises";
+    boolean check=str1.contentEquals(str2);
+    System.out.println(check);
+  }
+}

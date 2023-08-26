@@ -1,0 +1,7 @@
+class CheckItContains{
+  public static void main(String args[]){
+    String str="PHP Exercises and Python Exercises";
+    boolean check=str.contains("and");
+    System.out.println(check);
+  }
+}
